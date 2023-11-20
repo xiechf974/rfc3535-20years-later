@@ -73,7 +73,7 @@ TBC.
        or not.
 
        **Status Update**: In 2014, the IESG published a statement Writable MIB Module, which states that:
-         > SNMP MIB modules creating and modifying configuration state should only be produced by working groups in cases of clear utility and consensus to use SNMP 
+         > SNMP MIB modules creating and modifying configuration state should only be produced by working groups in cases of clear utility and consensus to use SNMP
  write operations for configuration, and in consultation with the OPS ADs/MIB doctors.
 
    3.  The workshop recommends that a group be formed to investigate why
@@ -151,7 +151,7 @@ TBC.
        SPPI PIBs.
 
        **Status Update**: The IETF has reclassified Structure of Policy Provisioning Information {{?RFC3159}}, as well as
-       three Policy Information Bases ({{?RFC3317}}, {{?RFC3318}}, and {{?RFC3571}}) to 
+       three Policy Information Bases ({{?RFC3317}}, {{?RFC3318}}, and {{?RFC3571}}) to
        Historic status.
 
 # Some Observations
