@@ -174,7 +174,7 @@ network models, IETF-defined device models are not widely
 implemented. There is a need to rationalize this space and
 avoid redundant efforts.
 
-# Need for Profiling
+## Need for Profiling
 
 Many NETCONF-related tools are (being) specified by the IETF,
 but these tools are not widely supported (e.g., Push). Editing a
@@ -186,7 +186,7 @@ were published by the behave WG {{?BCP127}}.
 
 Likewise, reassess the value of some IETF proposals vs. competing/emerging solution would be useful.
 
-# Lack of Agile Process for YANG Modules
+## Lack of Agile Process for YANG Modules
 
 RFCs might not be suited for documenting YANG modules. In the meantime, there is a need for
 "reference models" and "sufficiently stable models". An
@@ -200,7 +200,7 @@ versions.
 
 TBC.
 
-## Another Item
+## YANG-formatted Data Manipulation
 
 TBC.
 
