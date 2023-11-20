@@ -4,7 +4,7 @@ abbrev: "RFC3535, 20 Years Later"
 category: info
 
 docname: draft-boucadair-rfc3535-20years-later-latest
-submissiontype: IETF 
+submissiontype: IETF
 number:
 date:
 consensus: true
