@@ -49,7 +49,7 @@ to establish a dialog between network operators and
 protocol developers, and to guide the IETF focus on work
 regarding network management.  That outcome of that workshop
 was documented in "IAB Network Management Workshop" {{?RFC3535}}
-which was instrumental for developing NETCONF {{?RFCR6241}}, YANG {{?RFC6020}}{{?RFC7950}}, and RESTCONF {{?RFC8040}}.
+which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?RFC7950}}, and RESTCONF {{?RFC8040}}.
 
 20 years later, new requirements on network management operations requirements are emerging from the operators. This document intends to capture these requirements
 
