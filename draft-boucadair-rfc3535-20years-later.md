@@ -31,12 +31,12 @@ informative:
 The IAB has organized an important workshop
 to establish a dialog between network operators and
 protocol developers, and to guide the IETF focus on work
-regarding network management.  That outcome of that workshop
-was documented in "IAB Network Management Workshop" (RFC 3535)
-and was instrumental for developing NETCONF and YANG.
+regarding network management.  The outcome of that workshop
+was documented in the "IAB Network Management Workshop" (RFC 3535)
+which was instrumental for developing NETCONF and YANG, in particular.
 
-20 years later, it is time to evaluate what has been achieved since then
-and identify the operational barriers for making these
+20 years later, it is time to evaluate what has been achieved since then and
+identify the operational barriers for making these
 technologies widely implemented. Also, this document intends to capture new
 requirements for network management operations.
 
@@ -44,16 +44,16 @@ requirements for network management operations.
 
 # Introduction
 
-The IAB has organized an important workshop (June 4-June 6, 2002)
+The IAB has organized a workshop (June 4-June 6, 2002)
 to establish a dialog between network operators and
 protocol developers, and to guide the IETF focus on work
-regarding network management.  That outcome of that workshop
-was documented in "IAB Network Management Workshop" {{?RFC3535}}
+regarding network management.  The outcome of that workshop
+was documented in the "IAB Network Management Workshop" {{?RFC3535}}
 which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?RFC7950}}, and RESTCONF {{?RFC8040}}.
 
-20 years later, new requirements on network management operations requirements are emerging from the operators. This document intends to capture these requirements
+20 years later, new requirements on network management operations are emerging from the operators. This document intends to capture these requirements that reflect the progress in this area. The document also provide an assessment of the RFC3535 recommendations and to what extend that roadmap was driving network management efforts within the IETF.
 
-Early version of the document includes many placeholders on purpose as it intends to collect inputs.
+Early version of the document includes **many placeholders on purpose** as it intends to collect inputs from interested parties.
 
 # Summary of Achievements Since RFC 3535
 
@@ -69,6 +69,8 @@ To be further elaborated:
 * Intent-based
 * Network APIs
 * Telemetry
+
+See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 
 # Assessment of RFC 3535 Recommendations
 
@@ -108,7 +110,7 @@ To be further elaborated:
        technologies (such as common XML configuration schemas, exchange
        protocols and so on).
 
-       **Status Update**: OK.
+       **Status Update**: OK. This recommendation was also mirrored in other documents such as {{?RFC5706}}.
 
    7.  The workshop recommends, with strong consensus from the operators
        and rough consensus from the protocol developers, that the
