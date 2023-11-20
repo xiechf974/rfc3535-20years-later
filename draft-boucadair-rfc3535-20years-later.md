@@ -55,10 +55,6 @@ which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?
 
 Early version of the document includes many placeholders on purpose as it intends to collect inputs.
 
-# Conventions and Definitions
-
-{::boilerplate bcp14-tagged}
-
 # Summary of Achievements Since RFC 3535
 
 TBC.
@@ -186,6 +182,18 @@ endorsed YANG modules, such as considering an RFC to
 describe the initial module sketch and objectives and an
 official IETF repository for maintaining intermediate YANG
 versions.
+
+## Another Item 
+
+TBC.
+
+## Another Item 
+
+TBC.
+
+# Perspectives &  Recommendations
+
+TBC
 
 # Security Considerations
 
