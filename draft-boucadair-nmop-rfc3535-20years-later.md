@@ -1,15 +1,15 @@
 ---
-title: "Ref"
+title: "RFC 3535, 20 Years Later"
 abbrev: "RFC 3535, 20 Years Later"
 category: info
 
-docname: draft-boucadair-rfc3535-20years-later-latest
+docname: draft-boucadair-nmop-rfc3535-20years-later-latest
 submissiontype: IETF
 number:
 date:
 consensus: true
 v: 3
-# area: AREA
+# area: OPS
 # workgroup: WG Working Group
 keyword:
  - network management
@@ -53,9 +53,9 @@ which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?
 
 20 years later, new requirements on network management operations are emerging from the operators. This document intends to capture these requirements that reflect the progress in this area. The document also provide an assessment of the RFC3535 recommendations and to what extend that roadmap was driving network management efforts within the IETF.
 
-Early version of the document includes **many placeholders on purpose** as it intends to collect inputs from interested parties. Items listed in {{sec-obs}} are provided to exemplify candidate items to discuss in that section.
+Early version of the document includes **many placeholders on purpose** as the intent is to collect inputs from interested parties. Items listed in {{sec-obs}} are provided to exemplify candidate items to discuss in that section.
 
-# Summary of Achievements Since RFC 3535
+# Summary of Technology Advences Since RFC 3535
 
 To be further elaborated:
 
@@ -195,6 +195,14 @@ endorsed YANG modules, such as considering an RFC to
 describe the initial module sketch and objectives and an
 official IETF repository for maintaining intermediate YANG
 versions.
+
+## Integration Complexity
+
+TBC.
+
+## Another Item
+
+TBC.
 
 ## Another Item
 
