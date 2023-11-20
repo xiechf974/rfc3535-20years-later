@@ -57,7 +57,18 @@ Early version of the document includes many placeholders on purpose as it intend
 
 # Summary of Achievements Since RFC 3535
 
-TBC.
+To be further elaborated:
+
+* NETCONF
+* YANG
+* RESTCONF
+* SDN & Programmable Networks
+* Automation
+* Virtualization
+* Containerization
+* Intent-based
+* Network APIs
+* Telemetry
 
 # Assessment of RFC 3535 Recommendations
 
@@ -183,15 +194,15 @@ describe the initial module sketch and objectives and an
 official IETF repository for maintaining intermediate YANG
 versions.
 
-## Another Item 
+## Another Item
 
 TBC.
 
-## Another Item 
+## Another Item
 
 TBC.
 
-# Perspectives &  Recommendations
+# Perspectives & Recommendations
 
 TBC
 
