@@ -187,7 +187,7 @@ needs.
 > Another approach is to consider an appraoch similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}. Such a document
 > would serve as a guide and reference for implementers and any other parties who desire information contained in the 'NETCONF/RESTCONF/YANG'-related RFCs.
 
-Likewise, reassess the value of some IETF proposals vs. competing/emerging solutions would be useful.
+Likewise, reassess the value of some IETF proposals vs. competing/emerging solutions would be useful (e.g., gRPC vs. YANG-Push).
 
 ## Lack of Agile Process for (Maintenance) YANG Modules
 
