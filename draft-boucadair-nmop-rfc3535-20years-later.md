@@ -181,10 +181,13 @@ but these tools are not widely supported (e.g., Push). Editing a
 profile document with a set of recommendations about core/key
 features with the appropriate justification will help the
 emergence of more implementations that meet the operators’
-needs. Examples of such profile documents are RFCs that
-were published by the behave WG {{?BCP127}}.
+needs.
 
-Likewise, reassess the value of some IETF proposals vs. competing/emerging solution would be useful.
+> Examples of such profile documents are the various RFCs that were published by the behave WG {{?BCP127}}.
+> Another approach is to consider an appraoch similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}. Such a document
+> would serve as a guide and reference for implementers and any other parties who desire information contained in the 'NETCONF/RESTCONF/YANG'-related RFCs.
+
+Likewise, reassess the value of some IETF proposals vs. competing/emerging solutions would be useful.
 
 ## Lack of Agile Process for YANG Modules
 
