@@ -189,7 +189,7 @@ needs.
 
 Likewise, reassess the value of some IETF proposals vs. competing/emerging solutions would be useful.
 
-## Lack of Agile Process for YANG Modules
+## Lack of Agile Process for (Maintenance) YANG Modules
 
 RFCs might not be suited for documenting YANG modules. In the meantime, there is a need for
 "reference models" and "sufficiently stable models". An
@@ -204,6 +204,14 @@ versions.
 TBC.
 
 ## YANG-formatted Data Manipulation
+
+TBC.
+
+## Translation and Mapping Between Service/Network and Device Models
+
+TBC.
+
+## Another Item
 
 TBC.
 
