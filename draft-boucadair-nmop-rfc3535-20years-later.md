@@ -189,7 +189,7 @@ needs.
 
 Likewise, reassess the value of some IETF proposals vs. competing/emerging solutions would be useful (e.g., gRPC vs. YANG-Push).
 
-## Lack of Agile Process for (Maintenance) YANG Modules
+## Lack of Agile Process for (The Maintenance of) YANG Modules
 
 RFCs might not be suited for documenting YANG modules. In the meantime, there is a need for
 "reference models" and "sufficiently stable models". An
