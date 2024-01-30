@@ -199,15 +199,41 @@ describe the initial module sketch and objectives and an
 official IETF repository for maintaining intermediate YANG
 versions.
 
-## Integration Complexity
+## Integration Complexity (Thomas)
 
 TBC.
 
-## YANG-formatted Data Manipulation
+## YANG-formatted Data Manipulation (Med)
 
 TBC.
 
-## Translation and Mapping Between Service/Network and Device Models
+## Translation and Mapping Between Service/Network and Device Models (Oscar)
+
+TBC.
+
+## (In)Consistent Data Structures in Network Protocols for Data Export (Thomas)
+
+TBC.
+
+## Proprietary YANG Modules, CLI, and Limited Abstraction (Oscar)
+
+Pluggins/Proxy YANG/CLI is still the rule in many operations.
+
+Complexity in dev the pluggins (as you need to cover many OS/vendors).
+
+Network models for the realization provides some "level" of abstraction and then automations.
+
+TBC.
+
+## Distinct Networks, Distinct Management Requirements (Luis)
+
+distinct scope than 3535.
+
+TBC.
+
+## Implications of External Dependency (Luis)
+
+TSN/detenet
 
 TBC.
 
@@ -215,13 +241,6 @@ TBC.
 
 TBC.
 
-## Another Item
-
-TBC.
-
-## Another Item
-
-TBC.
 
 # Perspectives & Recommendations
 
