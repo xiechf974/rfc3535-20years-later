@@ -233,9 +233,11 @@ TBC.
 
 ## Implications of External Dependency (Luis)
 
-TSN/detenet
+Current networks are abandoning the silo approach from the past towards an increasing convergence. On one hand, there are trends towards a tighter interaction and integration of different technologies previously considered as totally separated from an operational perspective. Examples of that are the IP and Optical integration (e.g., the introduction of coloured interfaces on routers), or the extension of deterministic-behavior features to layer 3 networks. This kind of convergence in most cases creates dependecies on the traditional network management features, which require to incoprorate or integrate functionality from other technological domains.
 
-TBC.
+Furthermore, such convergence is also reflected on the need of interacting and interworking with distinct network parts participating of the end-to-end service delivery. Mobile access, fixed access, data center, enterprise, radio functional split (i.e., fronthaul and midhaul), neutral exchanges, intensive data networks (e.g., scientific academic networks), content distribution, etc, represent network parts constituent of end-to-end services that can impose dependencias of the management of an intermmediate network.
+
+That convergence shown the last years also implies the need of an up-to-date refresh of management capabilities and tooling of the traditional networks.
 
 ## Another Item
 
