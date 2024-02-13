@@ -20,6 +20,18 @@ author:
    fullname: Mohamed Boucadair
    organization: Orange
    email: mohamed.boucadair@orange.com
+ -
+   fullname: Luis Miguel Contreras Murillo
+   organization: Telefonica
+   email: luismiguel.contrerasmurillo@telefonica.com
+ -
+   fullname: Oscar Gonzalez de Dios
+   organization: Telefonica
+   email: oscar.gonzalezdedios@telefonica.co
+ -
+   fullname: Thomas Graf
+   organization: Swisscom
+   email: thomas.graf@swisscom.com
 
 normative:
 
@@ -167,9 +179,9 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 
 ## Fragmented Ecosystem
 
-The current YANG device models ecosystem is fragmented: some
+The current YANG device models ecosystem is **fragmented**: some
 standards models are defined in the IETF while similar ones are
-defined in other fora such as Openconfig.  Unlike service and
+defined in other fora such as Openconfig or ONF. Unlike service and
 network models, IETF-defined device models are not widely
 implemented. There is a need to rationalize this space and
 avoid redundant efforts.
@@ -225,7 +237,7 @@ Network models for the realization provides some "level" of abstraction and then
 
 TBC.
 
-## Distinct Networks, Distinct Management Requirements (Luis)
+## Distinct Networks, Distinct Management Requirements
 
 From the time RFC 3535 was released up to now, new kind of services and applications have been developed and deployed over the time, with very diverse, and some times contradicting, requirements. Those services have been engineered on top of multi-service networks for the sake of efficiency and simplicity, accommodating such a variety of needs. As a result, services requiring mobility, data replication, large capacity, adaptability, multi-path support, determinism, etc., coexist on the same shared network, needing from it mechanisms for graceful operation.
 
@@ -233,7 +245,7 @@ Likewise, such diversity of services also require different management capabilit
 
 This reality is different from the one existing at the time of {{?RFC3535}}, and as such, the new identified needs can require from novel approaches to guarantee the aforementioned co-existence of services.
 
-## Implications of External Dependency (Luis)
+## Implications of External Dependency
 
 Networks are being updated to abandon the silo approach from the past towards an increasing convergence. Specifically, there are trends towards a tighter interaction and integration of different technologies previously considered as totally separated from an operational perspective. Examples of that trends are the IP and Optical integration (e.g., the introduction of colored interfaces on routers), or the extension of deterministic-behavior features to Layer 3 networks. This kind of convergence in most cases creates dependencies on the conventional network management features, which require to incorporate or integrate functionality from other technological domains.
 
@@ -245,6 +257,9 @@ That convergence shown the last years also implies the need of an up-to-date ref
 
 TBC.
 
+## Another Item
+
+TBC.
 
 # Perspectives & Recommendations
 
@@ -252,7 +267,7 @@ TBC
 
 # Security Considerations
 
-TBC
+TBC.
 
 
 # IANA Considerations
