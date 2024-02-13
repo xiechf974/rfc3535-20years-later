@@ -237,7 +237,7 @@ Networks are being updated to abandon the silo approach from the past towards an
 
 Furthermore, such convergence is also reflected on the need of interacting and interworking with distinct network parts participating in the end-to-end service delivery. Mobile access, fixed access, data center, enterprise, radio functional split (i.e., fronthaul and midhaul), neutral exchanges, intensive data networks (e.g., scientific academic networks), content distribution, etc., represent network parts constituent of end-to-end services that can impose dependencies of the management of an intermediate network.
 
-That convergence shown the last years also implies the need of an up-to-date refresh of management capabilities and tooling of the traditional networks.
+That convergence shown the last years also implies the need of an up-to-date refresh of management capabilities and tooling of the conventional networks. Also, it highlights the need to easily map the data models that are used to manage each specific segment.
 
 ## Another Item
 
