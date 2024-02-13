@@ -231,7 +231,7 @@ From the time RFC 3535 was released up to now, new kind of services and applicat
 
 Likewise, such diversity of services also require different management capabilities. For example, session continuity, distribution trees, traffic engineering, congestion status notification, reordering, or on-time delivery impose very different management needs to be satisfied.
 
-This reality is different from the one existing at the time of RFC3535, and as such, the new identifed needs can require from novel approaches to guarantee the aforementioned co-existence of services.
+This reality is different from the one existing at the time of {{?RFC3535}}, and as such, the new identified needs can require from novel approaches to guarantee the aforementioned co-existence of services.
 
 ## Implications of External Dependency (Luis)
 
