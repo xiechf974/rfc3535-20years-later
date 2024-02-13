@@ -229,7 +229,7 @@ TBC.
 
 From the time RFC 3535 was released up to now, new kind of services and applications have been developed and deployed over the time, with very diverse, and some times contradicting, requirements. Those services have been engineered on top of multi-service networks for the sake of efficiency and simplicity, accommodating such a variety of needs. As a result, services requiring mobility, data replication, large capacity, adaptability, multi-path support, determinism, etc., coexist on the same shared network, needing from it mechanisms for graceful operation.
 
-Similar to the fact of having different requirements, such diversity of services also require different management capabilities. Just naming a few, session continuity, distribution trees, traffic engineering, congestion status notification, reordering or on-time delivery impose very different management needs to be satisfied. 
+Likewise, such diversity of services also require different management capabilities. For example, session continuity, distribution trees, traffic engineering, congestion status notification, reordering, or on-time delivery impose very different management needs to be satisfied.
 
 This reality is different from the one existing at the time of RFC3535, and as such, the new identifed needs can require from novel approaches to guarantee the aforementioned co-existence of services.
 
