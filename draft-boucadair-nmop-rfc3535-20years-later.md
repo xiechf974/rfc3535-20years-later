@@ -186,7 +186,7 @@ network models, IETF-defined device models are not widely
 implemented. There is a need to rationalize this space and
 avoid redundant efforts.
 
-## Need for Profiling
+## Lack of Profiling
 
 Many NETCONF-related tools are (being) specified by the IETF,
 but these tools are not widely supported (e.g., Push). Editing a
@@ -216,10 +216,10 @@ versions.
 Section 3 of RFC 3535 describes the network operator requirements. One of the requirements describe the ease of use which according to RFC 6244 section 3.2 is addressed by Netconf and YANG. For configuration this holds true, for network observability unfortunately not yet. This has been confirmed with a set of network operators by asking how long it takes from subscribing YANG data to make it accessible to the operator. Minutes, Hours, Days or Weeks. None of them answered Minutes or Hours. All of them responded Days or Weeks. Hinting manual post processing of YANG data.
 
 Collecting YANG metrics from networks is already a struggle due to late arrival of RFC 8639, RFC 8640 and RFC 8641 and draft-ietf-netconf-https-notif and draft-ietf-netconf-udp-notif for configured subscription transport protocols which defined YANG-Push in the industry. This caused network vendors to implement alternative ways to collect real-time streaming data in the meanwhile, such as gNMI which was proposed in 2018 draft-openconfig-rtgwg-gnmi-spec to the IETF but not followed up on. Unfortunately, these implementations differ between network operating systems due to the lack of standardization, specifically for the metadata which would ensure machine readability.
- 
+
 When a set of network operators where asked to where operational YANG data needs to be integrated to, the answer homogeneously was Apache Kafka Message Broker and Time Series Databases. draft-netana-nmop-yang-kafka-integration defines an architetcture how YANG-Push can be integrated into Apache Kafka and references needed YANG-Push extensions and defines requirements for YANG schema registry development. The YANG-Push extensions addressing needs to make YANG-Push messages machine readable and against semantic validate able to ensure a consistent data processing. One of the current challenges is that the subscribed YANG data referenced with datastore-subtree-filter or datastore-xpath-filter breaks semantic integrity which needs to be addressed by either updating Section 4 of RFC 8641 or proposing a new YANG module being used at the YANG-Push receiver as described in Section 5 of draft-netana-nmop-yang-kafka-integration.
 
-## YANG-formatted Data Manipulation (Med)
+## YANG-formatted Data Manipulation
 
 TBC.
 
@@ -254,6 +254,8 @@ From the time RFC 3535 was released up to now, new kind of services and applicat
 Likewise, such diversity of services also require different management capabilities. For example, session continuity, distribution trees, traffic engineering, congestion status notification, reordering, or on-time delivery impose very different management needs to be satisfied.
 
 This reality is different from the one existing at the time of {{?RFC3535}}, and as such, the new identified needs can require from novel approaches to guarantee the aforementioned co-existence of services.
+
+Also, some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) {{?RFC838}}.
 
 ## Implications of External Dependency
 
