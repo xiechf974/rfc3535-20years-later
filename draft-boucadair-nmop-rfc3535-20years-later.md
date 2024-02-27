@@ -152,8 +152,8 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        SMI/SPPI data definition languages as being done in the SMIng
        working group.
 
-       **Status Update**:
-       : SMIng WG was concluded in 2003-04-04.
+        **Status Update**:
+        : SMIng WG was concluded in 2003-04-04.
 
    11.  The workshop recommends, with split consensus from the operators
        and rough consensus from the protocol developers, that the IETF
