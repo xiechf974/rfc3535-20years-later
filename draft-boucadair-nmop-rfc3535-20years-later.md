@@ -71,16 +71,20 @@ Early version of the document includes **many placeholders on purpose** as the i
 
 To be further elaborated:
 
-* NETCONF
-* YANG
-* RESTCONF
-* SDN & Programmable Networks
-* Automation
-* Virtualization
-* Containerization
-* Intent-based
+* NETCONF {{?RFC6241}}
+* YANG {{?RFC7950}}
+* RESTCONF  {{?RFC8040}}
+* SDN & Programmable Networks {{?RFC7149}}{{?RFC7426}}
+* Automation {{?RFC8969}}
+* Virtualization {{?RFC8568}}
+* Containerization {{?I-D.ietf-bmwg-containerized-infra}}
+* Intent-based {{?RFC9315}}
 * Network APIs
-* Telemetry
+* Telemetry {{?RFC9232}}
+* JSON Encoding of Data Modeled with YANG {{?RFC7951}}
+* CoAP Management Interface (CORECONF) {{?I-D.ietf-core-comi}}
+* YANG to CBOR mapping {{?RFC9254}}
+* YANG Schema Item iDentifier (YANG SID) {{?I-D.ietf-core-sid}}
 
 See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 
@@ -93,7 +97,9 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        the working group whether they want to provide writable objects
        or not.
 
-       **Status Update**: In 2014, the IESG published a statement Writable MIB Module, which states that:
+       **Status Update**:
+       : In 2014, the IESG published a statement Writable MIB Module, which states that:
+
          > SNMP MIB modules creating and modifying configuration state should only be produced by working groups in cases of clear utility and consensus to use SNMP
  write operations for configuration, and in consultation with the OPS ADs/MIB doctors.
 
@@ -113,39 +119,44 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        developers and operators, that the IETF focus resources on the
        standardization of configuration management mechanisms.
 
-       **Status Update**: NETCONF, RESTCONF, CORECONF, YANG.
+       **Status Update**:
+       : NETCONF {{?RFC6241}}, RESTCONF {{?RFC8040}}, CORECONF {{I-D.ietf-core-comi}}, YANG.
+       : YANG is a transport-independent data modeling language. It can be used independently of NETCONF/RESTCONF. For example, YANG can be used to define abstract data structures {{?RFC8791}} that can be manipulated by other protocols (e.g., {{?RFC9132}}).
 
-   6.  The workshop recommends, with strong consensus from the operators
+   7.  The workshop recommends, with strong consensus from the operators
        and rough consensus from the protocol developers, that the
        IETF/IRTF should spend resources on the development and
        standardization of XML-based device configuration and management
        technologies (such as common XML configuration schemas, exchange
        protocols and so on).
 
-       **Status Update**: OK. This recommendation was also mirrored in other documents such as {{?RFC5706}}.
+       **Status Update**:
+       : OK. This recommendation was also mirrored in other documents such as {{?RFC5706}}.
 
-   7.  The workshop recommends, with strong consensus from the operators
+   9.  The workshop recommends, with strong consensus from the operators
        and rough consensus from the protocol developers, that the
        IETF/IRTF should not spend resources on developing HTML-based or
        HTTP-based methods for configuration management.
 
-       **Status Update**: The IETF deviated from this recommendation, e.g., RESTCONF {{?RFC8040}} or CoAP Management Interface (CORECONF) {{?I-D.ietf-core-comi}}.
+       **Status Update**:
+       : The IETF deviated from this recommendation, e.g., RESTCONF {{?RFC8040}} or CoAP Management Interface (CORECONF) {{?I-D.ietf-core-comi}}.
 
-   8.  The workshop recommends, with rough consensus from the operators
+   11.  The workshop recommends, with rough consensus from the operators
        and strong consensus from the protocol developers, that the IETF
        should continue to spend resources on the evolution of the
        SMI/SPPI data definition languages as being done in the SMIng
        working group.
 
-       **Status Update**: SMIng WG was concluded in 2003-04-04.
+       **Status Update**:
+       : SMIng WG was concluded in 2003-04-04.
 
-   9.  The workshop recommends, with split consensus from the operators
+   11.  The workshop recommends, with split consensus from the operators
        and rough consensus from the protocol developers, that the IETF
        should spend resources on fixing the MIB development and
        standardization processs.
 
-       **Status Update**: The IETF dedicated some resources to fix some
-       SNMP shortcomings with a focus on security (e.g., Transport Layer Security (TLS) Transport Model for
+       **Status Update**:
+       : The IETF dedicated some resources to fix some SNMP shortcomings with a focus on security (e.g., Transport Layer Security (TLS) Transport Model for
        the SNMP {{?RFC6353}} or {{?RFC9456}}, HMAC-SHA-2 Authentication Protocols in User-Based Security Model (USM) for SNMPv3 {{?RFC7860}}).
 
 {{Section 6 of ?RFC3535}} also includes the following but without tagging them as recommendations:
@@ -154,24 +165,27 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        consensus from the protocol developers, that the IETF should not
        focus resources on CIM extensions.
 
-       **Status Update**: The IETF didn't dedicate any resources on CIM extensions.
+       **Status Update**:
+       : The IETF didn't dedicate any resources on CIM extensions.
 
-   2.  The workshop had rough consensus from the protocol developers
+   3.  The workshop had rough consensus from the protocol developers
        that the IETF should not spend resources on COPS-PR development.
        So far, the operators have only very limited experience with
        COPS-PR.  In general, however, they felt that further development
        of COPS-PR might be a waste of resources as they assume that
        COPS-PR does not really address their requirements.
 
-       **Status Update**: The IETF has reclassified COPS Usage for Policy Provisioning {{?RFC3084}}
+       **Status Update**:
+       : The IETF has reclassified COPS Usage for Policy Provisioning {{?RFC3084}}
        to Historic status.
 
-   3.  The workshop had rough consensus from the protocol developers
+   5.  The workshop had rough consensus from the protocol developers
        that the IETF should not spend resources on SPPI PIB definitions.
        The operators had rough consensus that they do not care about
        SPPI PIBs.
 
-       **Status Update**: The IETF has reclassified Structure of Policy Provisioning Information {{?RFC3159}}, as well as
+       **Status Update**:
+       : The IETF has reclassified Structure of Policy Provisioning Information {{?RFC3159}}, as well as
        three Policy Information Bases ({{?RFC3317}}, {{?RFC3318}}, and {{?RFC3571}}) to
        Historic status.
 
@@ -186,7 +200,7 @@ network models, IETF-defined device models are not widely
 implemented. There is a need to rationalize this space and
 avoid redundant efforts.
 
-## Need for Profiling
+## Lack of Profiling
 
 Many NETCONF-related tools are (being) specified by the IETF,
 but these tools are not widely supported (e.g., Push). Editing a
@@ -221,11 +235,11 @@ When a set of network operators where asked to where operational YANG data needs
 
 Another challenge is that the subscribed YANG data referenced with datastore-subtree-filter or datastore-xpath-filter breaks semantic integrity which needs to be addressed by either updating {{Section 4 of ?RFC8641}} or proposing a new YANG module being used at the YANG-Push receiver.
 
-## YANG-formatted Data Manipulation (Med)
+## YANG-formatted Data Manipulation
 
 TBC.
 
-## Translation and Mapping Between Service/Network and Device Models (Oscar)
+## Translation and Mapping Between Service/Network and Device Models
 
 TBC.
 
@@ -239,7 +253,7 @@ The lack of information from where the data is being pushed from is only known t
 
 The same common principle applies to when observation timestamping is missing in the Network Telemetry message. Since the data collection is the closest element to the network, a time stamp is added to give the network operator at least the information when the Network Telemetry message was collected. However, since Network Telemetry addresses real-time streaming needs, this is often not accurate enough for data correlation.
 
-## Proprietary YANG Modules, CLI, and Limited Abstraction (Oscar)
+## Proprietary YANG Modules, CLI, and Limited Abstraction
 
 Pluggins/Proxy YANG/CLI is still the rule in many operations.
 
