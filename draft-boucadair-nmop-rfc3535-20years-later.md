@@ -37,6 +37,11 @@ normative:
 
 informative:
 
+  ODL:
+    title: Graph Model Overview
+    date: 2023
+    target: https://docs.opendaylight.org/projects/bgpcep/en/latest/graph/graph-user-guide-graph-model.html#
+
 
 --- abstract
 
@@ -237,7 +242,7 @@ Another challenge is that the subscribed YANG data referenced with datastore-sub
 
 ## YANG-formatted Data Manipulation
 
-TBC.
+The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models. See, for example, {{ODL}}.
 
 ## Translation and Mapping Between Service/Network and Device Models
 
