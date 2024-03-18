@@ -32,6 +32,10 @@ author:
    fullname: Thomas Graf
    organization: Swisscom
    email: thomas.graf@swisscom.com
+ -
+   fullname: Reshad Rahman
+   organization: Equinix
+   email: rrahman@equinix.com
 
 normative:
 
@@ -72,7 +76,7 @@ which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?
 
 Early version of the document includes **many placeholders on purpose** as the intent is to collect inputs from interested parties. Items listed in {{sec-obs}} are provided to exemplify candidate items to discuss in that section.
 
-# Summary of Technology Advences Since RFC 3535
+# Summary of Technology Advances Since RFC 3535
 
 To be further elaborated:
 
@@ -206,22 +210,22 @@ avoid redundant efforts.
 
 ## Lack of Profiling
 
-Many NETCONF-related tools are (being) specified by the IETF,
-but these tools are not widely supported (e.g., Push). Editing a
+Many NETCONF-related features are (being) specified by the IETF,
+but these features are not widely supported (e.g., Push). Editing a
 profile document with a set of recommendations about core/key
 features with the appropriate justification will help the
 emergence of more implementations that meet the operators’
 needs.
 
 > Examples of such profile documents are the various RFCs that were published by the behave WG {{?BCP127}}.
-> Another approach is to consider an appraoch similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}. Such a document
+> Another approach is to consider an approach similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}. Such a document
 > would serve as a guide and reference for implementers and any other parties who desire information contained in the 'NETCONF/RESTCONF/YANG'-related RFCs.
 
 Likewise, reassess the value of some IETF proposals vs. competing/emerging solutions would be useful (e.g., gRPC vs. YANG-Push).
 
 ## Lack of Agile Process for (The Maintenance of) YANG Modules
 
-RFCs might not be suited for documenting YANG modules. In the meantime, there is a need for
+RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for
 "reference models" and "sufficiently stable models". An
 hybrid approach might be investigated for documenting IETF-
 endorsed YANG modules, such as considering an RFC to
@@ -285,9 +289,17 @@ Furthermore, such convergence is also reflected on the need of interacting and i
 
 That convergence shown the last years also implies the need of an up-to-date refresh of management capabilities and tooling of the conventional networks. Also, it highlights the need to easily map the data models that are used to manage each specific segment.
 
-## Another Item
+## Too much time between publication of new networking functionality and the associated YANG
 
-TBC.
+RFC8667 (IS-IS extensions for SR) was published in December 2019. I-D.ietf-isis-sr-yang will be published ~5 years after.
+
+Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
+That may slow down the protocol specification though.
+
+## Open-source tools
+
+While there are open-source implementations for NETCONF (e.g. NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
+For example, ygot generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
 
 ## Another Item
 
