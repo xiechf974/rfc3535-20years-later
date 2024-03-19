@@ -289,17 +289,17 @@ Furthermore, such convergence is also reflected on the need of interacting and i
 
 That convergence shown the last years also implies the need of an up-to-date refresh of management capabilities and tooling of the conventional networks. Also, it highlights the need to easily map the data models that are used to manage each specific segment.
 
-## Too much time between publication of new networking functionality and the associated YANG
+## Too Much Time Between Publication of New Networking Functionality and the Associated YANG
 
-RFC8667 (IS-IS extensions for SR) was published in December 2019. I-D.ietf-isis-sr-yang will be published ~5 years after.
+For example, {{?RFC8667}} (IS-IS extensions for SR) was published in December 2019, while {{?I-D.ietf-isis-sr-yang}} will be published ~5 years after.
 
 Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
-That may slow down the protocol specification though.
+That may slow down the protocol specification, though.
 
-## Open-source tools
+## Open-source Tools
 
-While there are open-source implementations for NETCONF (e.g. NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
-For example, ygot generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
+While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
+For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
 
 ## Another Item
 
