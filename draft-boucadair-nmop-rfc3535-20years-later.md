@@ -97,6 +97,13 @@ To be further elaborated:
 
 See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 
+
+# Assessment of RFC 3535 Operator Requirements
+
+{{Section 3 of ?RFC3535}} includes the following recommendations:
+
+* TBC
+
 # Assessment of RFC 3535 Recommendations
 
 {{Section 6 of ?RFC3535}} includes the following recommendations:
@@ -304,6 +311,33 @@ For example, "ygot" generates structures from YANG models and these can easily b
 ## Another Item
 
 TBC.
+
+# Some Individual Assessments
+
+This section captures some early assessments. The goal is first to capture received feedback, challenge it, and then structure it.
+
+## What Went Well
+
+-	An overview of current and next possible technologies were given
+-	Some rather technical, technology focused input from operators were collected
+-	Some protocols were early on de-scoped and described why
+
+## What Went Wrong
+
+-	Not enough implementers (software developers implementing the standards) and users (network operators using the network management software developed based on standards) were present and were well organized. That lead to standards which are technical not implementable and implementation that are not applicable or bringing not enough added value.
+-	IETF is not the expert community in data engineering. The experts are in the data industry. Without them, integration in data processing chains like Data Mesh is going to be a challenge.
+-	Closed Loop Operation and Intend Based Networking were not considered as a use case or overall non-technology related use cases were not considered.
+-	Most drawn conclusions were not explained why the IETF community came to such conclusions.
+-	We were looking at the past and present and not into the distant future. What do we need in 5-10 years?
+
+## Where Can Be Improved
+
+-	Focus on use cases. What goal do we need to fulfill and who can describe best: Network Operators
+-	Focus on how those use cases could be implemented best and what standards would help: Software and Data Engineers
+-	Look at current standards and see wherever those standards contribute to those implementations: IETF community
+-	List what is missing and analyze why it is missing: IETF community
+-	Create an eco-systems of software developer and network operators which share their open source tools: IETF community
+-	Mandate that no network management standard is being defined without having at least two reference implementations and help the IETF community to achieve that: IESG
 
 # Perspectives & Recommendations
 
