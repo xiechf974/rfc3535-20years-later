@@ -314,7 +314,7 @@ TBC.
 
 # Some Individual Assessments
 
-This section captures some early assessment. The goal is first to capture received feedback, challenge it, and the structure it.
+This section captures some early assessments. The goal is first to capture received feedback, challenge it, and then structure it.
 
 ## What Went Well
 
