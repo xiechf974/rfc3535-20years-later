@@ -308,6 +308,10 @@ That may slow down the protocol specification, though.
 While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
 For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
 
+## Network APIfication
+
+APIs are getting momentum as means of interworking between parties, also at the time of providing network services. An example of that is {{?I-D.ramseyer-grow-peering-api}} for the purpose of dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. Thus, the definition of APIs, independent of the realization of the supportive model, could be generalize for fast development, prototyping, and validation. 
+
 ## Another Item
 
 TBC.
