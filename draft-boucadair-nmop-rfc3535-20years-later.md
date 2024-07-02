@@ -310,7 +310,7 @@ For example, "ygot" generates structures from YANG models and these can easily b
 
 ## Network APIfication
 
-APIs are getting momentum as means of interworking between parties, also at the time of providing network services. An example of that is {{?I-D.ramseyer-grow-peering-api}} for the purpose of dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. Thus, the definition of APIs, independent of the realization of the supportive model, could be generalize for fast development, prototyping, and validation. 
+APIs are getting momentum as means of interworking between parties, also at the time of providing network services. An example of that is {{?I-D.ramseyer-grow-peering-api}} for the purpose of dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. Thus, the definition of APIs, independent of the realization of the supportive model, could be generalize for fast development, prototyping, and validation.
 
 ## Another Item
 
