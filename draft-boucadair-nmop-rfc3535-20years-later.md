@@ -317,7 +317,7 @@ The distinct approaches followed in both the compute and the network environment
 
 ## The Network Becomes Consumable
 
-Network connectivity can support tailored services in terms of SLOs, for instance, by means of network slice services [RFC9543]. This possibility of consuming the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
+Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
 
 ## Another Item
 
