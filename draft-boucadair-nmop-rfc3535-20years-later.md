@@ -108,7 +108,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 
 {{Section 6 of ?RFC3535}} includes the following recommendations:
 
-   1.  The workshop recommends that the IETF stop forcing working groups
+   1.  The workshop recommended that the IETF stop forcing working groups
        to provide writable MIB modules.  It should be the decision of
        the working group whether they want to provide writable objects
        or not.
@@ -119,19 +119,19 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
          > SNMP MIB modules creating and modifying configuration state should only be produced by working groups in cases of clear utility and consensus to use SNMP
  write operations for configuration, and in consultation with the OPS ADs/MIB doctors.
 
-   3.  The workshop recommends that a group be formed to investigate why
+   3.  The workshop recommended that a group be formed to investigate why
        current MIB modules do not contain all the objects needed by
        operators to monitor their networks.
 
        **Status Update**: xxx
 
-   4.  The workshop recommends that a group be formed to investigate why
+   4.  The workshop recommended that a group be formed to investigate why
        the current SNMP protocol does not satisfy all the monitoring
        requirements of operators.
 
        **Status Update**: xxx
 
-   5.  The workshop recommends, with strong consensus from both protocol
+   5.  The workshop recommended, with strong consensus from both protocol
        developers and operators, that the IETF focus resources on the
        standardization of configuration management mechanisms.
 
@@ -139,7 +139,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        : NETCONF {{?RFC6241}}, RESTCONF {{?RFC8040}}, CORECONF {{I-D.ietf-core-comi}}, YANG.
        : YANG is a transport-independent data modeling language. It can be used independently of NETCONF/RESTCONF. For example, YANG can be used to define abstract data structures {{?RFC8791}} that can be manipulated by other protocols (e.g., {{?RFC9132}}).
 
-   7.  The workshop recommends, with strong consensus from the operators
+   7.  The workshop recommended, with strong consensus from the operators
        and rough consensus from the protocol developers, that the
        IETF/IRTF should spend resources on the development and
        standardization of XML-based device configuration and management
@@ -149,7 +149,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        **Status Update**:
        : OK. This recommendation was also mirrored in other documents such as {{?RFC5706}}.
 
-   9.  The workshop recommends, with strong consensus from the operators
+   9.  The workshop recommended, with strong consensus from the operators
        and rough consensus from the protocol developers, that the
        IETF/IRTF should not spend resources on developing HTML-based or
        HTTP-based methods for configuration management.
@@ -157,7 +157,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        **Status Update**:
        : The IETF deviated from this recommendation, e.g., RESTCONF {{?RFC8040}} or CoAP Management Interface (CORECONF) {{?I-D.ietf-core-comi}}.
 
-   11.  The workshop recommends, with rough consensus from the operators
+   11.  The workshop recommended, with rough consensus from the operators
        and strong consensus from the protocol developers, that the IETF
        should continue to spend resources on the evolution of the
        SMI/SPPI data definition languages as being done in the SMIng
@@ -166,7 +166,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
         **Status Update**:
         : SMIng WG was concluded in 2003-04-04.
 
-   11.  The workshop recommends, with split consensus from the operators
+   11.  The workshop recommended, with split consensus from the operators
        and rough consensus from the protocol developers, that the IETF
        should spend resources on fixing the MIB development and
        standardization processs.
@@ -307,6 +307,17 @@ That may slow down the protocol specification, though.
 
 While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
 For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
+
+## New Service Approaches
+
+The virtualization trend hava made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of Service Level Objectives (SLOs).
+
+The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanism for enabling an efficient interplay, while highly automating the overall service delivery procedure.
+
+
+## The Network Becomes Consumable
+
+Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
 
 ## Another Item
 
