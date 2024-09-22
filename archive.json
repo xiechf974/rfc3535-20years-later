@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-09-19T01:20:13.622830+00:00",
+  "timestamp": "2024-09-22T01:27:10.261869+00:00",
   "repo": "boucadair/rfc3535-20years-later",
   "labels": [
     {
@@ -111,6 +111,22 @@
       "body": "https://networkautomation.forum/autocon1",
       "createdAt": "2024-03-20T12:27:00Z",
       "updatedAt": "2024-03-20T12:27:00Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 14,
+      "id": "I_kwDOKqz7zs6XKo0e",
+      "title": "Many solutions for the same problem, but lack of clear applicably guidance",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/issues/14",
+      "state": "OPEN",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "From Jean-Michel Combes:\r\n\r\n> J'ai un cas de 2 m\u00e9canismes standardis\u00e9s pour une m\u00eame probl\u00e9matique : la mise en place d'ACLs sur des routeurs, soit via BGP FlowSpec [RFC8955][RFC8956], soit via NETCONF/YANG [RFC8519].\r\nAucun des documents cit\u00e9s ne citent l'autre solution et propose une explication/raison claire concernant l'utilisation de l'un ou l'autre.\r\n\r\n> Du coup, mon (seul - actuellement) commentaire serait que lorsque l'IETF standardise plusieurs solutions, que des explications/raisons soient int\u00e9gr\u00e9s dans les sp\u00e9cifications.\r\n",
+      "createdAt": "2024-09-19T12:04:17Z",
+      "updatedAt": "2024-09-19T12:04:17Z",
       "closedAt": null,
       "comments": []
     }
