@@ -389,3 +389,7 @@ This document has no IANA actions.
 
 --- back
 
+# Acknowledgments
+{:numbered="false"}
+
+Thanks to Christian Jacquenet for his inputs.
