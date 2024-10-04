@@ -274,7 +274,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 
 **Status Update**:
 : No such group was formed to our knowledge.
-: This SNMP shortcoming was also reiterated in {{Section 3.5.2 of .RFC5345}}.
+: This SNMP shortcoming was also reiterated in {{Section 3.5.2 of ?RFC5345}}.
 
 {:quote}
 >   4. The workshop recommended, with strong consensus from both protocol
