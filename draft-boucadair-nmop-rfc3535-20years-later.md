@@ -100,7 +100,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 {{Section 3 of ?RFC3535}} includes the following recommendations:
 
 {:quote}
->  1.  Ease of use is a key requirement for any network management
+>      Ease of use is a key requirement for any network management
        technology from the operators point of view.
 
 **Status Update**:
@@ -109,7 +109,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        that were specified since then.
 
 {:quote}
->   2.  It is necessary to make a clear distinction between configuration
+>      It is necessary to make a clear distinction between configuration
        data, data that describes operational state and statistics.  Some
        devices make it very hard to determine which parameters were
        administratively configured and which were obtained via other
@@ -121,7 +121,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        concept in NETCONF/YANG (e.g., {{?RFC8342}}.
 
 {:quote}
->   3.  It is required to be able to fetch separately configuration data,
+>      It is required to be able to fetch separately configuration data,
        operational state data, and statistics from devices, and to be
        able to compare these between devices.
 
@@ -129,7 +129,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : This is supported by NETCONF and RESTCONF.
 
 {:quote}
->   4.  It is necessary to enable operators to concentrate on the
+>      It is necessary to enable operators to concentrate on the
        configuration of the network as a whole rather than individual
        devices.
 
@@ -153,14 +153,14 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : More effort is still needed in this area.
 
 {:quote}
->   5. Support for configuration transactions across a number of devices
+>      Support for configuration transactions across a number of devices
        would significantly simplify network configuration management.
 
 **Status Update**:
 : This feature is supported by NETCONF.
 
 {:quote}
->   6. Given configuration A and configuration B, it should be possible
+>      Given configuration A and configuration B, it should be possible
        to generate the operations necessary to get from A to B with
        minimal state changes and effects on network and systems.  It is
        important to minimize the impact caused by configuration changes.
@@ -169,7 +169,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : This feature is supported by NETCONF.
 
 {:quote}
->   7.   A mechanism to dump and restore configurations is a primitive
+>      A mechanism to dump and restore configurations is a primitive
        operation needed by operators.  Standards for pulling and pushing
        configurations from/to devices are desirable.
 
@@ -177,7 +177,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : This feature is supported by NETCONF.
 
 {:quote}
->   8. It must be easy to do consistency checks of configurations over
+>      It must be easy to do consistency checks of configurations over
        time and between the ends of a link in order to determine the
        changes between two configurations and whether those
        configurations are consistent.
@@ -186,7 +186,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : A mechanism is specified in {{?RFC9144}}.
 
 {:quote}
->   9. Network wide configurations are typically stored in central
+>      Network wide configurations are typically stored in central
        master databases and transformed into formats that can be pushed
        to devices, either by generating sequences of CLI commands or
        complete configuration files that are pushed to devices.  There
@@ -199,7 +199,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : Covered by current implementations.
 
 {:quote}
->  10. It is highly desirable that text processing tools such as diff,
+>      It is highly desirable that text processing tools such as diff,
        and version management tools such as RCS or CVS, can be used to
        process configurations, which implies that devices should not
        arbitrarily reorder data such as access control lists.
@@ -208,7 +208,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : This is deployment-specific.
 
 {:quote}
->   11. The granularity of access control needed on management interfaces
+>      The granularity of access control needed on management interfaces
        needs to match operational needs.  Typical requirements are a
        role-based access control model and the principle of least
        privilege, where a user can be given only the minimum access
@@ -219,14 +219,14 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        the IETF defined {{?RFC8341}} for this purpose.
 
 {:quote}
->   12. It must be possible to do consistency checks of access control
+>      It must be possible to do consistency checks of access control
        lists across devices.
 
 **Status Update**:
 : This is implementation-specific.
 
 {:quote}
->   13. It is important to distinguish between the distribution of
+>      It is important to distinguish between the distribution of
        configurations and the activation of a certain configuration.
        Devices should be able to hold multiple configurations.
 
@@ -234,7 +234,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : This is supported by existing NETCONF methods.
 
 {:quote}
->   14. SNMP access control is data-oriented, while CLI access control is
+>      SNMP access control is data-oriented, while CLI access control is
        usually command (task) oriented.  Depending on the management
        function, sometimes data-oriented or task-oriented access control
        makes more sense.  As such, it is a requirement to support both
@@ -248,7 +248,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 {{Section 6 of ?RFC3535}} includes the following recommendations:
 
 {:quote}
->  1.  The workshop recommended that the IETF stop forcing working groups
+>      The workshop recommended that the IETF stop forcing working groups
        to provide writable MIB modules.  It should be the decision of
        the working group whether they want to provide writable objects
        or not.
@@ -260,7 +260,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
  write operations for configuration, and in consultation with the OPS ADs/MIB doctors.
 
 {:quote}
->  2.  The workshop recommended that a group be formed to investigate why
+>      The workshop recommended that a group be formed to investigate why
        current MIB modules do not contain all the objects needed by
        operators to monitor their networks.
 
@@ -268,7 +268,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : No such group was formed to our knowledge.
 
 {:quote}
->  3.  The workshop recommended that a group be formed to investigate why
+>      The workshop recommended that a group be formed to investigate why
        the current SNMP protocol does not satisfy all the monitoring
        requirements of operators.
 
@@ -277,7 +277,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : This SNMP shortcoming was also reiterated in {{Section 3.5.2 of ?RFC5345}}.
 
 {:quote}
->   4. The workshop recommended, with strong consensus from both protocol
+>      The workshop recommended, with strong consensus from both protocol
        developers and operators, that the IETF focus resources on the
        standardization of configuration management mechanisms.
 
@@ -286,7 +286,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : YANG is a transport-independent data modeling language. It can be used independently of NETCONF/RESTCONF. For example, YANG can be used to define abstract data structures {{?RFC8791}} that can be manipulated by other protocols (e.g., {{?RFC9132}}).
 
 {:quote}
->  5.  The workshop recommended, with strong consensus from the operators
+>      The workshop recommended, with strong consensus from the operators
        and rough consensus from the protocol developers, that the
        IETF/IRTF should spend resources on the development and
        standardization of XML-based device configuration and management
@@ -297,7 +297,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : OK. This recommendation was also mirrored in other documents such as {{?RFC5706}}.
 
 {:quote}
->  6. The workshop recommended, with strong consensus from the operators
+>      The workshop recommended, with strong consensus from the operators
        and rough consensus from the protocol developers, that the
        IETF/IRTF should not spend resources on developing HTML-based or
        HTTP-based methods for configuration management.
@@ -306,7 +306,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
  : The IETF deviated from this recommendation, e.g., RESTCONF {{?RFC8040}} or CoAP Management Interface (CORECONF) {{?I-D.ietf-core-comi}}.
 
  {:quote}
->  7.  The workshop recommended, with rough consensus from the operators
+>      The workshop recommended, with rough consensus from the operators
        and strong consensus from the protocol developers, that the IETF
        should continue to spend resources on the evolution of the
        SMI/SPPI data definition languages as being done in the SMIng
@@ -316,7 +316,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : SMIng WG was concluded in 2003-04-04.
 
 {:quote}
->  8.  The workshop recommended, with split consensus from the operators
+>      The workshop recommended, with split consensus from the operators
        and rough consensus from the protocol developers, that the IETF
        should spend resources on fixing the MIB development and
        standardization processs.
@@ -327,7 +327,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 {{Section 6 of ?RFC3535}} also includes the following but without tagging them as recommendations:
 
 {:quote}
->  1.  The workshop had split consensus from the operators and rough
+>      The workshop had split consensus from the operators and rough
        consensus from the protocol developers, that the IETF should not
        focus resources on CIM extensions.
 
@@ -335,7 +335,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
 : The IETF didn't dedicate any resources on CIM extensions.
 
 {:quote}
->  2.  The workshop had rough consensus from the protocol developers
+>      The workshop had rough consensus from the protocol developers
        that the IETF should not spend resources on COPS-PR development.
        So far, the operators have only very limited experience with
        COPS-PR.  In general, however, they felt that further development
@@ -347,7 +347,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
   to Historic status.
 
 {:quote}
->  3.  The workshop had rough consensus from the protocol developers
+>      The workshop had rough consensus from the protocol developers
        that the IETF should not spend resources on SPPI PIB definitions.
        The operators had rough consensus that they do not care about
        SPPI PIBs.
@@ -435,7 +435,9 @@ The use of a flat tree hierarchy in YANG models may induce some performance issu
 
 ## Translation and Mapping Between Service/Network and Device Models
 
-TBC.
+Navigating among multiple levels of the hierarchy (service, network, device) relies
+currenlty on proprietary solutions to graft and tanslate between two layers. There
+is no programmatic approach to ensure lossless mappings.
 
 ## (In)Consistent Data Structures in Network Protocols for Data Export
 
@@ -453,9 +455,7 @@ Pluggins/Proxy YANG/CLI is still the rule in many operations.
 
 Complexity in dev the pluggins (as you need to cover many OS/vendors).
 
-Network models for the realization provides some "level" of abstraction and then automations.
-
-TBC.
+Network models for the realization provides some "level" of abstraction and then automation.
 
 ## Distinct Networks, Distinct Management Requirements
 
@@ -529,10 +529,6 @@ This section captures some early assessments. The goal is first to capture recei
 -	List what is missing and analyze why it is missing: IETF community
 -	Create an eco-systems of software developer and network operators which share their open source tools: IETF community
 -	Recommend that operational and management considerations are developed in early stage of protocols development: IESG
-
-# Perspectives & Recommendations
-
-TBC
 
 # Security Considerations
 
