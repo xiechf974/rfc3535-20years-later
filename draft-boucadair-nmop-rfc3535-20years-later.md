@@ -74,11 +74,9 @@ which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?
 
 20 years later, new requirements on network management operations are emerging from the operators. This document intends to capture these requirements that reflect the progress in this area. The document also provide an assessment of the RFC3535 recommendations and to what extend that roadmap was driving network management efforts within the IETF.
 
-Early version of the document includes **many placeholders on purpose** as the intent is to collect inputs from interested parties. Items listed in {{sec-obs}} are provided to exemplify candidate items to discuss in that section.
+# Technology Advances Since RFC 3535
 
-# Summary of Technology Advances Since RFC 3535
-
-To be further elaborated:
+Since the publication of {{?RFC3535}} major advances were achieved in the Network Managment area, such as (but not limited to):
 
 * NETCONF {{?RFC6241}}
 * YANG {{?RFC7950}}
@@ -96,7 +94,6 @@ To be further elaborated:
 * YANG Schema Item iDentifier (YANG SID) {{?I-D.ietf-core-sid}}
 
 See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
-
 
 # Assessment of RFC 3535 Operator Requirements
 
@@ -205,6 +202,32 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        Historic status.
 
 # Some Observations {#sec-obs}
+
+## On the Importance of Data Models
+
+An appealing aspect about network automation techniques is that they almost apply to any kind of network. From that perspective, the functional component of a network automation framework that probably matters the most, and independent of the underlying interfaces and protocols, are the data models. Concretely, data models are instrumental in the automation of networks, especially that they can provide closed-loop control for adaptive and deterministic service creation, delivery, and maintenance.
+
+Data models can be used to derive required configuration information for both network and service components, and state information that will be monitored and tracked. Likewise, they can be used during the service/network management life cycle (e.g., service instantiation, provisioning, optimization, monitoring, diagnostic, and assurance).
+
+More than three decades of "Internet standardization" have shown that the specification of data models is not that straightforward. This is because of at least two major reasons:
+
+*	For more than 30 years, legacy network equipment manufacturers have considered their technology as a competitive advantage, thereby leading to proprietary, vendor-specific, data models and the burden of vendor lock-ins. For example, there are more YANG proprietary modules than standarized ones.
+
+*	Over the same period, operators have also developed their savoir-faire as a key competitive advantage. Such savoir-faire had to rely upon these proprietary data models. Operators were reluctant in the past to share their design and management practices.
+
+The situation has  changed since network "softwarization" strategies have been disclosed by vendors and operators. From a business standpoint, network "softwarization" is seen as a major transformation effort by operators, because of the flexibility and the "a la carte" approach that is promoted by "X-as-a-service" (XaaS) designs, "X" being network, platform, Network Slice, etc.
+
+XaaS designs assume the availability of data models that are dynamically instantiated (along with a set of relevant policies) as a function of the "X" (and its design, for that matter). **XaaS services cannot be designed, delivered, and operated without data models.** Standard data models are thus key as they allow to:
+
+*	Ease mapping among many layers.
+*	Ease data correlation from distinct sources.
+*	Nullify (soften) CLI specifics to vendors.
+*	Support both top-down and bottom-up approaches:
+
+   +	Accurate control loops for adaptive and deterministic service creation, delivery, and maintenance.
+   +	Feed an intelligence that will drive appropriate actions to adjust the current status to align with the intended status.
+
+Network softwarization can only happen with a strong, committed standardization effort augmented by an active involvement in Opensource projects, which facilitate access to code. Particularly, **without data models, a Network API is basically useless**.
 
 ## Fragmented Ecosystem
 
@@ -324,12 +347,7 @@ The distinct approaches followed in both the compute and the network environment
 
 Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
 
-
-## Another Item
-
-TBC.
-
-# Some Individual Assessments
+# Additional Assessments
 
 This section captures some early assessments. The goal is first to capture received feedback, challenge it, and then structure it.
 
@@ -343,7 +361,7 @@ This section captures some early assessments. The goal is first to capture recei
 
 -	Not enough implementers (software developers implementing the standards) and users (network operators using the network management software developed based on standards) were present and were well organized. That lead to standards which are technical not implementable and implementation that are not applicable or bringing not enough added value.
 -	IETF is not the expert community in data engineering. The experts are in the data industry. Without them, integration in data processing chains like Data Mesh is going to be a challenge.
--	Closed Loop Operation and Intend Based Networking were not considered as a use case or overall non-technology related use cases were not considered.
+-	Closed Loop Operation and Intent Based Networking were not considered as a use case or overall non-technology related use cases were not considered.
 -	Most drawn conclusions were not explained why the IETF community came to such conclusions.
 -	We were looking at the past and present and not into the distant future. What do we need in 5-10 years?
 
@@ -354,7 +372,7 @@ This section captures some early assessments. The goal is first to capture recei
 -	Look at current standards and see wherever those standards contribute to those implementations: IETF community
 -	List what is missing and analyze why it is missing: IETF community
 -	Create an eco-systems of software developer and network operators which share their open source tools: IETF community
--	Mandate that no network management standard is being defined without having at least two reference implementations and help the IETF community to achieve that: IESG
+-	Recommend that operational and management considerations are developed in early stage of protocols development: IESG
 
 # Perspectives & Recommendations
 
@@ -362,8 +380,7 @@ TBC
 
 # Security Considerations
 
-TBC.
-
+This document does not define any protocol or architecture.
 
 # IANA Considerations
 
@@ -375,4 +392,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+Thanks to Christian Jacquenet for his inputs.
