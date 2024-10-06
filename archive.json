@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-03T01:22:16.920179+00:00",
+  "timestamp": "2024-10-06T01:34:40.025799+00:00",
   "repo": "boucadair/rfc3535-20years-later",
   "labels": [
     {
@@ -127,6 +127,22 @@
       "body": "From Jean-Michel Combes:\r\n\r\n> J'ai un cas de 2 m\u00e9canismes standardis\u00e9s pour une m\u00eame probl\u00e9matique : la mise en place d'ACLs sur des routeurs, soit via BGP FlowSpec [RFC8955][RFC8956], soit via NETCONF/YANG [RFC8519].\r\nAucun des documents cit\u00e9s ne citent l'autre solution et propose une explication/raison claire concernant l'utilisation de l'un ou l'autre.\r\n\r\n> Du coup, mon (seul - actuellement) commentaire serait que lorsque l'IETF standardise plusieurs solutions, que des explications/raisons soient int\u00e9gr\u00e9s dans les sp\u00e9cifications.\r\n",
       "createdAt": "2024-09-19T12:04:17Z",
       "updatedAt": "2024-09-19T12:04:17Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 18,
+      "id": "I_kwDOKqz7zs6ZAOix",
+      "title": "Lack of implementation of proposed solutions",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/issues/18",
+      "state": "OPEN",
+      "author": "reshad-equinix",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "New solutions proposed by WGs such as NETMOD and NETCONF very often lack an implementation or only have a partial implementation. The situation has improved with the last hackathons (e.g. for YANG-Push) but these solutions became RFCs without a known implementation:\r\n- YANG-Push\r\n- Schema-mount\r\n- NMDA\r\n\r\nSchema-mount allegedly has only 1 known implementation because of the complexity of the solution. That means the IETF most likely spent lots of cycles for something which won't be deployed ever.\r\n\r\nWhile hackathons have improved the situation, I wonder if we should mandate at least 1 implementation. For open-source, `sysrepo`/`libyang` are decent choices. ",
+      "createdAt": "2024-10-04T18:01:15Z",
+      "updatedAt": "2024-10-04T18:01:15Z",
       "closedAt": null,
       "comments": []
     }
@@ -681,6 +697,90 @@
           ]
         }
       ]
+    },
+    {
+      "number": 15,
+      "id": "PR_kwDOKqz7zs59eJsQ",
+      "title": "on the importance of data models",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/15",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-03T08:56:38Z",
+      "updatedAt": "2024-10-04T09:24:12Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "198d5b97f804316bbecb6930bbc32f05d06d9279",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "on-the-importance-of-data-models",
+      "headRefOid": "0a116ce363ffb37a508770ed7a11f2733d23455c",
+      "closedAt": "2024-10-04T09:24:11Z",
+      "mergedAt": "2024-10-04T09:24:11Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "66fa528c69fd3eaf63d5b0e2b51ce021157d36f9"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 16,
+      "id": "PR_kwDOKqz7zs59fo4Q",
+      "title": "operator requirements assessments",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/16",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-03T12:26:31Z",
+      "updatedAt": "2024-10-04T09:24:57Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "198d5b97f804316bbecb6930bbc32f05d06d9279",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "operator-requirements-assessments",
+      "headRefOid": "ef8338e0a41e79ee5eb6a242f19f5ea5f1b88a71",
+      "closedAt": "2024-10-04T09:24:57Z",
+      "mergedAt": "2024-10-04T09:24:57Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "6b624de3e762f96483964b1070be684feb4c2457"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 17,
+      "id": "PR_kwDOKqz7zs59mSaq",
+      "title": "updates to recommendation section",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/17",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-04T09:34:00Z",
+      "updatedAt": "2024-10-04T14:46:28Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "6b624de3e762f96483964b1070be684feb4c2457",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "updates-to-recommendation-section",
+      "headRefOid": "7e9cb1cf1294e1648aabc78897ef24e638f4953f",
+      "closedAt": "2024-10-04T14:46:28Z",
+      "mergedAt": "2024-10-04T14:46:28Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "c2cb15abb892d767c0e53563dd0799fceab544a6"
+      },
+      "comments": [],
+      "reviews": []
     }
   ]
 }
