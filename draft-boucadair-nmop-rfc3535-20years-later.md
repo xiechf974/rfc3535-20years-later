@@ -388,12 +388,9 @@ Particularly, **without data models, a Network API is essentially useless**.
 
 ## Fragmented Ecosystem
 
-The current YANG device models ecosystem is **fragmented**: some
-standards models are defined in the IETF while similar ones are
-defined in other fora such as Openconfig or ONF. Unlike service and
-network models, IETF-defined device models are not widely
-implemented. There is a need to rationalize this space and
-avoid redundant efforts.
+The current YANG device models ecosystem is **fragmented**: some standards models are defined through the IETF, while similar ones are defined in other forums such as Openconfig or ONF.
+Unlike service and network models, IETF-defined device models are not widely implemented.
+There is a need to rationalize this space and avoid redundant efforts.
 
 ## Lack of Profiling
 
