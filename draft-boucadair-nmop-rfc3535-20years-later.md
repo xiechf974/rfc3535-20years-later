@@ -397,11 +397,11 @@ There is a need to rationalize this space and avoid redundant efforts.
 Many NETCONF-related features are (being) specified by the IETF, but these features are not widely supported (e.g., YANG-Push {{?RFC8639}}).
 Editing a profile document that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.
 
-> Examples of such profile documents are the various RFCs that were published by the behave WG {{?BCP127}}.
-> Another approach is to consider an approach similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}. Such a document
-> would serve as a guide and reference for implementers and any other parties who desire information contained in the 'NETCONF/RESTCONF/YANG'-related RFCs.
+> Examples of such profile documents are the various RFCs that were published by the Behavior Engineering for Hindrance Avoidance (behave) WG {{?BCP127}}.
+> Another approach could be to consider a model similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}.
+> Such a document would serve as a guide and reference for implementers and others seeking information on 'NETCONF/RESTCONF/YANG'-related RFCs.
 
-Likewise, reassess the value of some IETF proposals vs. competing/emerging solutions would be useful (e.g., gRPC vs. YANG-Push).
+Additionally, reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.
 
 ## Lack of Agile Process for (The Maintenance of) YANG Modules
 
