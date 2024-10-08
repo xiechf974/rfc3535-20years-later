@@ -148,7 +148,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
        the Layer 3 Service Model (L3SM) {{?RFC8299}}, the Layer 2 Network Model (L2NM) {{?RFC9291}},
        and the Layer 3 Network Model (L3NM) {{?RFC9182}}).
 : A similar effort is currently
-       ongoing for handling atatchement circuits at both service and network layers (e.g.,
+       ongoing for handling attachement circuits at both service and network layers (e.g.,
        {{?I-D.ietf-opsawg-teas-attachment-circuit}}, {{?I-D.ietf-opsawg-ntw-attachment-circuit}}).
 : More effort is still needed in this area.
 
@@ -375,15 +375,16 @@ The situation has  changed since network "softwarization" strategies have been d
 
 XaaS designs assume the availability of data models that are dynamically instantiated (along with a set of relevant policies) as a function of the "X" (and its design, for that matter). **XaaS services cannot be designed, delivered, and operated without data models.** Standard data models are thus key as they allow to:
 
-*	Ease mapping among many layers.
+*	Ease mapping among many network layers.
 *	Ease data correlation from distinct sources.
 *	Nullify (soften) CLI specifics to vendors.
 *	Support both top-down and bottom-up approaches:
 
-   +	Accurate control loops for adaptive and deterministic service creation, delivery, and maintenance.
-   +	Feed an intelligence that will drive appropriate actions to adjust the current status to align with the intended status.
+  - Accurate control loops for adaptive and deterministic service creation, delivery, and maintenance.
+  - Feed an intelligence that will drive appropriate actions to adjust the current status to align with the intended status.
 
-Network softwarization can only happen with a strong, committed standardization effort augmented by an active involvement in Opensource projects, which facilitate access to code. Particularly, **without data models, a Network API is basically useless**.
+Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
+Particularly, **without data models, a Network API is essentially useless**.
 
 ## Fragmented Ecosystem
 
