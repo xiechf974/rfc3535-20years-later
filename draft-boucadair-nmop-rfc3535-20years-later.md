@@ -394,12 +394,8 @@ There is a need to rationalize this space and avoid redundant efforts.
 
 ## Lack of Profiling
 
-Many NETCONF-related features are (being) specified by the IETF,
-but these features are not widely supported (e.g., Push). Editing a
-profile document with a set of recommendations about core/key
-features with the appropriate justification will help the
-emergence of more implementations that meet the operators’
-needs.
+Many NETCONF-related features are (being) specified by the IETF, but these features are not widely supported (e.g., YANG-Push {{?RFC8639}}).
+Editing a profile document that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.
 
 > Examples of such profile documents are the various RFCs that were published by the behave WG {{?BCP127}}.
 > Another approach is to consider an approach similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}. Such a document
