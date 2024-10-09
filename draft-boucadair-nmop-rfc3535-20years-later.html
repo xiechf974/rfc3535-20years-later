@@ -1217,13 +1217,16 @@ requirements for network management operations.<a href="#section-abstract-2" cla
                 <p id="section-toc.1-1.5.2.15.1"><a href="#section-5.15" class="auto internal xref">5.15</a>. <a href="#name-open-source-tools" class="internal xref">Open-source Tools</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.16">
-                <p id="section-toc.1-1.5.2.16.1"><a href="#section-5.16" class="auto internal xref">5.16</a>. <a href="#name-new-service-approaches" class="internal xref">New Service Approaches</a></p>
+                <p id="section-toc.1-1.5.2.16.1"><a href="#section-5.16" class="auto internal xref">5.16</a>. <a href="#name-integration-with-native-it-" class="internal xref">Integration with "native" IT Tooling</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.17">
-                <p id="section-toc.1-1.5.2.17.1"><a href="#section-5.17" class="auto internal xref">5.17</a>. <a href="#name-the-network-becomes-consuma" class="internal xref">The Network Becomes Consumable</a></p>
+                <p id="section-toc.1-1.5.2.17.1"><a href="#section-5.17" class="auto internal xref">5.17</a>. <a href="#name-new-service-approaches" class="internal xref">New Service Approaches</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.18">
-                <p id="section-toc.1-1.5.2.18.1"><a href="#section-5.18" class="auto internal xref">5.18</a>. <a href="#name-many-solutions-for-the-same" class="internal xref">Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance</a></p>
+                <p id="section-toc.1-1.5.2.18.1"><a href="#section-5.18" class="auto internal xref">5.18</a>. <a href="#name-the-network-becomes-consuma" class="internal xref">The Network Becomes Consumable</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.19">
+                <p id="section-toc.1-1.5.2.19.1"><a href="#section-5.19" class="auto internal xref">5.19</a>. <a href="#name-many-solutions-for-the-same" class="internal xref">Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance</a></p>
 </li>
             </ul>
 </li>
@@ -2131,41 +2134,55 @@ That may slow down the protocol specification, though.<a href="#section-5.13-2.2
 <p id="section-5.15-1">While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
 For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).<a href="#section-5.15-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-5.15-2">
-          <dt id="section-5.15-2.1">NEW-OPS-REQ-TOOLS:</dt>
+          <dt id="section-5.15-2.1">NEW-OPS-REQ-CLIENT-TOOLS:</dt>
           <dd style="margin-left: 1.5em" id="section-5.15-2.2">
-            <p id="section-5.15-2.2.1">Focus on tooling is needed.<a href="#section-5.15-2.2.1" class="pilcrow">¶</a></p>
+            <p id="section-5.15-2.2.1">Focus on tooling is needed, especially on the client side.<a href="#section-5.15-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+</section>
+</div>
+<div id="integration-with-native-it-tooling">
+<section id="section-5.16">
+        <h3 id="name-integration-with-native-it-">
+<a href="#section-5.16" class="section-number selfRef">5.16. </a><a href="#name-integration-with-native-it-" class="section-name selfRef">Integration with "native" IT Tooling</a>
+        </h3>
+<span class="break"></span><dl class="dlParallel" id="section-5.16-1">
+          <dt id="section-5.16-1.1">NEW-OPS-REQ-IT-INTEGRATION:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.2">
+            <p id="section-5.16-1.2.1">There is a need to ease the integration of low-level/network-oriented solutuon with native "IT tooling" (e.g., "https://opentelemetry.io/").<a href="#section-5.16-1.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 </dl>
 </section>
 </div>
 <div id="new-service-approaches">
-<section id="section-5.16">
+<section id="section-5.17">
         <h3 id="name-new-service-approaches">
-<a href="#section-5.16" class="section-number selfRef">5.16. </a><a href="#name-new-service-approaches" class="section-name selfRef">New Service Approaches</a>
+<a href="#section-5.17" class="section-number selfRef">5.17. </a><a href="#name-new-service-approaches" class="section-name selfRef">New Service Approaches</a>
         </h3>
-<p id="section-5.16-1">The virtualization trend hava made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of Service Level Objectives (SLOs).<a href="#section-5.16-1" class="pilcrow">¶</a></p>
-<p id="section-5.16-2">The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanism for enabling an efficient interplay, while highly automating the overall service delivery procedure.<a href="#section-5.16-2" class="pilcrow">¶</a></p>
+<p id="section-5.17-1">The virtualization trend hava made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of Service Level Objectives (SLOs).<a href="#section-5.17-1" class="pilcrow">¶</a></p>
+<p id="section-5.17-2">The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanism for enabling an efficient interplay, while highly automating the overall service delivery procedure.<a href="#section-5.17-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="the-network-becomes-consumable">
-<section id="section-5.17">
+<section id="section-5.18">
         <h3 id="name-the-network-becomes-consuma">
-<a href="#section-5.17" class="section-number selfRef">5.17. </a><a href="#name-the-network-becomes-consuma" class="section-name selfRef">The Network Becomes Consumable</a>
+<a href="#section-5.18" class="section-number selfRef">5.18. </a><a href="#name-the-network-becomes-consuma" class="section-name selfRef">The Network Becomes Consumable</a>
         </h3>
-<p id="section-5.17-1">Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services <span>[<a href="#RFC9543" class="cite xref">RFC9543</a>]</span>. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).<a href="#section-5.17-1" class="pilcrow">¶</a></p>
+<p id="section-5.18-1">Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services <span>[<a href="#RFC9543" class="cite xref">RFC9543</a>]</span>. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).<a href="#section-5.18-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="many-solutions-for-the-same-problem-but-lack-of-clear-applicably-guidance">
-<section id="section-5.18">
+<section id="section-5.19">
         <h3 id="name-many-solutions-for-the-same">
-<a href="#section-5.18" class="section-number selfRef">5.18. </a><a href="#name-many-solutions-for-the-same" class="section-name selfRef">Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance</a>
+<a href="#section-5.19" class="section-number selfRef">5.19. </a><a href="#name-many-solutions-for-the-same" class="section-name selfRef">Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance</a>
         </h3>
-<p id="section-5.18-1">There are several solutions that were standardized for network management purposes. For example, management of ACLs by means to BGP FlowSpec <span>[<a href="#RFC8955" class="cite xref">RFC8955</a>]</span><span>[<a href="#RFC8956" class="cite xref">RFC8956</a>]</span> or  by means of NETCONF/YANG <span>[<a href="#RFC8519" class="cite xref">RFC8519</a>]</span>. There is no cross referencing between the two standards or delimits its applicability scope vs the other approach.<a href="#section-5.18-1" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-5.18-2">
-          <dt id="section-5.18-2.1">NEW-OPS-REQ-GUIDANCE:</dt>
-          <dd style="margin-left: 1.5em" id="section-5.18-2.2">
-            <p id="section-5.18-2.2.1">The target application/applicability of a network management approach should be integrated in the specification itself.<a href="#section-5.18-2.2.1" class="pilcrow">¶</a></p>
+<p id="section-5.19-1">There are several solutions that were standardized for network management purposes. For example, management of ACLs by means to BGP FlowSpec <span>[<a href="#RFC8955" class="cite xref">RFC8955</a>]</span><span>[<a href="#RFC8956" class="cite xref">RFC8956</a>]</span> or  by means of NETCONF/YANG <span>[<a href="#RFC8519" class="cite xref">RFC8519</a>]</span>. There is no cross referencing between the two standards or delimits its applicability scope vs the other approach.<a href="#section-5.19-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.19-2">
+          <dt id="section-5.19-2.1">NEW-OPS-REQ-GUIDANCE:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-2.2">
+            <p id="section-5.19-2.2.1">The target application/applicability of a network management approach should be integrated in the specification itself.<a href="#section-5.19-2.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 </dl>

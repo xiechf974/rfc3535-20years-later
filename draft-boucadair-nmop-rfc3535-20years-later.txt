@@ -95,9 +95,10 @@ Table of Contents
             Functionality and the Associated YANG
      5.14. Lack of Implementation of Proposed Solutions
      5.15. Open-source Tools
-     5.16. New Service Approaches
-     5.17. The Network Becomes Consumable
-     5.18. Many Solutions for the Same Problem, but Lack of Clear
+     5.16. Integration with "native" IT Tooling
+     5.17. New Service Approaches
+     5.18. The Network Becomes Consumable
+     5.19. Many Solutions for the Same Problem, but Lack of Clear
             Applicably Guidance
    6.  Additional Assessments
      6.1.  What Went Well
@@ -756,9 +757,16 @@ Table of Contents
    device with gNMI.  NETCONF is not supported though (we need the XML
    tags).
 
-   NEW-OPS-REQ-TOOLS:  Focus on tooling is needed.
+   NEW-OPS-REQ-CLIENT-TOOLS:  Focus on tooling is needed, especially on
+      the client side.
 
-5.16.  New Service Approaches
+5.16.  Integration with "native" IT Tooling
+
+   NEW-OPS-REQ-IT-INTEGRATION:  There is a need to ease the integration
+      of low-level/network-oriented solutuon with native "IT tooling"
+      (e.g., "https://opentelemetry.io/").
+
+5.17.  New Service Approaches
 
    The virtualization trend hava made posible to dynamically instantiate
    Service Functions (SFs) in distributed compute facilities in the form
@@ -776,7 +784,7 @@ Table of Contents
    enabling an efficient interplay, while highly automating the overall
    service delivery procedure.
 
-5.17.  The Network Becomes Consumable
+5.18.  The Network Becomes Consumable
 
    Network connectivity can support tailored services in terms of SLOs,
    for instance, by means of Network Slice Services [RFC9543].  This
@@ -788,7 +796,7 @@ Table of Contents
    functionality, and associated information (e.g., inventory based
    data).
 
-5.18.  Many Solutions for the Same Problem, but Lack of Clear Applicably
+5.19.  Many Solutions for the Same Problem, but Lack of Clear Applicably
        Guidance
 
    There are several solutions that were standardized for network
