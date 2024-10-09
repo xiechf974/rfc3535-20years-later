@@ -543,6 +543,13 @@ The distinct approaches followed in both the compute and the network environment
 
 Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
 
+## Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance
+
+There are several solutions that were standardized for network management purposes. For example, management of ACLs by means to BGP FlowSpec {{?RFC8955}}{{?RFC8956}} or  by means of NETCONF/YANG {{?RFC8519}}. There is no cross referencing between the two standards or delimits its applicability scope vs the other approach.
+
+NEW-OPS-REQ-GUIDANCE:
+: The target application/applicability of a network management approach should be integrated in the specification itself.
+
 # Additional Assessments
 
 This section captures some early assessments. The goal is first to capture received feedback, challenge it, and then structure it.
@@ -584,4 +591,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-Thanks to Christian Jacquenet for his inputs.
+Thanks to Christian Jacquenet, Jean-Michel Combes, and Lionel Tailhardat for their inputs.
