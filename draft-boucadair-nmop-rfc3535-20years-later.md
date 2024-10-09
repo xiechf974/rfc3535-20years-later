@@ -525,11 +525,13 @@ NEW-OPS-REQ-READILTY-IMPLEM:
 While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
 For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
 
-NEW-OPS-REQ-TOOLS:
-: Focus on tooling is needed.
+NEW-OPS-REQ-CLIENT-TOOLS:
+: Focus on tooling is needed, especially on the client side.
 
+## Integration with "native" IT Tooling
 
-
+NEW-OPS-REQ-IT-INTEGRATION:
+: There is a need to ease the integration of low-level/network-oriented solutuon with native "IT tooling" (e.g., "https://opentelemetry.io/").
 
 ## New Service Approaches
 
