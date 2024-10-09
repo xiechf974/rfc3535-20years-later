@@ -1885,8 +1885,18 @@ Historic status.<a href="#section-4-24.2.1" class="pilcrow">¶</a></p>
             <p id="section-5.1-7.6.1">Feed an intelligence that will drive appropriate actions to adjust the current status to align with the intended status.<a href="#section-5.1-7.6.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-5.1-8">Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
-Particularly, <strong>without data models, a Network API is essentially useless</strong>.<a href="#section-5.1-8" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.1-8">
+          <dt id="section-5.1-8.1">NEW-OPS-REQ-STRENGTHEN-DM:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-8.2">
+            <p id="section-5.1-8.2.1"></p><a href="#section-5.1-8.2" class="pilcrow">¶</a>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.1-8.3">:Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-8.4">
+            <p id="section-5.1-8.4.1">Particularly, <strong>without data models, a Network API is essentially useless</strong>.<a href="#section-5.1-8.4.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="fragmented-ecosystem">
@@ -1895,8 +1905,9 @@ Particularly, <strong>without data models, a Network API is essentially useless<
 <a href="#section-5.2" class="section-number selfRef">5.2. </a><a href="#name-fragmented-ecosystem" class="section-name selfRef">Fragmented Ecosystem</a>
         </h3>
 <p id="section-5.2-1">The current YANG device models ecosystem is <strong>fragmented</strong>: some standards models are defined through the IETF, while similar ones are defined in other forums such as Openconfig or ONF.
-Unlike service and network models, IETF-defined device models are not widely implemented.
-There is a need to rationalize this space and avoid redundant efforts.<a href="#section-5.2-1" class="pilcrow">¶</a></p>
+Unlike service and network models, IETF-defined device models are not widely implemented.<a href="#section-5.2-1" class="pilcrow">¶</a></p>
+<p id="section-5.2-2">NEW-OPS-REQ-RATIONALIZE:
+:There is a need to rationalize this space and avoid redundant efforts.<a href="#section-5.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="lack-of-profiling">
@@ -1904,16 +1915,22 @@ There is a need to rationalize this space and avoid redundant efforts.<a href="#
         <h3 id="name-lack-of-profiling">
 <a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-lack-of-profiling" class="section-name selfRef">Lack of Profiling</a>
         </h3>
-<p id="section-5.3-1">Many NETCONF-related features are (being) specified by the IETF, but these features are not widely supported (e.g., YANG-Push <span>[<a href="#RFC8639" class="cite xref">RFC8639</a>]</span>).
-Editing a profile document that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.<a href="#section-5.3-1" class="pilcrow">¶</a></p>
+<p id="section-5.3-1">Many NETCONF-related features are (being) specified by the IETF, but these features are not widely supported (e.g., YANG-Push <span>[<a href="#RFC8639" class="cite xref">RFC8639</a>]</span>).<a href="#section-5.3-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.3-2">
+          <dt id="section-5.3-2.1">NEW-OPS-REQ-PROFILING:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-2.2">
+            <p id="section-5.3-2.2.1">Editing a profile document that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.<a href="#section-5.3-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 <ul class="normal ulEmpty">
-<li class="normal ulEmpty" id="section-5.3-2.1">
-            <p id="section-5.3-2.1.1">Examples of such profile documents are the various RFCs that were published by the Behavior Engineering for Hindrance Avoidance (behave) WG <span>[<a href="#BCP127" class="cite xref">BCP127</a>]</span>.
+<li class="normal ulEmpty" id="section-5.3-3.1">
+            <p id="section-5.3-3.1.1">Examples of such profile documents are the various RFCs that were published by the Behavior Engineering for Hindrance Avoidance (behave) WG <span>[<a href="#BCP127" class="cite xref">BCP127</a>]</span>.
 Another approach could be to consider a model similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" <span>[<a href="#RFC7414" class="cite xref">RFC7414</a>]</span>.
-Such a document would serve as a guide and reference for implementers and others seeking information on 'NETCONF/RESTCONF/YANG'-related RFCs.<a href="#section-5.3-2.1.1" class="pilcrow">¶</a></p>
+Such a document would serve as a guide and reference for implementers and others seeking information on 'NETCONF/RESTCONF/YANG'-related RFCs.<a href="#section-5.3-3.1.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-5.3-3">Additionally, reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.<a href="#section-5.3-3" class="pilcrow">¶</a></p>
+<p id="section-5.3-4">Additionally, reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.<a href="#section-5.3-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="lack-of-agile-process-for-the-maintenance-of-yang-modules">
@@ -1922,12 +1939,19 @@ Such a document would serve as a guide and reference for implementers and others
 <a href="#section-5.4" class="section-number selfRef">5.4. </a><a href="#name-lack-of-agile-process-for-t" class="section-name selfRef">Lack of Agile Process for (The Maintenance of) YANG Modules</a>
         </h3>
 <p id="section-5.4-1">RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for
-"reference models" and "sufficiently stable models". An
-hybrid approach might be investigated for documenting IETF-
+"reference models" and "sufficiently stable models".<a href="#section-5.4-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.4-2">
+          <dt id="section-5.4-2.1">NEW-OPS-REQ-AGILE:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-2.2">
+            <p id="section-5.4-2.2.1">Develop a more agile process for the development and maintenance of YANG modules in the IETF.<a href="#section-5.4-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+<p id="section-5.4-3">An hybrid approach might be investigated for documenting IETF-
 endorsed YANG modules, such as considering an RFC to
 describe the initial module sketch and objectives and an
 official IETF repository for maintaining intermediate YANG
-versions.<a href="#section-5.4-1" class="pilcrow">¶</a></p>
+versions.<a href="#section-5.4-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="integration-complexity">
@@ -1939,6 +1963,13 @@ versions.<a href="#section-5.4-1" class="pilcrow">¶</a></p>
 <p id="section-5.5-2">Collecting YANG metrics from networks is already a struggle due to late arrival of <span>[<a href="#RFC8639" class="cite xref">RFC8639</a>]</span>, <span>[<a href="#RFC8640" class="cite xref">RFC8640</a>]</span>, <span>[<a href="#RFC8641" class="cite xref">RFC8641</a>]</span>, <span>[<a href="#I-D.ietf-netconf-https-notif" class="cite xref">I-D.ietf-netconf-https-notif</a>]</span>, and <span>[<a href="#I-D.ietf-netconf-udp-notif" class="cite xref">I-D.ietf-netconf-udp-notif</a>]</span> for configured subscription transport protocols which defined YANG-Push in the industry. This caused network vendors to implement alternative solutions to collect real-time streaming data in the meanwhile, such as gNMI which was proposed in 2018 in <span>[<a href="#I-D.openconfig-rtgwg-gnmi-spec" class="cite xref">I-D.openconfig-rtgwg-gnmi-spec</a>]</span> to the IETF but not followed up on. Unfortunately, these implementations differ between network Operating Systems due to the lack of standardization, specifically for the metadata which would ensure machine readability.<a href="#section-5.5-2" class="pilcrow">¶</a></p>
 <p id="section-5.5-3">When a set of network operators where asked to where operational YANG data needs to be integrated to, the answer homogeneously was Apache Kafka Message Broker and Time Series Databases. There is a need to specify how YANG-Push can be integrated into Apache Kafka and references needed YANG-Push extensions and YANG schema registry development. The YANG-Push extensions addressing needs to make YANG-Push messages machine readable and against semantic validate able to ensure a consistent data processing.<a href="#section-5.5-3" class="pilcrow">¶</a></p>
 <p id="section-5.5-4">Another challenge is that the subscribed YANG data referenced with datastore-subtree-filter or datastore-xpath-filter breaks semantic integrity which needs to be addressed by either updating <span><a href="https://rfc-editor.org/rfc/rfc8641#section-4" class="relref">Section 4</a> of [<a href="#RFC8641" class="cite xref">RFC8641</a>]</span> or proposing a new YANG module being used at the YANG-Push receiver.<a href="#section-5.5-4" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.5-5">
+          <dt id="section-5.5-5.1">NEW-OPS-REQ-INTEGRATION:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-5.2">
+            <p id="section-5.5-5.2.1">Consider approach by-design to ease integration.<a href="#section-5.5-5.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="yang-formatted-data-manipulation">
@@ -1947,6 +1978,13 @@ versions.<a href="#section-5.4-1" class="pilcrow">¶</a></p>
 <a href="#section-5.6" class="section-number selfRef">5.6. </a><a href="#name-yang-formatted-data-manipul" class="section-name selfRef">YANG-formatted Data Manipulation</a>
         </h3>
 <p id="section-5.6-1">The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models. See, for example, <span>[<a href="#ODL" class="cite xref">ODL</a>]</span>.<a href="#section-5.6-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.6-2">
+          <dt id="section-5.6-2.1">NEW-OPS-REQ-SCALE:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-2.2">
+            <p id="section-5.6-2.2.1">Consider approaches for YANG models to scale.<a href="#section-5.6-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="translation-and-mapping-between-servicenetwork-and-device-models">
@@ -1957,6 +1995,13 @@ versions.<a href="#section-5.4-1" class="pilcrow">¶</a></p>
 <p id="section-5.7-1">Navigating among multiple levels of the hierarchy (service, network, device) relies
 currenlty on proprietary solutions to graft and tanslate between two layers. There
 is no programmatic approach to ensure lossless mappings.<a href="#section-5.7-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.7-2">
+          <dt id="section-5.7-2.1">NEW-OPS-REQ-LOSSLESS:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-2.2">
+            <p id="section-5.7-2.2.1">Consider programmatic approaches to ensure lossless mappings between service/network/device data models.<a href="#section-5.7-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="inconsistent-data-structures-in-network-protocols-for-data-export">
@@ -1968,6 +2013,13 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.7-1"
 <p id="section-5.8-2"><span>[<a href="#RFC9232" class="cite xref">RFC9232</a>]</span> is an informational document and does not specify what these Network Telemetry protocols should have in common to ensure consistent data structures for data export. While data types are fairly good aligned, a lack of metadata standardization among the Network Telemetry protocols is observed. In particular describing from where the metrics has been exported from and timestamping. In <span><a href="https://rfc-editor.org/rfc/rfc7854#section-4.2" class="relref">Section 4.2</a> of [<a href="#RFC7854" class="cite xref">RFC7854</a>]</span> timestamps are optional and sysName <span>[<a href="#RFC1213" class="cite xref">RFC1213</a>]</span> is only carried in the BMP initiation message (<span><a href="https://rfc-editor.org/rfc/rfc7854#section-4.3" class="relref">Section 4.3</a> of [<a href="#RFC7854" class="cite xref">RFC7854</a>]</span>), while the message header of IPFIX defined in <span><a href="https://rfc-editor.org/rfc/rfc7011#section-4.3" class="relref">Section 4.3</a> of [<a href="#RFC7011" class="cite xref">RFC7011</a>]</span> lacks the sysName definition.<a href="#section-5.8-2" class="pilcrow">¶</a></p>
 <p id="section-5.8-3">The lack of information from where the data is being pushed from is only known to the Network Telemetry data collection due to the transport session being established from the network node exporting the information. When Network Telemetry messages are being transformed and forwarded, this information is being lost. Therefore, it is common among network operators to augment sysName and other metadata at the data collection.<a href="#section-5.8-3" class="pilcrow">¶</a></p>
 <p id="section-5.8-4">The same common principle applies to when observation timestamping is missing in the Network Telemetry message. Since the data collection is the closest element to the network, a time stamp is added to give the network operator at least the information when the Network Telemetry message was collected. However, since Network Telemetry addresses real-time streaming needs, this is often not accurate enough for data correlation.<a href="#section-5.8-4" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.8-5">
+          <dt id="section-5.8-5.1">NEW-OPS-REQ-REUSABILITY:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-5.2">
+            <p id="section-5.8-5.2.1">Consider approach to ensure reuse/consistent data structure.<a href="#section-5.8-5.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="proprietary-yang-modules-cli-and-limited-abstraction">
@@ -2007,8 +2059,14 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.7-1"
 <a href="#section-5.12" class="section-number selfRef">5.12. </a><a href="#name-too-much-time-between-publi" class="section-name selfRef">Too Much Time Between Publication of New Networking Functionality and the Associated YANG</a>
         </h3>
 <p id="section-5.12-1">For example, <span>[<a href="#RFC8667" class="cite xref">RFC8667</a>]</span> (IS-IS extensions for SR) was published in December 2019, while <span>[<a href="#I-D.ietf-isis-sr-yang" class="cite xref">I-D.ietf-isis-sr-yang</a>]</span> will be published ~5 years after.<a href="#section-5.12-1" class="pilcrow">¶</a></p>
-<p id="section-5.12-2">Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
-That may slow down the protocol specification, though.<a href="#section-5.12-2" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.12-2">
+          <dt id="section-5.12-2.1">NEW-OPS-REQ-TIMELY-DM:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-2.2">
+            <p id="section-5.12-2.2.1">Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
+That may slow down the protocol specification, though.<a href="#section-5.12-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="open-source-tools">
@@ -2018,6 +2076,13 @@ That may slow down the protocol specification, though.<a href="#section-5.12-2" 
         </h3>
 <p id="section-5.13-1">While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
 For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).<a href="#section-5.13-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.13-2">
+          <dt id="section-5.13-2.1">NEW-OPS-REQ-TOOLS:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-2.2">
+            <p id="section-5.13-2.2.1">Focus on tooling is needed.<a href="#section-5.13-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="network-apification">
@@ -2026,7 +2091,13 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <a href="#section-5.14" class="section-number selfRef">5.14. </a><a href="#name-network-apification" class="section-name selfRef">Network APIfication</a>
         </h3>
 <p id="section-5.14-1">APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, <span>[<a href="#I-D.ramseyer-grow-peering-api" class="cite xref">I-D.ramseyer-grow-peering-api</a>]</span> defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in <span>[<a href="#I-D.ietf-opsawg-teas-attachment-circuit" class="cite xref">I-D.ietf-opsawg-teas-attachment-circuit</a>]</span> as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.<a href="#section-5.14-1" class="pilcrow">¶</a></p>
-<p id="section-5.14-2">Readily available API specifications could be generalized for fast development, prototyping, and validation.<a href="#section-5.14-2" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.14-2">
+          <dt id="section-5.14-2.1">NEW-OPS-REQ-DM-API:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-2.2">
+            <p id="section-5.14-2.2.1">Readily available API specifications could be generalized for fast development, prototyping, and validation.<a href="#section-5.14-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="new-service-approaches">
