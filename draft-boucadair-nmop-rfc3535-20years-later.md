@@ -528,9 +528,6 @@ For example, "ygot" generates structures from YANG models and these can easily b
 NEW-OPS-REQ-TOOLS:
 : Focus on tooling is needed.
 
-
-
-
 ## New Service Approaches
 
 The virtualization trend hava made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of Service Level Objectives (SLOs).
@@ -540,6 +537,13 @@ The distinct approaches followed in both the compute and the network environment
 ## The Network Becomes Consumable
 
 Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
+
+## Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance
+
+There are several solutions that were standardized for network management purposes. For example, management of ACLs by means to BGP FlowSpec {{?RFC8955}}{{?RFC8956}} or  by means of NETCONF/YANG {{?RFC8519}}. There is no cross referencing between the two standards or delimits its applicability scope vs the other approach.
+
+NEW-OPS-REQ-GUIDANCE:
+: The target application/applicability of a network management approach should be integrated in the specification itself.
 
 # Additional Assessments
 
@@ -582,4 +586,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-Thanks to Christian Jacquenet for his inputs.
+Thanks to Christian Jacquenet, Jean-Michel Combes, and Lionel Tailhardat for their inputs.
