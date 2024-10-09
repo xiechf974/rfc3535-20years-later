@@ -375,7 +375,7 @@ The situation has  changed since network "softwarization" strategies have been d
 
 XaaS designs assume the availability of data models that are dynamically instantiated (along with a set of relevant policies) as a function of the "X" (and its design, for that matter). **XaaS services cannot be designed, delivered, and operated without data models.** Standard data models are thus key as they allow to:
 
-*	Ease mapping among many network layers.
+*	Ease mapping among many (network/service) layers.
 *	Ease data correlation from distinct sources.
 *	Nullify (soften) CLI specifics to vendors.
 *	Support both top-down and bottom-up approaches:
