@@ -1225,6 +1225,9 @@ requirements for network management operations.<a href="#section-abstract-2" cla
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.18">
                 <p id="section-toc.1-1.5.2.18.1"><a href="#section-5.18" class="auto internal xref">5.18</a>. <a href="#name-the-network-becomes-consuma" class="internal xref">The Network Becomes Consumable</a></p>
 </li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.19">
+                <p id="section-toc.1-1.5.2.19.1"><a href="#section-5.19" class="auto internal xref">5.19</a>. <a href="#name-many-solutions-for-the-same" class="internal xref">Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance</a></p>
+</li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
@@ -2170,6 +2173,21 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <p id="section-5.18-1">Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services <span>[<a href="#RFC9543" class="cite xref">RFC9543</a>]</span>. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).<a href="#section-5.18-1" class="pilcrow">¶</a></p>
 </section>
 </div>
+<div id="many-solutions-for-the-same-problem-but-lack-of-clear-applicably-guidance">
+<section id="section-5.19">
+        <h3 id="name-many-solutions-for-the-same">
+<a href="#section-5.19" class="section-number selfRef">5.19. </a><a href="#name-many-solutions-for-the-same" class="section-name selfRef">Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance</a>
+        </h3>
+<p id="section-5.19-1">There are several solutions that were standardized for network management purposes. For example, management of ACLs by means to BGP FlowSpec <span>[<a href="#RFC8955" class="cite xref">RFC8955</a>]</span><span>[<a href="#RFC8956" class="cite xref">RFC8956</a>]</span> or  by means of NETCONF/YANG <span>[<a href="#RFC8519" class="cite xref">RFC8519</a>]</span>. There is no cross referencing between the two standards or delimits its applicability scope vs the other approach.<a href="#section-5.19-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.19-2">
+          <dt id="section-5.19-2.1">NEW-OPS-REQ-GUIDANCE:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-2.2">
+            <p id="section-5.19-2.2.1">The target application/applicability of a network management approach should be integrated in the specification itself.<a href="#section-5.19-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+</section>
+</div>
 </section>
 </div>
 <div id="additional-assessments">
@@ -2467,6 +2485,10 @@ For example, "ygot" generates structures from YANG models and these can easily b
       <dd>
 <span class="refAuthor">Wen, B.</span>, <span class="refAuthor">Fioccola, G., Ed.</span>, <span class="refAuthor">Xie, C.</span>, and <span class="refAuthor">L. Jalil</span>, <span class="refTitle">"A YANG Data Model for Layer 2 Virtual Private Network (L2VPN) Service Delivery"</span>, <span class="seriesInfo">RFC 8466</span>, <span class="seriesInfo">DOI 10.17487/RFC8466</span>, <time datetime="2018-10" class="refDate">October 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8466">https://www.rfc-editor.org/rfc/rfc8466</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="RFC8519">[RFC8519]</dt>
+      <dd>
+<span class="refAuthor">Jethanandani, M.</span>, <span class="refAuthor">Agarwal, S.</span>, <span class="refAuthor">Huang, L.</span>, and <span class="refAuthor">D. Blair</span>, <span class="refTitle">"YANG Data Model for Network Access Control Lists (ACLs)"</span>, <span class="seriesInfo">RFC 8519</span>, <span class="seriesInfo">DOI 10.17487/RFC8519</span>, <time datetime="2019-03" class="refDate">March 2019</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8519">https://www.rfc-editor.org/rfc/rfc8519</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC8528">[RFC8528]</dt>
       <dd>
 <span class="refAuthor">Bjorklund, M.</span> and <span class="refAuthor">L. Lhotka</span>, <span class="refTitle">"YANG Schema Mount"</span>, <span class="seriesInfo">RFC 8528</span>, <span class="seriesInfo">DOI 10.17487/RFC8528</span>, <time datetime="2019-03" class="refDate">March 2019</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8528">https://www.rfc-editor.org/rfc/rfc8528</a>&gt;</span>. </dd>
@@ -2494,6 +2516,14 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <dt id="RFC8791">[RFC8791]</dt>
       <dd>
 <span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Björklund, M.</span>, and <span class="refAuthor">K. Watsen</span>, <span class="refTitle">"YANG Data Structure Extensions"</span>, <span class="seriesInfo">RFC 8791</span>, <span class="seriesInfo">DOI 10.17487/RFC8791</span>, <time datetime="2020-06" class="refDate">June 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8791">https://www.rfc-editor.org/rfc/rfc8791</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8955">[RFC8955]</dt>
+      <dd>
+<span class="refAuthor">Loibl, C.</span>, <span class="refAuthor">Hares, S.</span>, <span class="refAuthor">Raszuk, R.</span>, <span class="refAuthor">McPherson, D.</span>, and <span class="refAuthor">M. Bacher</span>, <span class="refTitle">"Dissemination of Flow Specification Rules"</span>, <span class="seriesInfo">RFC 8955</span>, <span class="seriesInfo">DOI 10.17487/RFC8955</span>, <time datetime="2020-12" class="refDate">December 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8955">https://www.rfc-editor.org/rfc/rfc8955</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8956">[RFC8956]</dt>
+      <dd>
+<span class="refAuthor">Loibl, C., Ed.</span>, <span class="refAuthor">Raszuk, R., Ed.</span>, and <span class="refAuthor">S. Hares, Ed.</span>, <span class="refTitle">"Dissemination of Flow Specification Rules for IPv6"</span>, <span class="seriesInfo">RFC 8956</span>, <span class="seriesInfo">DOI 10.17487/RFC8956</span>, <time datetime="2020-12" class="refDate">December 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8956">https://www.rfc-editor.org/rfc/rfc8956</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8969">[RFC8969]</dt>
       <dd>
@@ -2543,7 +2573,7 @@ For example, "ygot" generates structures from YANG models and these can easily b
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="appendix-A-1">Thanks to Christian Jacquenet for his inputs.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-1">Thanks to Christian Jacquenet, Jean-Michel Combes, and Lionel Tailhardat for their inputs.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
