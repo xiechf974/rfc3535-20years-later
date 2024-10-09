@@ -384,7 +384,7 @@ XaaS designs assume the availability of data models that are dynamically instant
   - Feed an intelligence that will drive appropriate actions to adjust the current status to align with the intended status.
 
 NEW-OPS-REQ-STRENGTHEN-DM:
-:Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
+: Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
 : Particularly, **without data models, a Network API is essentially useless**.
 
 ## Fragmented Ecosystem
@@ -393,7 +393,14 @@ The current YANG device models ecosystem is **fragmented**: some standards model
 Unlike service and network models, IETF-defined device models are not widely implemented.
 
 NEW-OPS-REQ-RATIONALIZE:
-:There is a need to rationalize this space and avoid redundant efforts.
+: There is a need to rationalize this space and avoid redundant efforts.
+
+## Network APIfication
+
+APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, {{?I-D.ramseyer-grow-peering-api}} defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in {{?I-D.ietf-opsawg-teas-attachment-circuit}} as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.
+
+NEW-OPS-REQ-DM-API:
+: Readily available API specifications could be generalized for fast development, prototyping, and validation.
 
 ## Lack of Profiling
 
@@ -498,6 +505,21 @@ NEW-OPS-REQ-TIMELY-DM:
 : Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
 That may slow down the protocol specification, though.
 
+## Lack of Implementation of Proposed Solutions
+
+New solutions proposed by WGs such as NETMOD and NETCONF very often lack an implementation or only have a partial implementation. The situation has improved with the last hackathons (e.g., for YANG-Push), but these solutions became RFCs without a known implementation:
+
+* YANG-Push {{?RFC8641}}
+* Schema-mount {{?RFC8528}}
+* NMDA {{?RFC8342}}
+
+Schema-mount allegedly has only one known implementation because of the complexity of the solution. That means the IETF most likely spent lots of cycles for something which won't be deployed ever.
+
+While hackathons have improved the situation, the availablability of implementation is concerning. For open-source, 'sysrepo'/'libyang' are decent choices.
+
+NEW-OPS-REQ-READILTY-IMPLEM:
+: It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementationsmanagement for I-Ds to be published as PS (e.g., {{?RFC1264}}), but these rules were relaxed for reasons described, e.g., {{?RFC4794}} and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.
+
 ## Open-source Tools
 
 While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
@@ -506,12 +528,8 @@ For example, "ygot" generates structures from YANG models and these can easily b
 NEW-OPS-REQ-TOOLS:
 : Focus on tooling is needed.
 
-## Network APIfication
 
-APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, {{?I-D.ramseyer-grow-peering-api}} defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in {{?I-D.ietf-opsawg-teas-attachment-circuit}} as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.
 
-NEW-OPS-REQ-DM-API:
-: Readily available API specifications could be generalized for fast development, prototyping, and validation.
 
 ## New Service Approaches
 
