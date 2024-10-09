@@ -5,13 +5,13 @@
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
 Intended status: Informational                          L. M. C. Murillo
-Expires: 7 April 2025                                      O. G. D. Dios
+Expires: 12 April 2025                                     O. G. D. Dios
                                                               Telefonica
                                                                  T. Graf
                                                                 Swisscom
                                                                R. Rahman
                                                                  Equinix
-                                                          4 October 2024
+                                                          9 October 2024
 
 
 RFC 3535, 20 Years Later: An Update of Operators Requirements on Network
@@ -54,7 +54,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 April 2025.
+   This Internet-Draft will expire on 12 April 2025.
 
 Copyright Notice
 
@@ -205,7 +205,7 @@ Table of Contents
       [RFC8299], the Layer 2 Network Model (L2NM) [RFC9291], and the
       Layer 3 Network Model (L3NM) [RFC9182]).
 
-      A similar effort is currently ongoing for handling atatchement
+      A similar effort is currently ongoing for handling attachement
       circuits at both service and network layers (e.g.,
       [I-D.ietf-opsawg-teas-attachment-circuit],
       [I-D.ietf-opsawg-ntw-attachment-circuit]).
@@ -443,7 +443,7 @@ Table of Contents
    cannot be designed, delivered, and operated without data models.*
    Standard data models are thus key as they allow to:
 
-   *  Ease mapping among many layers.
+   *  Ease mapping among many (network/service) layers.
 
    *  Ease data correlation from distinct sources.
 
@@ -458,37 +458,38 @@ Table of Contents
       the current status to align with the intended status.
 
    Network softwarization can only happen with a strong, committed
-   standardization effort augmented by an active involvement in
-   Opensource projects, which facilitate access to code.  Particularly,
-   *without data models, a Network API is basically useless*.
+   standardization effort, complemented by active involvement in open-
+   source projects that facilitate access to code.  Particularly,
+   *without data models, a Network API is essentially useless*.
 
 5.2.  Fragmented Ecosystem
 
    The current YANG device models ecosystem is *fragmented*: some
-   standards models are defined in the IETF while similar ones are
-   defined in other fora such as Openconfig or ONF.  Unlike service and
-   network models, IETF-defined device models are not widely
+   standards models are defined through the IETF, while similar ones are
+   defined in other forums such as Openconfig or ONF.  Unlike service
+   and network models, IETF-defined device models are not widely
    implemented.  There is a need to rationalize this space and avoid
    redundant efforts.
 
 5.3.  Lack of Profiling
 
    Many NETCONF-related features are (being) specified by the IETF, but
-   these features are not widely supported (e.g., Push).  Editing a
-   profile document with a set of recommendations about core/key
-   features with the appropriate justification will help the emergence
-   of more implementations that meet the operators’ needs.
+   these features are not widely supported (e.g., YANG-Push [RFC8639]).
+   Editing a profile document that outlines a set of recommendations for
+   core/key features, along with appropriate justifications, will help
+   foster more implementations that meet operators’ needs.
 
       Examples of such profile documents are the various RFCs that were
-      published by the behave WG [BCP127].  Another approach is to
-      consider an approach similar to the "Roadmap for Transmission
-      Control Protocol (TCP) Specification Documents" [RFC7414].  Such a
-      document would serve as a guide and reference for implementers and
-      any other parties who desire information contained in the
-      'NETCONF/RESTCONF/YANG'-related RFCs.
+      published by the Behavior Engineering for Hindrance Avoidance
+      (behave) WG [BCP127].  Another approach could be to consider a
+      model similar to the "Roadmap for Transmission Control Protocol
+      (TCP) Specification Documents" [RFC7414].  Such a document would
+      serve as a guide and reference for implementers and others seeking
+      information on 'NETCONF/RESTCONF/YANG'-related RFCs.
 
-   Likewise, reassess the value of some IETF proposals vs. competing/
-   emerging solutions would be useful (e.g., gRPC vs. YANG-Push).
+   Additionally, reassessing the value of some IETF proposals compared
+   to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would
+   be beneficial.
 
 5.4.  Lack of Agile Process for (The Maintenance of) YANG Modules
 
