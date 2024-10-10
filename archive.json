@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-08T01:22:16.714673+00:00",
+  "timestamp": "2024-10-10T01:21:48.597150+00:00",
   "repo": "boucadair/rfc3535-20years-later",
   "labels": [
     {
@@ -87,15 +87,15 @@
       "id": "I_kwDOKqz7zs6CASYZ",
       "title": "integration with \"native\" IT tooling",
       "url": "https://github.com/boucadair/rfc3535-20years-later/issues/8",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "boucadair",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "https://opentelemetry.io/",
       "createdAt": "2024-03-12T09:20:05Z",
-      "updatedAt": "2024-03-12T09:20:05Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-09T13:54:04Z",
+      "closedAt": "2024-10-09T13:54:04Z",
       "comments": []
     },
     {
@@ -119,15 +119,15 @@
       "id": "I_kwDOKqz7zs6XKo0e",
       "title": "Many solutions for the same problem, but lack of clear applicably guidance",
       "url": "https://github.com/boucadair/rfc3535-20years-later/issues/14",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "boucadair",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "From Jean-Michel Combes:\r\n\r\n> J'ai un cas de 2 m\u00e9canismes standardis\u00e9s pour une m\u00eame probl\u00e9matique : la mise en place d'ACLs sur des routeurs, soit via BGP FlowSpec [RFC8955][RFC8956], soit via NETCONF/YANG [RFC8519].\r\nAucun des documents cit\u00e9s ne citent l'autre solution et propose une explication/raison claire concernant l'utilisation de l'un ou l'autre.\r\n\r\n> Du coup, mon (seul - actuellement) commentaire serait que lorsque l'IETF standardise plusieurs solutions, que des explications/raisons soient int\u00e9gr\u00e9s dans les sp\u00e9cifications.\r\n",
       "createdAt": "2024-09-19T12:04:17Z",
-      "updatedAt": "2024-09-19T12:04:17Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-09T13:53:13Z",
+      "closedAt": "2024-10-09T13:53:13Z",
       "comments": []
     },
     {
@@ -142,7 +142,31 @@
       "labels": [],
       "body": "New solutions proposed by WGs such as NETMOD and NETCONF very often lack an implementation or only have a partial implementation. The situation has improved with the last hackathons (e.g. for YANG-Push) but these solutions became RFCs without a known implementation:\r\n- YANG-Push\r\n- Schema-mount\r\n- NMDA\r\n\r\nSchema-mount allegedly has only 1 known implementation because of the complexity of the solution. That means the IETF most likely spent lots of cycles for something which won't be deployed ever.\r\n\r\nWhile hackathons have improved the situation, I wonder if we should mandate at least 1 implementation. For open-source, `sysrepo`/`libyang` are decent choices. ",
       "createdAt": "2024-10-04T18:01:15Z",
-      "updatedAt": "2024-10-04T18:01:15Z",
+      "updatedAt": "2024-10-09T13:40:23Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "body": "Added  point in #21 as this is a valid point to discuss. \r\n\r\nNote however that I added the following as this is a recurrent story in the IETF.\r\n\r\nNEW-OPS-REQ-READILTY-IMPLEM:\r\n: It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementations/management for I-Ds to be published as PS (e.g., {{?RFC1264}}), but these rules were relaxed for reasons described, e.g., {{?RFC4794}} and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.",
+          "createdAt": "2024-10-09T13:40:21Z",
+          "updatedAt": "2024-10-09T13:40:21Z"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "id": "I_kwDOKqz7zs6ZkgtQ",
+      "title": "API Discovery",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/issues/24",
+      "state": "OPEN",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-09T17:07:23Z",
+      "updatedAt": "2024-10-09T17:07:23Z",
       "closedAt": null,
       "comments": []
     }
@@ -778,6 +802,180 @@
       "mergedBy": "boucadair",
       "mergeCommit": {
         "oid": "c2cb15abb892d767c0e53563dd0799fceab544a6"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 19,
+      "id": "PR_kwDOKqz7zs597Puw",
+      "title": "Minor fixes and rewording, up to the \"Lack of Agile Process for (The Maintenance of) YANG Modules\" section.",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/19",
+      "state": "MERGED",
+      "author": "GenEars",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-08T09:53:34Z",
+      "updatedAt": "2024-10-09T13:10:52Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "c5a86244ae8004270272014f324cdd651a484fd3",
+      "headRepository": "GenEars/rfc3535-20years-later",
+      "headRefName": "main",
+      "headRefOid": "516119c9cb143c40d1815e9a247ca518b559de39",
+      "closedAt": "2024-10-09T13:10:52Z",
+      "mergedAt": "2024-10-09T13:10:52Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "623f23e8e747fc392d02ab2008ea9f2fd73887fc"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqz7zs6MfrgM",
+          "commit": {
+            "abbreviatedOid": "0c9d1aa"
+          },
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-10-09T13:10:12Z",
+          "updatedAt": "2024-10-09T13:10:13Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "```suggestion\r\n*\tEase mapping among many (network/service) layers.\r\n```",
+              "createdAt": "2024-10-09T13:10:13Z",
+              "updatedAt": "2024-10-09T13:10:13Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqz7zs6Mfrsy",
+          "commit": {
+            "abbreviatedOid": "516119c"
+          },
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "Thanks, Lionel",
+          "createdAt": "2024-10-09T13:10:30Z",
+          "updatedAt": "2024-10-09T13:10:30Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "id": "PR_kwDOKqz7zs5-FNRS",
+      "title": "extract REQs",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/20",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-09T13:21:41Z",
+      "updatedAt": "2024-10-09T13:23:46Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "623f23e8e747fc392d02ab2008ea9f2fd73887fc",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "extract-REQs",
+      "headRefOid": "897f1f6e2da893c2b9b3c3d9334a8f234085e216",
+      "closedAt": "2024-10-09T13:23:46Z",
+      "mergedAt": "2024-10-09T13:23:45Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "1088f2e2dc39308c44f5a06258d38d987f2e9170"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 21,
+      "id": "PR_kwDOKqz7zs5-FUli",
+      "title": "lack of implem",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/21",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-09T13:34:21Z",
+      "updatedAt": "2024-10-09T13:40:33Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "1088f2e2dc39308c44f5a06258d38d987f2e9170",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "lack-of-implem",
+      "headRefOid": "900ca66d68545cf86d75a1afc9df1aaa57c61cb7",
+      "closedAt": "2024-10-09T13:40:33Z",
+      "mergedAt": "2024-10-09T13:40:33Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "72d3031a03bb8eae1ddb63d6c901f97a833dd48c"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 22,
+      "id": "PR_kwDOKqz7zs5-Fb27",
+      "title": "More guidance",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/22",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-09T13:47:30Z",
+      "updatedAt": "2024-10-09T13:53:12Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "72d3031a03bb8eae1ddb63d6c901f97a833dd48c",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "More-guidance",
+      "headRefOid": "49116a6d7c68126f1da4679b7ce21fc4b21da85d",
+      "closedAt": "2024-10-09T13:53:12Z",
+      "mergedAt": "2024-10-09T13:53:12Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "a629ee22c28e9e263dc4c6599929952c0f799fe9"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 23,
+      "id": "PR_kwDOKqz7zs5-Fe83",
+      "title": "IT tooling integration",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/23",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-09T13:52:53Z",
+      "updatedAt": "2024-10-09T13:54:03Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "a629ee22c28e9e263dc4c6599929952c0f799fe9",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "IT-tooling-integration",
+      "headRefOid": "d5dd09a937e34de931714b766a52e05105981673",
+      "closedAt": "2024-10-09T13:54:03Z",
+      "mergedAt": "2024-10-09T13:54:03Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "68f3e5baab6fd0823035ae2d98cdd60882afbb71"
       },
       "comments": [],
       "reviews": []
