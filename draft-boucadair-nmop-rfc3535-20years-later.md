@@ -45,7 +45,21 @@ informative:
     title: Graph Model Overview
     date: 2023
     target: https://docs.opendaylight.org/projects/bgpcep/en/latest/graph/graph-user-guide-graph-model.html#
-
+  Widoco2017:
+    title: "WIDOCO: a wizard for documenting ontologies"
+    date: 2017
+    author:
+      - name: Daniel Garijo
+    target: http://dgarijo.com/papers/widoco-iswc2017.pdf
+  LOT2019:
+    title: "LOT: An industrial oriented ontology engineering framework"
+    date: 2022
+    author:
+      - name: Maria Poveda-Villalon
+      - name: Alba Fernandez-Izquierdo
+      - name: Mariano Fernandez-Lopez
+      - name: Raul Garcia-Castro
+    target: https://doi.org/10.1016/j.engappai.2022.104755
 
 --- abstract
 
@@ -405,13 +419,9 @@ Additionally, reassessing the value of some IETF proposals compared to competing
 
 ## Lack of Agile Process for (The Maintenance of) YANG Modules
 
-RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for
-"reference models" and "sufficiently stable models". An
-hybrid approach might be investigated for documenting IETF-
-endorsed YANG modules, such as considering an RFC to
-describe the initial module sketch and objectives and an
-official IETF repository for maintaining intermediate YANG
-versions.
+RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for "reference models" and "sufficiently stable models".
+An hybrid approach might be investigated for documenting IETF-endorsed YANG modules, such as considering an RFC to describe the initial module sketch and objectives and an official IETF repository for maintaining intermediate YANG versions.
+By drawing a parallel between YANG data models and the concept of ontology used in the field of Semantic Web, the topic of YANG module maintenance could greatly benefit from proven methodologies in knowledge engineering such as {{LOT2019}} and automatic documentation tools like {{Widoco2017}}.
 
 ## Integration Complexity
 
