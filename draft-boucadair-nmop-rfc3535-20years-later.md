@@ -397,19 +397,31 @@ XaaS designs assume the availability of data models that are dynamically instant
   - Accurate control loops for adaptive and deterministic service creation, delivery, and maintenance.
   - Feed an intelligence that will drive appropriate actions to adjust the current status to align with the intended status.
 
-Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
-Particularly, **without data models, a Network API is essentially useless**.
+NEW-OPS-REQ-STRENGTHEN-DM:
+: Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
+: Particularly, **without data models, a Network API is essentially useless**.
 
 ## Fragmented Ecosystem
 
 The current YANG device models ecosystem is **fragmented**: some standards models are defined through the IETF, while similar ones are defined in other forums such as Openconfig or ONF.
 Unlike service and network models, IETF-defined device models are not widely implemented.
-There is a need to rationalize this space and avoid redundant efforts.
+
+NEW-OPS-REQ-RATIONALIZE:
+: There is a need to rationalize this space and avoid redundant efforts.
+
+## Network APIfication
+
+APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, {{?I-D.ramseyer-grow-peering-api}} defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in {{?I-D.ietf-opsawg-teas-attachment-circuit}} as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.
+
+NEW-OPS-REQ-DM-API:
+: Readily available API specifications could be generalized for fast development, prototyping, and validation.
 
 ## Lack of Profiling
 
 Many NETCONF-related features are (being) specified by the IETF, but these features are not widely supported (e.g., YANG-Push {{?RFC8639}}).
-Editing a profile document that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.
+
+NEW-OPS-REQ-PROFILING:
+: Editing a profile document that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs.
 
 > Examples of such profile documents are the various RFCs that were published by the Behavior Engineering for Hindrance Avoidance (behave) WG {{?BCP127}}.
 > Another approach could be to consider a model similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}.
@@ -421,7 +433,11 @@ Additionally, reassessing the value of some IETF proposals compared to competing
 
 RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for "reference models" and "sufficiently stable models".
 An hybrid approach might be investigated for documenting IETF-endorsed YANG modules, such as considering an RFC to describe the initial module sketch and objectives and an official IETF repository for maintaining intermediate YANG versions.
+
 By drawing a parallel between YANG data models and the concept of ontology used in the field of Semantic Web, the topic of YANG module maintenance could greatly benefit from proven methodologies in knowledge engineering such as {{LOT2019}} and automatic documentation tools like {{Widoco2017}}.
+
+NEW-OPS-REQ-AGILE:
+: Develop a more agile process for the development and maintenance of YANG modules in the IETF.
 
 ## Integration Complexity
 
@@ -433,6 +449,9 @@ When a set of network operators where asked to where operational YANG data needs
 
 Another challenge is that the subscribed YANG data referenced with datastore-subtree-filter or datastore-xpath-filter breaks semantic integrity which needs to be addressed by either updating {{Section 4 of ?RFC8641}} or proposing a new YANG module being used at the YANG-Push receiver.
 
+NEW-OPS-REQ-INTEGRATION:
+: Consider approach by-design to ease integration.
+
 ## YANG-formatted Data Manipulation
 
 The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models.
@@ -441,11 +460,17 @@ Different approaches using graph paradigms and compatible with YANG are currentl
 For istance, {{ODL}} implements an in-memory connected graph version of YANG-based data to enable fast breadth-first search (BFS).
 By combining the network digital twin concept {{?I-D.irtf-nmrg-network-digital-twin-arch}} with Semantic Web techniques, {{?I-D.marcas-nmop-knowledge-graph-yang}} and {{?I-D.tailhardat-nmop-incident-management-noria}} propose translating YANG-based data into the knowledge graph (KG) formalism to leverage automated reasoning and graph traversal techniques.
 
+NEW-OPS-REQ-SCALE:
+: Consider approaches for YANG models to scale.
+
 ## Translation and Mapping Between Service/Network and Device Models
 
 Navigating among multiple levels of the hierarchy (service, network, device) relies
 currenlty on proprietary solutions to graft and tanslate between two layers. There
 is no programmatic approach to ensure lossless mappings.
+
+NEW-OPS-REQ-LOSSLESS:
+: Consider programmatic approaches to ensure lossless mappings between service/network/device data models.
 
 ## (In)Consistent Data Structures in Network Protocols for Data Export
 
@@ -456,6 +481,9 @@ Network Telemetry, as described in {{?RFC9232}}, involve a set of protocols. Due
 The lack of information from where the data is being pushed from is only known to the Network Telemetry data collection due to the transport session being established from the network node exporting the information. When Network Telemetry messages are being transformed and forwarded, this information is being lost. Therefore, it is common among network operators to augment sysName and other metadata at the data collection.
 
 The same common principle applies to when observation timestamping is missing in the Network Telemetry message. Since the data collection is the closest element to the network, a time stamp is added to give the network operator at least the information when the Network Telemetry message was collected. However, since Network Telemetry addresses real-time streaming needs, this is often not accurate enough for data correlation.
+
+NEW-OPS-REQ-REUSABILITY:
+: Consider approach to ensure reuse/consistent data structure.
 
 ## Proprietary YANG Modules, CLI, and Limited Abstraction
 
@@ -490,19 +518,37 @@ Resolving this kind of issue could draw on insights from parallel technical fiel
 
 For example, {{?RFC8667}} (IS-IS extensions for SR) was published in December 2019, while {{?I-D.ietf-isis-sr-yang}} will be published ~5 years after.
 
-Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
+NEW-OPS-REQ-TIMELY-DM:
+: Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.
 That may slow down the protocol specification, though.
+
+## Lack of Implementation of Proposed Solutions
+
+New solutions proposed by WGs such as NETMOD and NETCONF very often lack an implementation or only have a partial implementation. The situation has improved with the last hackathons (e.g., for YANG-Push), but these solutions became RFCs without a known implementation:
+
+* YANG-Push {{?RFC8641}}
+* Schema-mount {{?RFC8528}}
+* NMDA {{?RFC8342}}
+
+Schema-mount allegedly has only one known implementation because of the complexity of the solution. That means the IETF most likely spent lots of cycles for something which won't be deployed ever.
+
+While hackathons have improved the situation, the availablability of implementation is concerning. For open-source, 'sysrepo'/'libyang' are decent choices.
+
+NEW-OPS-REQ-READILTY-IMPLEM:
+: It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementationsmanagement for I-Ds to be published as PS (e.g., {{?RFC1264}}), but these rules were relaxed for reasons described, e.g., {{?RFC4794}} and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.
 
 ## Open-source Tools
 
 While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
 For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
 
-## Network APIfication
+NEW-OPS-REQ-CLIENT-TOOLS:
+: Focus on tooling is needed, especially on the client side.
 
-APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, {{?I-D.ramseyer-grow-peering-api}} defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in {{?I-D.ietf-opsawg-teas-attachment-circuit}} as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.
+## Integration with "native" IT Tooling
 
-Readily available API specifications could be generalized for fast development, prototyping, and validation.
+NEW-OPS-REQ-IT-INTEGRATION:
+: There is a need to ease the integration of low-level/network-oriented solutuon with native "IT tooling" (e.g., "https://opentelemetry.io/").
 
 ## New Service Approaches
 
@@ -513,6 +559,13 @@ The distinct approaches followed in both the compute and the network environment
 ## The Network Becomes Consumable
 
 Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
+
+## Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance
+
+There are several solutions that were standardized for network management purposes. For example, management of ACLs by means to BGP FlowSpec {{?RFC8955}}{{?RFC8956}} or  by means of NETCONF/YANG {{?RFC8519}}. There is no cross referencing between the two standards or delimits its applicability scope vs the other approach.
+
+NEW-OPS-REQ-GUIDANCE:
+: The target application/applicability of a network management approach should be integrated in the specification itself.
 
 # Additional Assessments
 
@@ -555,4 +608,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-Thanks to Christian Jacquenet for his inputs.
+Thanks to Christian Jacquenet, Jean-Michel Combes, and Lionel Tailhardat for their inputs.
