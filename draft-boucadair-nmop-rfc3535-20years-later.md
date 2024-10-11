@@ -435,7 +435,11 @@ Another challenge is that the subscribed YANG data referenced with datastore-sub
 
 ## YANG-formatted Data Manipulation
 
-The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models. See, for example, {{ODL}}.
+The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models.
+This can be the case, for example, during a path calculation on a network topology.
+Different approaches using graph paradigms and compatible with YANG are currently available, but require further experimentation to generalize their adoption.
+For istance, {{ODL}} implements an in-memory connected graph version of YANG-based data to enable fast breadth-first search (BFS).
+By combining the network digital twin concept {{?I-D.irtf-nmrg-network-digital-twin-arch}} with Semantic Web techniques, {{?I-D.marcas-nmop-knowledge-graph-yang}} and {{?I-D.tailhardat-nmop-incident-management-noria}} propose translating YANG-based data into the knowledge graph (KG) formalism to leverage automated reasoning and graph traversal techniques.
 
 ## Translation and Mapping Between Service/Network and Device Models
 
