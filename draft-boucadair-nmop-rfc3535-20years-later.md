@@ -36,6 +36,10 @@ author:
    fullname: Reshad Rahman
    organization: Equinix
    email: rrahman@equinix.com
+ -
+   fullname: Lionel Tailhardat
+   organization: Orange
+   email: lionel.tailhardat@orange.com
 
 normative:
 
