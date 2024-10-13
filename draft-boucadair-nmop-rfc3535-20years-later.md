@@ -462,7 +462,11 @@ The use of a flat tree hierarchy in YANG models may induce some performance issu
 This can be the case, for example, during a path calculation on a network topology.
 Different approaches using graph theory and compatible with YANG are currently available, but require further experimentation to generalize their adoption.
 For istance, {{ODL}} implements an in-memory connected graph version of YANG-based data to enable fast breadth-first search (BFS).
-By combining the network digital twin concept {{?I-D.irtf-nmrg-network-digital-twin-arch}} with Semantic Web techniques, {{?I-D.marcas-nmop-knowledge-graph-yang}} and {{?I-D.tailhardat-nmop-incident-management-noria}} propose translating YANG-based data into the knowledge graph (KG) formalism to leverage automated reasoning and graph traversal techniques.
+
+NEW-OPS-REQ-Y2KG:
+: Need for a reference specification to translate YANG-based data into the knowledge graph (KG).
+
+For example, {{?I-D.marcas-nmop-knowledge-graph-yang}} and {{?I-D.tailhardat-nmop-incident-management-noria}} discuss YANG-2-KG proposals to leverage automated reasoning and graph traversal techniques.
 
 NEW-OPS-REQ-SCALE:
 : Consider approaches for YANG models to scale.
