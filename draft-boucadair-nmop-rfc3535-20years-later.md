@@ -515,6 +515,7 @@ Such convergence is also reflected on the need of interacting and interworking w
 
 That convergence observed in recent years also implies the need for an up-to-date refresh of management capabilities and tools for conventional networks.
 It highlights the necessity to handle the heterogeneity of data, configuration, and network management/requirements.
+
 From a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.
 Resolving this kind of issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains (e.g. {{?I-D.marcas-nmop-knowledge-graph-yang}} and {{?I-D.tailhardat-nmop-incident-management-noria}}).
 
