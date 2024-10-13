@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-10T01:21:48.597150+00:00",
+  "timestamp": "2024-10-13T01:27:34.870484+00:00",
   "repo": "boucadair/rfc3535-20years-later",
   "labels": [
     {
@@ -979,6 +979,71 @@
       },
       "comments": [],
       "reviews": []
+    },
+    {
+      "number": 25,
+      "id": "PR_kwDOKqz7zs5-W0AM",
+      "title": "Minor fixes + added details + bridging with SemWeb related works.",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/25",
+      "state": "OPEN",
+      "author": "GenEars",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The review/rewriting work goes up to the 'Implications of External Dependency' Section.",
+      "createdAt": "2024-10-11T15:23:47Z",
+      "updatedAt": "2024-10-11T16:06:01Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "68f3e5baab6fd0823035ae2d98cdd60882afbb71",
+      "headRepository": "GenEars/rfc3535-20years-later",
+      "headRefName": "main",
+      "headRefOid": "450cbc3a4ae79c64c40e32f36a699d46820a2103",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqz7zs6M2kXh",
+          "commit": {
+            "abbreviatedOid": "f89ee1d"
+          },
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "state": "CHANGES_REQUESTED",
+          "body": "Thanks, Lionel. \r\n\r\nI would soften the citations to individual draft to avoid the impression that we are pushing for specific solution. What matters here is to better motivate and describe the NEW requirements for operators. Thanks.",
+          "createdAt": "2024-10-11T15:49:34Z",
+          "updatedAt": "2024-10-11T15:58:12Z",
+          "comments": [
+            {
+              "originalPosition": 47,
+              "body": "```suggestion\r\nDifferent approaches using graph theory and compatible with YANG are currently available, but require further experimentation to generalize their adoption.\r\n```",
+              "createdAt": "2024-10-11T15:49:34Z",
+              "updatedAt": "2024-10-11T15:58:12Z"
+            },
+            {
+              "originalPosition": 49,
+              "body": "```suggestion\r\n\r\nNEW-OPS-REQ-Y2KG:\r\n: Need for a reference specification to translate YANG-based data into the knowledge graph (KG).\r\n\r\nFor example, {{?I-D.marcas-nmop-knowledge-graph-yang}} and {{?I-D.tailhardat-nmop-incident-management-noria}} discuss YANG-2-KG proposals to leverage automated reasoning and graph traversal techniques.\r\n```",
+              "createdAt": "2024-10-11T15:52:48Z",
+              "updatedAt": "2024-10-11T15:58:12Z"
+            },
+            {
+              "originalPosition": 72,
+              "body": "```suggestion\r\n\r\nFrom a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.\r\n```",
+              "createdAt": "2024-10-11T15:53:32Z",
+              "updatedAt": "2024-10-11T15:58:13Z"
+            },
+            {
+              "originalPosition": 73,
+              "body": "```suggestion\r\nResolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.\r\n```",
+              "createdAt": "2024-10-11T15:56:54Z",
+              "updatedAt": "2024-10-11T15:58:13Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
