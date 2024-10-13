@@ -517,7 +517,7 @@ That convergence observed in recent years also implies the need for an up-to-dat
 It highlights the necessity to handle the heterogeneity of data, configuration, and network management/requirements.
 
 From a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.
-Resolving this kind of issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains (e.g. {{?I-D.marcas-nmop-knowledge-graph-yang}} and {{?I-D.tailhardat-nmop-incident-management-noria}}).
+Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.
 
 ## Too Much Time Between Publication of New Networking Functionality and the Associated YANG
 
