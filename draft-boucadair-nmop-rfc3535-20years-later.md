@@ -413,6 +413,16 @@ Unlike service and network models, IETF-defined device models are not widely imp
 NEW-OPS-REQ-RATIONALIZE:
 : There is a need to rationalize this space and avoid redundant efforts.
 
+## The Network Becomes Consumable
+
+Network connectivity can support tailored services in terms of Service Level Obejctives (SLOs), for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
+
+NEW-OPS-REQ-EASE-EXPOSURE:
+: Focus on protocols and data models that expose network/service capabilities, network-wide services, and related operations.
+
+NEW-OPS-REQ-NW-DISCOVERY:
+: Define a reference approach/process for service exposure discovery (APIs discovery).
+
 ## Network APIfication
 
 APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, {{?I-D.ramseyer-grow-peering-api}} defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in {{?I-D.ietf-opsawg-teas-attachment-circuit}} as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.
@@ -455,7 +465,7 @@ When a set of network operators where asked to where operational YANG data needs
 Another challenge is that the subscribed YANG data referenced with datastore-subtree-filter or datastore-xpath-filter breaks semantic integrity which needs to be addressed by either updating {{Section 4 of ?RFC8641}} or proposing a new YANG module being used at the YANG-Push receiver.
 
 NEW-OPS-REQ-INTEGRATION:
-: Consider approaches to ease integration by-design.
+: Consider approaches to ease integration by-design (e.g., protocols and data models).
 
 ## YANG-formatted Data Manipulation
 
@@ -510,7 +520,8 @@ Likewise, such diversity of services also require different management capabilit
 
 This reality is different from the one existing at the time of {{?RFC3535}}, and as such, the new identified needs can require from novel approaches to guarantee the aforementioned co-existence of services.
 
-Also, some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) {{?RFC838}}.
+NEW-OPS-REQ-NEW-NEED:
+: Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) {{?RFC838}}.
 
 ## Implications of External Dependency
 
@@ -554,6 +565,11 @@ NEW-OPS-REQ-READILTY-IMPLEM:
 NEW-OPS-REQ-IT-INTEGRATION:
 : There is a need to ease the integration of low-level/network-oriented solutuon with native "IT tooling" (e.g., "https://opentelemetry.io/").
 
+### IETF Support for Better YANG Integration
+
+NEW-OPS-REQ-IETF-TOOLS
+: Ease exposure of libraries and host tools (e.g., `yangkit`) to ease integration.
+
 ### Open-source Tools
 
 While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
@@ -562,20 +578,11 @@ For example, "ygot" generates structures from YANG models and these can easily b
 NEW-OPS-REQ-CLIENT-TOOLS:
 : Focus on tooling is needed, especially on the client side.
 
-### Libraries
-
-NEW-OPS-REQ-IETF-TOOLS
-: Ease exposure of libraries and host tools (e.g., `yangkit`) to ease integration.
-
 ## New Service Approaches
 
 The virtualization trend hava made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of Service Level Objectives (SLOs).
 
-The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanism for enabling an efficient interplay, while highly automating the overall service delivery procedure.
-
-## The Network Becomes Consumable
-
-Network connectivity can support tailored services in terms of SLOs, for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
+The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.
 
 ## Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance
 
