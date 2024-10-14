@@ -1174,7 +1174,7 @@ requirements for network management operations.<a href="#section-abstract-2" cla
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-assessment-of-rfc-3535-reco" class="internal xref">Assessment of RFC 3535 Recommendations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-some-observations" class="internal xref">Some Observations</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-observations-and-new-requir" class="internal xref">Observations and New Requirements</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.1">
                 <p id="section-toc.1-1.5.2.1.1"><a href="#section-5.1" class="auto internal xref">5.1</a>.  <a href="#name-on-the-importance-of-data-m" class="internal xref">On the Importance of Data Models</a></p>
@@ -1866,8 +1866,8 @@ Historic status.<a href="#section-4-24.2.1" class="pilcrow">¶</a></p>
 </div>
 <div id="sec-obs">
 <section id="section-5">
-      <h2 id="name-some-observations">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-some-observations" class="section-name selfRef">Some Observations</a>
+      <h2 id="name-observations-and-new-requir">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-observations-and-new-requir" class="section-name selfRef">Observations and New Requirements</a>
       </h2>
 <div id="on-the-importance-of-data-models">
 <section id="section-5.1">
@@ -1915,7 +1915,7 @@ Historic status.<a href="#section-4-24.2.1" class="pilcrow">¶</a></p>
           <dd class="break"></dd>
 <dt id="section-5.1-8.3"></dt>
           <dd style="margin-left: 1.5em" id="section-5.1-8.4">
-            <p id="section-5.1-8.4.1">Particularly, <strong>without data models, a Network API is essentially useless</strong>.<a href="#section-5.1-8.4.1" class="pilcrow">¶</a></p>
+            <p id="section-5.1-8.4.1">Particularly, <strong>without data models, a Network API is essentially useless</strong> (see also <a href="#sec-api" class="auto internal xref">Section 5.4</a>).<a href="#section-5.1-8.4.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 </dl>
@@ -1946,7 +1946,7 @@ Unlike service and network models, IETF-defined device models are not widely imp
 <span class="break"></span><dl class="dlParallel" id="section-5.3-2">
           <dt id="section-5.3-2.1">NEW-OPS-REQ-EASE-EXPOSURE:</dt>
           <dd style="margin-left: 1.5em" id="section-5.3-2.2">
-            <p id="section-5.3-2.2.1">Focus on protocols and data models that expose network/service capabilities, network-wide services, and related operations.<a href="#section-5.3-2.2.1" class="pilcrow">¶</a></p>
+            <p id="section-5.3-2.2.1">Focus on protocols and data models to expose network/service capabilities, network-wide services, and related operations.<a href="#section-5.3-2.2.1" class="pilcrow">¶</a></p>
 </dd>
           <dd class="break"></dd>
 <dt id="section-5.3-2.3">NEW-OPS-REQ-NW-DISCOVERY:</dt>
@@ -1957,7 +1957,7 @@ Unlike service and network models, IETF-defined device models are not widely imp
 </dl>
 </section>
 </div>
-<div id="network-apification">
+<div id="sec-api">
 <section id="section-5.4">
         <h3 id="name-network-apification">
 <a href="#section-5.4" class="section-number selfRef">5.4. </a><a href="#name-network-apification" class="section-name selfRef">Network APIfication</a>
@@ -1992,7 +1992,13 @@ Another approach could be to consider a model similar to the "Roadmap for Transm
 Such a document would serve as a guide and reference for implementers and others seeking information on 'NETCONF/RESTCONF/YANG'-related RFCs.<a href="#section-5.5-3.1.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-5.5-4">Additionally, reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.<a href="#section-5.5-4" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.5-4">
+          <dt id="section-5.5-4.1">NEW-OPS-REQ-REASSESS:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-4.2">
+            <p id="section-5.5-4.2.1">Additionally, reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.<a href="#section-5.5-4.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="lack-of-agile-process-for-the-maintenance-of-yang-modules">
@@ -2231,8 +2237,14 @@ For example, "ygot" generates structures from YANG models and these can easily b
         <h3 id="name-new-service-approaches">
 <a href="#section-5.17" class="section-number selfRef">5.17. </a><a href="#name-new-service-approaches" class="section-name selfRef">New Service Approaches</a>
         </h3>
-<p id="section-5.17-1">The virtualization trend hava made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of Service Level Objectives (SLOs).<a href="#section-5.17-1" class="pilcrow">¶</a></p>
-<p id="section-5.17-2">The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.<a href="#section-5.17-2" class="pilcrow">¶</a></p>
+<p id="section-5.17-1">The virtualization trend have made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of SLOs.<a href="#section-5.17-1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.17-2">
+          <dt id="section-5.17-2.1">NEW-OPS-REQ-GLUE:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-2.2">
+            <p id="section-5.17-2.2.1">The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.<a href="#section-5.17-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="many-solutions-for-the-same-problem-but-lack-of-clear-applicably-guidance">
@@ -2651,7 +2663,7 @@ For example, "ygot" generates structures from YANG models and these can easily b
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="appendix-A-1">Thanks to Christian Jacquenet, Jean-Michel Combes, and Lionel Tailhardat for their inputs.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-1">Thanks to Christian Jacquenet and Jean-Michel Combes for their inputs.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">

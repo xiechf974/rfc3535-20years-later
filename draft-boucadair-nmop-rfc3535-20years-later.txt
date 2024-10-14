@@ -78,7 +78,7 @@ Table of Contents
    2.  Technology Advances Since RFC 3535
    3.  Assessment of RFC 3535 Operator Requirements
    4.  Assessment of RFC 3535 Recommendations
-   5.  Some Observations
+   5.  Observations and New Requirements
      5.1.  On the Importance of Data Models
      5.2.  Fragmented Ecosystem
      5.3.  The Network Becomes Consumable
@@ -404,7 +404,7 @@ Table of Contents
       Information Bases ([RFC3317], [RFC3318], and [RFC3571]) to
       Historic status.
 
-5.  Some Observations
+5.  Observations and New Requirements
 
 5.1.  On the Importance of Data Models
 
@@ -471,7 +471,7 @@ Table of Contents
       to code.
 
       Particularly, *without data models, a Network API is essentially
-      useless*.
+      useless* (see also Section 5.4).
 
 5.2.  Fragmented Ecosystem
 
@@ -496,7 +496,7 @@ Table of Contents
    permit the exposure of resources, capabilities, functionality, and
    associated information (e.g., inventory based data).
 
-   NEW-OPS-REQ-EASE-EXPOSURE:  Focus on protocols and data models that
+   NEW-OPS-REQ-EASE-EXPOSURE:  Focus on protocols and data models to
       expose network/service capabilities, network-wide services, and
       related operations.
 
@@ -538,9 +538,9 @@ Table of Contents
       serve as a guide and reference for implementers and others seeking
       information on 'NETCONF/RESTCONF/YANG'-related RFCs.
 
-   Additionally, reassessing the value of some IETF proposals compared
-   to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would
-   be beneficial.
+   NEW-OPS-REQ-REASSESS:  Additionally, reassessing the value of some
+      IETF proposals compared to competing or emerging solutions (e.g.,
+      gRPC vs. YANG-Push) would be beneficial.
 
 5.6.  Lack of Agile Process for (The Maintenance of) YANG Modules
 
@@ -827,7 +827,7 @@ Table of Contents
 
 5.17.  New Service Approaches
 
-   The virtualization trend hava made posible to dynamically instantiate
+   The virtualization trend have made posible to dynamically instantiate
    Service Functions (SFs) in distributed compute facilities in the form
    of virtual machines or containers, as micro-services.  The
    instantiation of the SFs is governed by cloud management systems, as
@@ -835,13 +835,12 @@ Table of Contents
    services.  That connectivity is typically realized by using overlay
    mechanisms, without any further interaction with the network.
    However, this appraoch seems to be insuficient for future services
-   demanding stringent requirements in terms of Service Level Objectives
-   (SLOs).
+   demanding stringent requirements in terms of SLOs.
 
-   The distinct approaches followed in both the compute and the network
-   environments makes necessary to define suitable mechanisms for
-   enabling an efficient interplay, while highly automating the overall
-   service delivery procedure.
+   NEW-OPS-REQ-GLUE:  The distinct approaches followed in both the
+      compute and the network environments makes necessary to define
+      suitable mechanisms for enabling an efficient interplay, while
+      highly automating the overall service delivery procedure.
 
 5.18.  Many Solutions for the Same Problem, but Lack of Clear Applicably
        Guidance
@@ -1324,8 +1323,8 @@ Table of Contents
 
 Acknowledgments
 
-   Thanks to Christian Jacquenet, Jean-Michel Combes, and Lionel
-   Tailhardat for their inputs.
+   Thanks to Christian Jacquenet and Jean-Michel Combes for their
+   inputs.
 
 Authors' Addresses
 
