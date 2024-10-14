@@ -375,7 +375,7 @@ See also "An Overview of the IETF Network Management Standards" {{?RFC6632}}.
   three Policy Information Bases ({{?RFC3317}}, {{?RFC3318}}, and {{?RFC3571}}) to
   Historic status.
 
-# Some Observations {#sec-obs}
+# Observations and New Requirements {#sec-obs}
 
 ## On the Importance of Data Models
 
@@ -403,7 +403,7 @@ XaaS designs assume the availability of data models that are dynamically instant
 
 NEW-OPS-REQ-STRENGTHEN-DM:
 : Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code.
-: Particularly, **without data models, a Network API is essentially useless**.
+: Particularly, **without data models, a Network API is essentially useless** (see also {{sec-api}}).
 
 ## Fragmented Ecosystem
 
@@ -418,12 +418,12 @@ NEW-OPS-REQ-RATIONALIZE:
 Network connectivity can support tailored services in terms of Service Level Obejctives (SLOs), for instance, by means of Network Slice Services {{?RFC9543}}. This approach of "consuming" the network flexibly and dynamically is made possible by enabling means of exposing network capabilities to either internal or external applications. Then, network management is no longer limited to collect network status information, but it should be now extended to permit the exposure of resources, capabilities, functionality, and associated information (e.g., inventory based data).
 
 NEW-OPS-REQ-EASE-EXPOSURE:
-: Focus on protocols and data models that expose network/service capabilities, network-wide services, and related operations.
+: Focus on protocols and data models to expose network/service capabilities, network-wide services, and related operations.
 
 NEW-OPS-REQ-NW-DISCOVERY:
 : Define a reference approach/process for service exposure discovery (APIs discovery).
 
-## Network APIfication
+## Network APIfication {#sec-api}
 
 APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, {{?I-D.ramseyer-grow-peering-api}} defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in {{?I-D.ietf-opsawg-teas-attachment-circuit}} as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.
 
@@ -441,7 +441,8 @@ NEW-OPS-REQ-PROFILING:
 > Another approach could be to consider a model similar to the "Roadmap for Transmission Control Protocol (TCP) Specification Documents" {{?RFC7414}}.
 > Such a document would serve as a guide and reference for implementers and others seeking information on 'NETCONF/RESTCONF/YANG'-related RFCs.
 
-Additionally, reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.
+NEW-OPS-REQ-REASSESS:
+: Additionally, reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.
 
 ## Lack of Agile Process for (The Maintenance of) YANG Modules
 
@@ -580,9 +581,10 @@ NEW-OPS-REQ-CLIENT-TOOLS:
 
 ## New Service Approaches
 
-The virtualization trend hava made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of Service Level Objectives (SLOs).
+The virtualization trend have made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of SLOs.
 
-The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.
+NEW-OPS-REQ-GLUE:
+: The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.
 
 ## Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance
 
@@ -632,4 +634,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-Thanks to Christian Jacquenet, Jean-Michel Combes, and Lionel Tailhardat for their inputs.
+Thanks to Christian Jacquenet and Jean-Michel Combes for their inputs.
