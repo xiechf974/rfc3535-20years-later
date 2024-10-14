@@ -10,6 +10,7 @@
 <meta content="Oscar Gonzalez de Dios" name="author">
 <meta content="Thomas Graf" name="author">
 <meta content="Reshad Rahman" name="author">
+<meta content="Lionel Tailhardat" name="author">
 <meta content='
        The IAB has organized an important workshop
 to establish a dialog between network operators and
@@ -1042,7 +1043,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Boucadair, et al.</td>
-<td class="center">Expires 12 April 2025</td>
+<td class="center">Expires 17 April 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1055,12 +1056,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-boucadair-nmop-rfc3535-20years-later-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-10-09" class="published">9 October 2024</time>
+<time datetime="2024-10-14" class="published">14 October 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-04-12">12 April 2025</time></dd>
+<dd class="expires"><time datetime="2025-04-17">17 April 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1082,6 +1083,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <div class="author">
       <div class="author-name">R. Rahman</div>
 <div class="org">Equinix</div>
+</div>
+<div class="author">
+      <div class="author-name">L. Tailhardat</div>
+<div class="org">Orange</div>
 </div>
 </dd>
 </dl>
@@ -1127,7 +1132,7 @@ requirements for network management operations.<a href="#section-abstract-2" cla
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 12 April 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 17 April 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1967,20 +1972,16 @@ Such a document would serve as a guide and reference for implementers and others
         <h3 id="name-lack-of-agile-process-for-t">
 <a href="#section-5.5" class="section-number selfRef">5.5. </a><a href="#name-lack-of-agile-process-for-t" class="section-name selfRef">Lack of Agile Process for (The Maintenance of) YANG Modules</a>
         </h3>
-<p id="section-5.5-1">RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for
-"reference models" and "sufficiently stable models".<a href="#section-5.5-1" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-5.5-2">
-          <dt id="section-5.5-2.1">NEW-OPS-REQ-AGILE:</dt>
-          <dd style="margin-left: 1.5em" id="section-5.5-2.2">
-            <p id="section-5.5-2.2.1">Develop a more agile process for the development and maintenance of YANG modules in the IETF.<a href="#section-5.5-2.2.1" class="pilcrow">¶</a></p>
+<p id="section-5.5-1">RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for "reference models" and "sufficiently stable models".
+An hybrid approach might be investigated for documenting IETF-endorsed YANG modules, such as considering an RFC to describe the initial module sketch and objectives and an official IETF repository for maintaining intermediate YANG versions.<a href="#section-5.5-1" class="pilcrow">¶</a></p>
+<p id="section-5.5-2">By drawing a parallel between YANG data models and the concept of ontology used in the field of Semantic Web, the topic of YANG module maintenance could greatly benefit from proven methodologies in knowledge engineering such as <span>[<a href="#LOT2019" class="cite xref">LOT2019</a>]</span> and automatic documentation tools like <span>[<a href="#Widoco2017" class="cite xref">Widoco2017</a>]</span>.<a href="#section-5.5-2" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.5-3">
+          <dt id="section-5.5-3.1">NEW-OPS-REQ-AGILE:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-3.2">
+            <p id="section-5.5-3.2.1">Develop a more agile process for the development and maintenance of YANG modules in the IETF.<a href="#section-5.5-3.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 </dl>
-<p id="section-5.5-3">An hybrid approach might be investigated for documenting IETF-
-endorsed YANG modules, such as considering an RFC to
-describe the initial module sketch and objectives and an
-official IETF repository for maintaining intermediate YANG
-versions.<a href="#section-5.5-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="integration-complexity">
@@ -2006,11 +2007,22 @@ versions.<a href="#section-5.5-3" class="pilcrow">¶</a></p>
         <h3 id="name-yang-formatted-data-manipul">
 <a href="#section-5.7" class="section-number selfRef">5.7. </a><a href="#name-yang-formatted-data-manipul" class="section-name selfRef">YANG-formatted Data Manipulation</a>
         </h3>
-<p id="section-5.7-1">The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models. See, for example, <span>[<a href="#ODL" class="cite xref">ODL</a>]</span>.<a href="#section-5.7-1" class="pilcrow">¶</a></p>
+<p id="section-5.7-1">The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models.
+This can be the case, for example, during a path calculation on a network topology.
+Different approaches using graph theory and compatible with YANG are currently available, but require further experimentation to generalize their adoption.
+For istance, <span>[<a href="#ODL" class="cite xref">ODL</a>]</span> implements an in-memory connected graph version of YANG-based data to enable fast breadth-first search (BFS).<a href="#section-5.7-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-5.7-2">
-          <dt id="section-5.7-2.1">NEW-OPS-REQ-SCALE:</dt>
+          <dt id="section-5.7-2.1">NEW-OPS-REQ-Y2KG:</dt>
           <dd style="margin-left: 1.5em" id="section-5.7-2.2">
-            <p id="section-5.7-2.2.1">Consider approaches for YANG models to scale.<a href="#section-5.7-2.2.1" class="pilcrow">¶</a></p>
+            <p id="section-5.7-2.2.1">Need for a reference specification to translate YANG-based data into the knowledge graph (KG).<a href="#section-5.7-2.2.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
+<p id="section-5.7-3">For example, <span>[<a href="#I-D.marcas-nmop-knowledge-graph-yang" class="cite xref">I-D.marcas-nmop-knowledge-graph-yang</a>]</span> and <span>[<a href="#I-D.tailhardat-nmop-incident-management-noria" class="cite xref">I-D.tailhardat-nmop-incident-management-noria</a>]</span> discuss YANG-2-KG proposals to leverage automated reasoning and graph traversal techniques.<a href="#section-5.7-3" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.7-4">
+          <dt id="section-5.7-4.1">NEW-OPS-REQ-SCALE:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-4.2">
+            <p id="section-5.7-4.2.1">Consider approaches for YANG models to scale.<a href="#section-5.7-4.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 </dl>
@@ -2066,7 +2078,7 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.8-1"
         <h3 id="name-distinct-networks-distinct-">
 <a href="#section-5.11" class="section-number selfRef">5.11. </a><a href="#name-distinct-networks-distinct-" class="section-name selfRef">Distinct Networks, Distinct Management Requirements</a>
         </h3>
-<p id="section-5.11-1">From the time RFC 3535 was released up to now, new kind of services and applications have been developed and deployed over the time, with very diverse, and some times contradicting, requirements. Those services have been engineered on top of multi-service networks for the sake of efficiency and simplicity, accommodating such a variety of needs. As a result, services requiring mobility, data replication, large capacity, adaptability, multi-path support, determinism, etc., coexist on the same shared network, needing from it mechanisms for graceful operation.<a href="#section-5.11-1" class="pilcrow">¶</a></p>
+<p id="section-5.11-1">From the time <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span> was released up to now, new kind of services and applications have been developed and deployed over the time, with very diverse, and some times contradicting, requirements. Those services have been engineered on top of multi-service networks for the sake of efficiency and simplicity, accommodating such a variety of needs. As a result, services requiring mobility, data replication, large capacity, adaptability, multi-path support, determinism, etc., coexist on the same shared network, needing from it mechanisms for graceful operation.<a href="#section-5.11-1" class="pilcrow">¶</a></p>
 <p id="section-5.11-2">Likewise, such diversity of services also require different management capabilities. For example, session continuity, distribution trees, traffic engineering, congestion status notification, reordering, or on-time delivery impose very different management needs to be satisfied.<a href="#section-5.11-2" class="pilcrow">¶</a></p>
 <p id="section-5.11-3">This reality is different from the one existing at the time of <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>, and as such, the new identified needs can require from novel approaches to guarantee the aforementioned co-existence of services.<a href="#section-5.11-3" class="pilcrow">¶</a></p>
 <p id="section-5.11-4">Also, some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) <span>[<a href="#RFC838" class="cite xref">RFC838</a>]</span>.<a href="#section-5.11-4" class="pilcrow">¶</a></p>
@@ -2078,8 +2090,11 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.8-1"
 <a href="#section-5.12" class="section-number selfRef">5.12. </a><a href="#name-implications-of-external-de" class="section-name selfRef">Implications of External Dependency</a>
         </h3>
 <p id="section-5.12-1">Networks are being updated to abandon the silo approach from the past towards an increasing convergence. Specifically, there are trends towards a tighter interaction and integration of different technologies previously considered as totally separated from an operational perspective. Examples of that trends are the IP and Optical integration (e.g., the introduction of colored interfaces on routers), or the extension of deterministic-behavior features to Layer 3 networks. This kind of convergence in most cases creates dependencies on the conventional network management features, which require to incorporate or integrate functionality from other technological domains.<a href="#section-5.12-1" class="pilcrow">¶</a></p>
-<p id="section-5.12-2">Furthermore, such convergence is also reflected on the need of interacting and interworking with distinct network parts participating in the end-to-end service delivery. Mobile access, fixed access, data center, enterprise, radio functional split (i.e., fronthaul and midhaul), neutral exchanges, intensive data networks (e.g., scientific academic networks), content distribution, etc., represent network parts constituent of end-to-end services that can impose dependencies of the management of an intermediate network.<a href="#section-5.12-2" class="pilcrow">¶</a></p>
-<p id="section-5.12-3">That convergence shown the last years also implies the need of an up-to-date refresh of management capabilities and tooling of the conventional networks. Also, it highlights the need to easily map the data models that are used to manage each specific segment.<a href="#section-5.12-3" class="pilcrow">¶</a></p>
+<p id="section-5.12-2">Such convergence is also reflected on the need of interacting and interworking with distinct network parts participating in the end-to-end service delivery. Mobile access, fixed access, data center, enterprise, radio functional split (i.e., fronthaul and midhaul), neutral exchanges, intensive data networks (e.g., scientific academic networks), content distribution, etc., represent network parts constituent of end-to-end services that can impose dependencies of the management of an intermediate network.<a href="#section-5.12-2" class="pilcrow">¶</a></p>
+<p id="section-5.12-3">That convergence observed in recent years also implies the need for an up-to-date refresh of management capabilities and tools for conventional networks.
+It highlights the necessity to handle the heterogeneity of data, configuration, and network management/requirements.<a href="#section-5.12-3" class="pilcrow">¶</a></p>
+<p id="section-5.12-4">From a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.
+Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.<a href="#section-5.12-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="too-much-time-between-publication-of-new-networking-functionality-and-the-associated-yang">
@@ -2331,7 +2346,11 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <dd class="break"></dd>
 <dt id="I-D.ietf-opsawg-teas-attachment-circuit">[I-D.ietf-opsawg-teas-attachment-circuit]</dt>
       <dd>
-<span class="refAuthor">Boucadair, M.</span>, <span class="refAuthor">Roberts, R.</span>, <span class="refAuthor">de Dios, O. G.</span>, <span class="refAuthor">Barguil, S.</span>, and <span class="refAuthor">B. Wu</span>, <span class="refTitle">"YANG Data Models for Bearers and 'Attachment Circuits'-as-a-Service (ACaaS)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-opsawg-teas-attachment-circuit-16</span>, <time datetime="2024-09-10" class="refDate">10 September 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-teas-attachment-circuit-16">https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-teas-attachment-circuit-16</a>&gt;</span>. </dd>
+<span class="refAuthor">Boucadair, M.</span>, <span class="refAuthor">Roberts, R.</span>, <span class="refAuthor">de Dios, O. G.</span>, <span class="refAuthor">Barguil, S.</span>, and <span class="refAuthor">B. Wu</span>, <span class="refTitle">"YANG Data Models for Bearers and 'Attachment Circuits'-as-a-Service (ACaaS)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-opsawg-teas-attachment-circuit-17</span>, <time datetime="2024-10-10" class="refDate">10 October 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-teas-attachment-circuit-17">https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-teas-attachment-circuit-17</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="I-D.marcas-nmop-knowledge-graph-yang">[I-D.marcas-nmop-knowledge-graph-yang]</dt>
+      <dd>
+<span class="refAuthor">Martinez-Casanueva, I. D.</span> and <span class="refAuthor">L. C. Rodríguez</span>, <span class="refTitle">"Knowledge Graphs for YANG-based Network Management"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-marcas-nmop-knowledge-graph-yang-03</span>, <time datetime="2024-07-05" class="refDate">5 July 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-marcas-nmop-knowledge-graph-yang-03">https://datatracker.ietf.org/doc/html/draft-marcas-nmop-knowledge-graph-yang-03</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.openconfig-rtgwg-gnmi-spec">[I-D.openconfig-rtgwg-gnmi-spec]</dt>
       <dd>
@@ -2340,6 +2359,14 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <dt id="I-D.ramseyer-grow-peering-api">[I-D.ramseyer-grow-peering-api]</dt>
       <dd>
 <span class="refAuthor">Aguado, C.</span>, <span class="refAuthor">Griswold, M.</span>, <span class="refAuthor">Ramseyer, J.</span>, <span class="refAuthor">Servin, A. L.</span>, and <span class="refAuthor">T. Strickx</span>, <span class="refTitle">"Peering API"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ramseyer-grow-peering-api-05</span>, <time datetime="2024-05-30" class="refDate">30 May 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ramseyer-grow-peering-api-05">https://datatracker.ietf.org/doc/html/draft-ramseyer-grow-peering-api-05</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="I-D.tailhardat-nmop-incident-management-noria">[I-D.tailhardat-nmop-incident-management-noria]</dt>
+      <dd>
+<span class="refAuthor">Tailhardat, L.</span>, <span class="refAuthor">Troncy, R.</span>, and <span class="refAuthor">Y. Chabot</span>, <span class="refTitle">"Knowledge Graphs for Enhanced Cross-Operator Incident Management and Network Design"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-tailhardat-nmop-incident-management-noria-01</span>, <time datetime="2024-08-29" class="refDate">29 August 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-tailhardat-nmop-incident-management-noria-01">https://datatracker.ietf.org/doc/html/draft-tailhardat-nmop-incident-management-noria-01</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="LOT2019">[LOT2019]</dt>
+      <dd>
+<span class="refAuthor">Poveda-Villalon, M.</span>, <span class="refAuthor">Fernandez-Izquierdo, A.</span>, <span class="refAuthor">Fernandez-Lopez, M.</span>, and <span class="refAuthor">R. Garcia-Castro</span>, <span class="refTitle">"LOT: An industrial oriented ontology engineering framework"</span>, <time datetime="2022" class="refDate">2022</time>, <span>&lt;<a href="https://doi.org/10.1016/j.engappai.2022.104755">https://doi.org/10.1016/j.engappai.2022.104755</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="ODL">[ODL]</dt>
       <dd>
@@ -2562,8 +2589,12 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <span class="refAuthor">Vaughn, K., Ed.</span>, <span class="refTitle">"Updates to the TLS Transport Model for SNMP"</span>, <span class="seriesInfo">RFC 9456</span>, <span class="seriesInfo">DOI 10.17487/RFC9456</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc9456">https://www.rfc-editor.org/rfc/rfc9456</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC9543">[RFC9543]</dt>
-    <dd>
+      <dd>
 <span class="refAuthor">Farrel, A., Ed.</span>, <span class="refAuthor">Drake, J., Ed.</span>, <span class="refAuthor">Rokui, R.</span>, <span class="refAuthor">Homma, S.</span>, <span class="refAuthor">Makhijani, K.</span>, <span class="refAuthor">Contreras, L.</span>, and <span class="refAuthor">J. Tantsura</span>, <span class="refTitle">"A Framework for Network Slices in Networks Built from IETF Technologies"</span>, <span class="seriesInfo">RFC 9543</span>, <span class="seriesInfo">DOI 10.17487/RFC9543</span>, <time datetime="2024-03" class="refDate">March 2024</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc9543">https://www.rfc-editor.org/rfc/rfc9543</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="Widoco2017">[Widoco2017]</dt>
+    <dd>
+<span class="refAuthor">Garijo, D.</span>, <span class="refTitle">"WIDOCO: a wizard for documenting ontologies"</span>, <time datetime="2017" class="refDate">2017</time>, <span>&lt;<a href="http://dgarijo.com/papers/widoco-iswc2017.pdf">http://dgarijo.com/papers/widoco-iswc2017.pdf</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
@@ -2619,6 +2650,14 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <div class="email">
 <span>Email:</span>
 <a href="mailto:rrahman@equinix.com" class="email">rrahman@equinix.com</a>
+</div>
+</address>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Lionel Tailhardat</span></div>
+<div dir="auto" class="left"><span class="org">Orange</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:lionel.tailhardat@orange.com" class="email">lionel.tailhardat@orange.com</a>
 </div>
 </address>
 </section>
