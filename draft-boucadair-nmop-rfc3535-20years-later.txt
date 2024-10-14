@@ -96,11 +96,13 @@ Table of Contents
      5.13. Too Much Time Between Publication of New Networking
             Functionality and the Associated YANG
      5.14. Lack of Implementation of Proposed Solutions
-     5.15. Open-source Tools
-     5.16. Integration with "native" IT Tooling
-     5.17. New Service Approaches
-     5.18. The Network Becomes Consumable
-     5.19. Many Solutions for the Same Problem, but Lack of Clear
+     5.15. Tooling
+       5.15.1.  Integration with "native" IT Tooling
+       5.15.2.  Open-source Tools
+       5.15.3.  Libraries
+     5.16. New Service Approaches
+     5.17. The Network Becomes Consumable
+     5.18. Many Solutions for the Same Problem, but Lack of Clear
             Applicably Guidance
    6.  Additional Assessments
      6.1.  What Went Well
@@ -496,7 +498,8 @@ Table of Contents
    mapping to actual realization models.
 
    NEW-OPS-REQ-DM-API:  Readily available API specifications could be
-      generalized for fast development, prototyping, and validation.
+      generalized from YANG modules for fast development, prototyping,
+      and validation.
 
 5.4.  Lack of Profiling
 
@@ -524,11 +527,12 @@ Table of Contents
 
    RFCs might not be suited for documenting YANG modules (it takes much
    too long, especiallly for updates).  In the meantime, there is a need
-   for "reference models" and "sufficiently stable models".  An hybrid
-   approach might be investigated for documenting IETF-endorsed YANG
-   modules, such as considering an RFC to describe the initial module
-   sketch and objectives and an official IETF repository for maintaining
-   intermediate YANG versions.
+   for "reference models" and "sufficiently stable models".
+
+   An hybrid approach might be investigated for documenting IETF-
+   endorsed YANG modules, such as considering an RFC to describe the
+   initial module sketch and objectives and an official IETF repository
+   for maintaining intermediate YANG versions.
 
    By drawing a parallel between YANG data models and the concept of
    ontology used in the field of Semantic Web, the topic of YANG module
@@ -579,8 +583,8 @@ Table of Contents
    [RFC8641] or proposing a new YANG module being used at the YANG-Push
    receiver.
 
-   NEW-OPS-REQ-INTEGRATION:  Consider approach by-design to ease
-      integration.
+   NEW-OPS-REQ-INTEGRATION:  Consider approaches to ease integration by-
+      design.
 
 5.7.  YANG-formatted Data Manipulation
 
@@ -777,7 +781,15 @@ Table of Contents
       decide about the actual measures to put in place.  To date, only
       IDR WG has clear guidance on two implementations.
 
-5.15.  Open-source Tools
+5.15.  Tooling
+
+5.15.1.  Integration with "native" IT Tooling
+
+   NEW-OPS-REQ-IT-INTEGRATION:  There is a need to ease the integration
+      of low-level/network-oriented solutuon with native "IT tooling"
+      (e.g., "https://opentelemetry.io/").
+
+5.15.2.  Open-source Tools
 
    While there are open-source implementations for NETCONF (e.g.,
    NETOPEER), the gRPC/gNMI suite seems to have more support for tools
@@ -789,13 +801,12 @@ Table of Contents
    NEW-OPS-REQ-CLIENT-TOOLS:  Focus on tooling is needed, especially on
       the client side.
 
-5.16.  Integration with "native" IT Tooling
+5.15.3.  Libraries
 
-   NEW-OPS-REQ-IT-INTEGRATION:  There is a need to ease the integration
-      of low-level/network-oriented solutuon with native "IT tooling"
-      (e.g., "https://opentelemetry.io/").
+   NEW-OPS-REQ-IETF-TOOLS  Ease exposure of libraries and host tools
+      (e.g., yangkit) to ease integration.
 
-5.17.  New Service Approaches
+5.16.  New Service Approaches
 
    The virtualization trend hava made posible to dynamically instantiate
    Service Functions (SFs) in distributed compute facilities in the form
@@ -813,7 +824,7 @@ Table of Contents
    enabling an efficient interplay, while highly automating the overall
    service delivery procedure.
 
-5.18.  The Network Becomes Consumable
+5.17.  The Network Becomes Consumable
 
    Network connectivity can support tailored services in terms of SLOs,
    for instance, by means of Network Slice Services [RFC9543].  This
@@ -825,7 +836,7 @@ Table of Contents
    functionality, and associated information (e.g., inventory based
    data).
 
-5.19.  Many Solutions for the Same Problem, but Lack of Clear Applicably
+5.18.  Many Solutions for the Same Problem, but Lack of Clear Applicably
        Guidance
 
    There are several solutions that were standardized for network
