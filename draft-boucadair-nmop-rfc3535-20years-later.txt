@@ -81,27 +81,27 @@ Table of Contents
    5.  Some Observations
      5.1.  On the Importance of Data Models
      5.2.  Fragmented Ecosystem
-     5.3.  Network APIfication
-     5.4.  Lack of Profiling
-     5.5.  Lack of Agile Process for (The Maintenance of) YANG Modules
-     5.6.  Integration Complexity
-     5.7.  YANG-formatted Data Manipulation
-     5.8.  Translation and Mapping Between Service/Network and Device
+     5.3.  The Network Becomes Consumable
+     5.4.  Network APIfication
+     5.5.  Lack of Profiling
+     5.6.  Lack of Agile Process for (The Maintenance of) YANG Modules
+     5.7.  Integration Complexity
+     5.8.  YANG-formatted Data Manipulation
+     5.9.  Translation and Mapping Between Service/Network and Device
             Models
-     5.9.  (In)Consistent Data Structures in Network Protocols for
+     5.10. (In)Consistent Data Structures in Network Protocols for
             Data Export
-     5.10. Proprietary YANG Modules, CLI, and Limited Abstraction
-     5.11. Distinct Networks, Distinct Management Requirements
-     5.12. Implications of External Dependency
-     5.13. Too Much Time Between Publication of New Networking
+     5.11. Proprietary YANG Modules, CLI, and Limited Abstraction
+     5.12. Distinct Networks, Distinct Management Requirements
+     5.13. Implications of External Dependency
+     5.14. Too Much Time Between Publication of New Networking
             Functionality and the Associated YANG
-     5.14. Lack of Implementation of Proposed Solutions
-     5.15. Tooling
-       5.15.1.  Integration with "native" IT Tooling
-       5.15.2.  Open-source Tools
-       5.15.3.  Libraries
-     5.16. New Service Approaches
-     5.17. The Network Becomes Consumable
+     5.15. Lack of Implementation of Proposed Solutions
+     5.16. Tooling
+       5.16.1.  Integration with "native" IT Tooling
+       5.16.2.  IETF Support for Better YANG Integration
+       5.16.3.  Open-source Tools
+     5.17. New Service Approaches
      5.18. Many Solutions for the Same Problem, but Lack of Clear
             Applicably Guidance
    6.  Additional Assessments
@@ -484,7 +484,26 @@ Table of Contents
    NEW-OPS-REQ-RATIONALIZE:  There is a need to rationalize this space
       and avoid redundant efforts.
 
-5.3.  Network APIfication
+5.3.  The Network Becomes Consumable
+
+   Network connectivity can support tailored services in terms of
+   Service Level Obejctives (SLOs), for instance, by means of Network
+   Slice Services [RFC9543].  This approach of "consuming" the network
+   flexibly and dynamically is made possible by enabling means of
+   exposing network capabilities to either internal or external
+   applications.  Then, network management is no longer limited to
+   collect network status information, but it should be now extended to
+   permit the exposure of resources, capabilities, functionality, and
+   associated information (e.g., inventory based data).
+
+   NEW-OPS-REQ-EASE-EXPOSURE:  Focus on protocols and data models that
+      expose network/service capabilities, network-wide services, and
+      related operations.
+
+   NEW-OPS-REQ-NW-DISCOVERY:  Define a reference approach/process for
+      service exposure discovery (APIs discovery).
+
+5.4.  Network APIfication
 
    APIs are getting momentum as means of interworking between parties,
    also at the time of providing network services.  As an example,
@@ -501,7 +520,7 @@ Table of Contents
       generalized from YANG modules for fast development, prototyping,
       and validation.
 
-5.4.  Lack of Profiling
+5.5.  Lack of Profiling
 
    Many NETCONF-related features are (being) specified by the IETF, but
    these features are not widely supported (e.g., YANG-Push [RFC8639]).
@@ -523,7 +542,7 @@ Table of Contents
    to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would
    be beneficial.
 
-5.5.  Lack of Agile Process for (The Maintenance of) YANG Modules
+5.6.  Lack of Agile Process for (The Maintenance of) YANG Modules
 
    RFCs might not be suited for documenting YANG modules (it takes much
    too long, especiallly for updates).  In the meantime, there is a need
@@ -543,7 +562,7 @@ Table of Contents
    NEW-OPS-REQ-AGILE:  Develop a more agile process for the development
       and maintenance of YANG modules in the IETF.
 
-5.6.  Integration Complexity
+5.7.  Integration Complexity
 
    Section 3 of [RFC3535] describes a set of network operator
    requirements.  One of the requirements is the ease of use which,
@@ -584,9 +603,9 @@ Table of Contents
    receiver.
 
    NEW-OPS-REQ-INTEGRATION:  Consider approaches to ease integration by-
-      design.
+      design (e.g., protocols and data models).
 
-5.7.  YANG-formatted Data Manipulation
+5.8.  YANG-formatted Data Manipulation
 
    The use of a flat tree hierarchy in YANG models may induce some
    performance issues compared to other graph models.  This can be the
@@ -607,7 +626,7 @@ Table of Contents
 
    NEW-OPS-REQ-SCALE:  Consider approaches for YANG models to scale.
 
-5.8.  Translation and Mapping Between Service/Network and Device Models
+5.9.  Translation and Mapping Between Service/Network and Device Models
 
    Navigating among multiple levels of the hierarchy (service, network,
    device) relies currenlty on proprietary solutions to graft and
@@ -617,8 +636,8 @@ Table of Contents
    NEW-OPS-REQ-LOSSLESS:  Consider programmatic approaches to ensure
       lossless mappings between service/network/device data models.
 
-5.9.  (In)Consistent Data Structures in Network Protocols for Data
-      Export
+5.10.  (In)Consistent Data Structures in Network Protocols for Data
+       Export
 
    Network Telemetry, as described in [RFC9232], involve a set of
    protocols.  Due to the different requirements, one Network Telemetry
@@ -664,7 +683,7 @@ Table of Contents
    NEW-OPS-REQ-REUSABILITY:  Consider approach to ensure reuse/
       consistent data structure.
 
-5.10.  Proprietary YANG Modules, CLI, and Limited Abstraction
+5.11.  Proprietary YANG Modules, CLI, and Limited Abstraction
 
    Pluggins/Proxy YANG/CLI is still the rule in many operations.
 
@@ -674,7 +693,7 @@ Table of Contents
    Network models for the realization provides some "level" of
    abstraction and then automation.
 
-5.11.  Distinct Networks, Distinct Management Requirements
+5.12.  Distinct Networks, Distinct Management Requirements
 
    From the time [RFC3535] was released up to now, new kind of services
    and applications have been developed and deployed over the time, with
@@ -697,12 +716,12 @@ Table of Contents
    novel approaches to guarantee the aforementioned co-existence of
    services.
 
-   Also, some networks have specific network management requirements
-   such as the need for asynchronous operations or constraints on data
-   compactness.  An example of such networks is Delay-Tolerant
-   Networking (DTN) [RFC838].
+   NEW-OPS-REQ-NEW-NEED:  Some networks have specific network management
+      requirements such as the need for asynchronous operations or
+      constraints on data compactness.  An example of such networks is
+      Delay-Tolerant Networking (DTN) [RFC838].
 
-5.12.  Implications of External Dependency
+5.13.  Implications of External Dependency
 
    Networks are being updated to abandon the silo approach from the past
    towards an increasing convergence.  Specifically, there are trends
@@ -739,7 +758,7 @@ Table of Contents
    of heterogeneity and data reconciliation across various application
    domains.
 
-5.13.  Too Much Time Between Publication of New Networking Functionality
+5.14.  Too Much Time Between Publication of New Networking Functionality
        and the Associated YANG
 
    For example, [RFC8667] (IS-IS extensions for SR) was published in
@@ -751,7 +770,7 @@ Table of Contents
       progress in parallel.  That may slow down the protocol
       specification, though.
 
-5.14.  Lack of Implementation of Proposed Solutions
+5.15.  Lack of Implementation of Proposed Solutions
 
    New solutions proposed by WGs such as NETMOD and NETCONF very often
    lack an implementation or only have a partial implementation.  The
@@ -781,15 +800,20 @@ Table of Contents
       decide about the actual measures to put in place.  To date, only
       IDR WG has clear guidance on two implementations.
 
-5.15.  Tooling
+5.16.  Tooling
 
-5.15.1.  Integration with "native" IT Tooling
+5.16.1.  Integration with "native" IT Tooling
 
    NEW-OPS-REQ-IT-INTEGRATION:  There is a need to ease the integration
       of low-level/network-oriented solutuon with native "IT tooling"
       (e.g., "https://opentelemetry.io/").
 
-5.15.2.  Open-source Tools
+5.16.2.  IETF Support for Better YANG Integration
+
+   NEW-OPS-REQ-IETF-TOOLS  Ease exposure of libraries and host tools
+      (e.g., yangkit) to ease integration.
+
+5.16.3.  Open-source Tools
 
    While there are open-source implementations for NETCONF (e.g.,
    NETOPEER), the gRPC/gNMI suite seems to have more support for tools
@@ -801,12 +825,7 @@ Table of Contents
    NEW-OPS-REQ-CLIENT-TOOLS:  Focus on tooling is needed, especially on
       the client side.
 
-5.15.3.  Libraries
-
-   NEW-OPS-REQ-IETF-TOOLS  Ease exposure of libraries and host tools
-      (e.g., yangkit) to ease integration.
-
-5.16.  New Service Approaches
+5.17.  New Service Approaches
 
    The virtualization trend hava made posible to dynamically instantiate
    Service Functions (SFs) in distributed compute facilities in the form
@@ -820,21 +839,9 @@ Table of Contents
    (SLOs).
 
    The distinct approaches followed in both the compute and the network
-   environments makes necessary to define suitable mechanism for
+   environments makes necessary to define suitable mechanisms for
    enabling an efficient interplay, while highly automating the overall
    service delivery procedure.
-
-5.17.  The Network Becomes Consumable
-
-   Network connectivity can support tailored services in terms of SLOs,
-   for instance, by means of Network Slice Services [RFC9543].  This
-   approach of "consuming" the network flexibly and dynamically is made
-   possible by enabling means of exposing network capabilities to either
-   internal or external applications.  Then, network management is no
-   longer limited to collect network status information, but it should
-   be now extended to permit the exposure of resources, capabilities,
-   functionality, and associated information (e.g., inventory based
-   data).
 
 5.18.  Many Solutions for the Same Problem, but Lack of Clear Applicably
        Guidance
