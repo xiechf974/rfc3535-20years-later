@@ -418,7 +418,7 @@ NEW-OPS-REQ-RATIONALIZE:
 APIs are getting momentum as means of interworking between parties, also at the time of providing network services. As an example, {{?I-D.ramseyer-grow-peering-api}} defines an API for dynamically establishing BGP peering sessions between Autonomous Systems of different administrative domains. That same objective is also covered by the YANG data model defined in {{?I-D.ietf-opsawg-teas-attachment-circuit}} as exemplified in Appendix A.10. Tools such as YANG/OpenAPI transforms are key to leverage existing data models and allow for better integration and mapping to actual realization models.
 
 NEW-OPS-REQ-DM-API:
-: Readily available API specifications could be generalized for fast development, prototyping, and validation.
+: Readily available API specifications could be generalized from YANG modules for fast development, prototyping, and validation.
 
 ## Lack of Profiling
 
@@ -436,6 +436,7 @@ Additionally, reassessing the value of some IETF proposals compared to competing
 ## Lack of Agile Process for (The Maintenance of) YANG Modules
 
 RFCs might not be suited for documenting YANG modules (it takes much too long, especiallly for updates). In the meantime, there is a need for "reference models" and "sufficiently stable models".
+
 An hybrid approach might be investigated for documenting IETF-endorsed YANG modules, such as considering an RFC to describe the initial module sketch and objectives and an official IETF repository for maintaining intermediate YANG versions.
 
 By drawing a parallel between YANG data models and the concept of ontology used in the field of Semantic Web, the topic of YANG module maintenance could greatly benefit from proven methodologies in knowledge engineering such as {{LOT2019}} and automatic documentation tools like {{Widoco2017}}.
@@ -454,7 +455,7 @@ When a set of network operators where asked to where operational YANG data needs
 Another challenge is that the subscribed YANG data referenced with datastore-subtree-filter or datastore-xpath-filter breaks semantic integrity which needs to be addressed by either updating {{Section 4 of ?RFC8641}} or proposing a new YANG module being used at the YANG-Push receiver.
 
 NEW-OPS-REQ-INTEGRATION:
-: Consider approach by-design to ease integration.
+: Consider approaches to ease integration by-design.
 
 ## YANG-formatted Data Manipulation
 
@@ -546,7 +547,14 @@ While hackathons have improved the situation, the availablability of implementat
 NEW-OPS-REQ-READILTY-IMPLEM:
 : It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementationsmanagement for I-Ds to be published as PS (e.g., {{?RFC1264}}), but these rules were relaxed for reasons described, e.g., {{?RFC4794}} and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.
 
-## Open-source Tools
+## Tooling
+
+### Integration with "native" IT Tooling
+
+NEW-OPS-REQ-IT-INTEGRATION:
+: There is a need to ease the integration of low-level/network-oriented solutuon with native "IT tooling" (e.g., "https://opentelemetry.io/").
+
+### Open-source Tools
 
 While there are open-source implementations for NETCONF (e.g., NETOPEER), the gRPC/gNMI suite seems to have more support for tools on the client side.
 For example, "ygot" generates structures from YANG models and these can easily be used by a client to configure a device with gNMI. NETCONF is not supported though (we need the XML tags).
@@ -554,10 +562,10 @@ For example, "ygot" generates structures from YANG models and these can easily b
 NEW-OPS-REQ-CLIENT-TOOLS:
 : Focus on tooling is needed, especially on the client side.
 
-## Integration with "native" IT Tooling
+### Libraries
 
-NEW-OPS-REQ-IT-INTEGRATION:
-: There is a need to ease the integration of low-level/network-oriented solutuon with native "IT tooling" (e.g., "https://opentelemetry.io/").
+NEW-OPS-REQ-IETF-TOOLS
+: Ease exposure of libraries and host tools (e.g., `yangkit`) to ease integration.
 
 ## New Service Approaches
 
