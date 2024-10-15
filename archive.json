@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-13T01:27:34.870484+00:00",
+  "timestamp": "2024-10-15T01:23:15.917898+00:00",
   "repo": "boucadair/rfc3535-20years-later",
   "labels": [
     {
@@ -55,16 +55,24 @@
       "id": "I_kwDOKqz7zs59mxJg",
       "title": "IETF support for better yang integration (e.g., yangkit)",
       "url": "https://github.com/boucadair/rfc3535-20years-later/issues/1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "boucadair",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "https://github.com/yang-central/yangkit\r\n\r\nMore focus on libs",
       "createdAt": "2024-01-30T09:16:14Z",
-      "updatedAt": "2024-01-30T09:16:35Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-10-14T05:51:18Z",
+      "closedAt": "2024-10-14T05:51:18Z",
+      "comments": [
+        {
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "body": "https://github.com/boucadair/rfc3535-20years-later/commit/1214835d7afd111a27e1d81e6ced3791aa97d77a",
+          "createdAt": "2024-10-14T05:51:18Z",
+          "updatedAt": "2024-10-14T05:51:18Z"
+        }
+      ]
     },
     {
       "number": 4,
@@ -985,24 +993,26 @@
       "id": "PR_kwDOKqz7zs5-W0AM",
       "title": "Minor fixes + added details + bridging with SemWeb related works.",
       "url": "https://github.com/boucadair/rfc3535-20years-later/pull/25",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "GenEars",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "The review/rewriting work goes up to the 'Implications of External Dependency' Section.",
       "createdAt": "2024-10-11T15:23:47Z",
-      "updatedAt": "2024-10-11T16:06:01Z",
+      "updatedAt": "2024-10-14T05:42:26Z",
       "baseRepository": "boucadair/rfc3535-20years-later",
       "baseRefName": "main",
       "baseRefOid": "68f3e5baab6fd0823035ae2d98cdd60882afbb71",
       "headRepository": "GenEars/rfc3535-20years-later",
       "headRefName": "main",
-      "headRefOid": "450cbc3a4ae79c64c40e32f36a699d46820a2103",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "c812cb5ccca5e86a3aa5a3faecdaada670f2552f",
+      "closedAt": "2024-10-14T05:42:26Z",
+      "mergedAt": "2024-10-14T05:42:26Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "a0bb96fb8956bc356eca4f95b16aeb052d70cc7a"
+      },
       "comments": [],
       "reviews": [
         {
@@ -1042,6 +1052,19 @@
               "updatedAt": "2024-10-11T15:58:13Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDOKqz7zs6M_E8h",
+          "commit": {
+            "abbreviatedOid": "c812cb5"
+          },
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-10-14T05:42:17Z",
+          "updatedAt": "2024-10-14T05:42:17Z",
+          "comments": []
         }
       ]
     }
