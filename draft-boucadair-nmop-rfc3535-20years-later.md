@@ -108,7 +108,8 @@ More than 20 years later, new requirements on network management operations are 
 |NEW-OPS-REQ-LOSSLESS|{{sec-map}}|
 |NEW-OPS-REQ-REUSABILITY|{{sec-con}}|
 |NEW-OPS-REQ-NEW-NEED|{{sec-distinct}}|
-|NEW-OPS-REQ-TIMELY-DM|{{sec-distinct}}|
+|NEW-OPS-REQ-UNSILO|{{sec-dep}}|
+|NEW-OPS-REQ-TIMELY-DM|{{sec-pub}}|
 |NEW-OPS-REQ-READILTY-IMPLEM|{{sec-impl}|
 |NEW-OPS-REQ-IT-INTEGRATION|{{sec-it}}|
 |NEW-OPS-REQ-IETF-TOOLS|{{sec-ietf-in}}|
@@ -558,11 +559,11 @@ Networks are being updated to abandon the silo approach from the past towards an
 
 Such convergence is also reflected on the need of interacting and interworking with distinct network parts participating in the end-to-end service delivery. Mobile access, fixed access, data center, enterprise, radio functional split (i.e., fronthaul and midhaul), neutral exchanges, intensive data networks (e.g., scientific academic networks), content distribution, etc., represent network parts constituent of end-to-end services that can impose dependencies of the management of an intermediate network.
 
-That convergence observed in recent years also implies the need for an up-to-date refresh of management capabilities and tools for conventional networks.
-It highlights the necessity to handle the heterogeneity of data, configuration, and network management/requirements.
-
-From a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.
-Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.
+NEW-OPS-REQ-UNSILO:
+: The convergence observed in recent years also implies the need for an up-to-date refresh of management capabilities and tools for conventional networks.
+: It highlights the necessity to handle the heterogeneity of data, configuration, and network management/requirements.
+: From a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.
+: Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.
 
 ## Too Much Time Between Publication of New Networking Functionality and the Associated YANG {#sec-pub}
 
