@@ -116,7 +116,7 @@ More than 20 years later, new requirements on network management operations are 
 |NEW-OPS-REQ-CLIENT-TOOLS|{{sec-client}}|
 |NEW-OPS-REQ-BRIDGE|{{sec-skills}}|
 |NEW-OPS-REQ-GLUE|{{sec-new}}|
-|NEW-OPS-REQ-GUIDANCE|{{sec-reca}}|
+|NEW-OPS-REQ-GUIDANCE|{{sec-guid}}|
 
 The document also provide an assessment of the RFC3535 recommendations ({{sec-assessment}}) and to what extend that roadmap was driving network management efforts within the IETF ({{sec-reca}}).
 
