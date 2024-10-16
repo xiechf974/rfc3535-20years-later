@@ -508,7 +508,7 @@ NEW-OPS-REQ-REUSABILITY:
 
 ## Proprietary YANG Modules, CLI, and Limited Abstraction
 
-Leveraging on pluggins, propietary YANG models or even CLI is still the rule in many operations, sometimes forced by the need of operating legacy infrastructures. 
+Leveraging on pluggins, propietary YANG models or even CLI is still the rule in many operations, sometimes forced by the need of operating legacy infrastructures.
 
 The complexity of developing and maintaining these means of operation is huge, as it is required to to cover many OS and vendors along the lifetime of the network device.
 
