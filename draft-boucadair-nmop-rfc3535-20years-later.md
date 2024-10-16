@@ -113,6 +113,7 @@ which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?
 |NEW-OPS-REQ-IT-INTEGRATION|{{sec-it}}|
 |NEW-OPS-REQ-IETF-TOOLS|{{sec-ietf-in}}|
 |NEW-OPS-REQ-CLIENT-TOOLS|{{sec-client}}|
+|NEW-OPS-REQ-BRIDGE|{{sec-skills}}|
 |NEW-OPS-REQ-GLUE|{{sec-new}}|
 |NEW-OPS-REQ-GUIDANCE|{{sec-reca}}|
 
@@ -586,7 +587,7 @@ While hackathons have improved the situation, the availablability of implementat
 NEW-OPS-REQ-READILTY-IMPLEM:
 : It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementations for I-Ds to be published as PS (e.g., {{?RFC1264}}), but these rules were relaxed for reasons described, e.g., {{?RFC4794}} and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.
 
-## Tooling
+## Tooling & Skills
 
 ### Integration with "native" IT Tooling {#sec-it}
 
@@ -606,6 +607,13 @@ For example, "ygot" generates structures from YANG models and these can easily b
 NEW-OPS-REQ-CLIENT-TOOLS:
 : Focus on tooling is needed, especially on the client side.
 
+### Skills {#sec-skills}
+
+The IETF is not the expert community in data engineering. The experts are in the data industry. Without them, integration in data processing chains like Data Mesh is going to be a challenge.
+
+NEW-OPS-REQ-BRIDGE:
+: Create an eco-system where data and networking engineers can collaborate.
+
 ## New Service Approaches {#sec-new}
 
 The virtualization trend have made posible to dynamically instantiate Service Functions (SFs) in distributed compute facilities in the form of virtual machines or containers, as micro-services. The instantiation of the SFs is governed by cloud management systems, as it is the connectivity among the different instances or micro-services. That connectivity is typically realized by using overlay mechanisms, without any further interaction with the network. However, this appraoch seems to be insuficient for future services demanding stringent requirements in terms of SLOs.
@@ -619,33 +627,6 @@ There are several solutions that were standardized for network management purpos
 
 NEW-OPS-REQ-GUIDANCE:
 : The target application/applicability of a network management approach should be integrated in the specification itself.
-
-# Additional Assessments
-
-This section captures some early assessments. The goal is first to capture received feedback, challenge it, and then structure it.
-
-## What Went Well
-
--	An overview of current and next possible technologies were given
--	Some rather technical, technology focused input from operators were collected
--	Some protocols were early on de-scoped and described why
-
-## What Went Wrong
-
--	Not enough implementers (software developers implementing the standards) and users (network operators using the network management software developed based on standards) were present and were well organized. That lead to standards which are technical not implementable and implementation that are not applicable or bringing not enough added value.
--	IETF is not the expert community in data engineering. The experts are in the data industry. Without them, integration in data processing chains like Data Mesh is going to be a challenge.
--	Closed Loop Operation and Intent Based Networking were not considered as a use case or overall non-technology related use cases were not considered.
--	Most drawn conclusions were not explained why the IETF community came to such conclusions.
--	We were looking at the past and present and not into the distant future. What do we need in 5-10 years?
-
-## Where Can Be Improved
-
--	Focus on use cases. What goal do we need to fulfill and who can describe best: Network Operators
--	Focus on how those use cases could be implemented best and what standards would help: Software and Data Engineers
--	Look at current standards and see wherever those standards contribute to those implementations: IETF community
--	List what is missing and analyze why it is missing: IETF community
--	Create an eco-systems of software developer and network operators which share their open source tools: IETF community
--	Recommend that operational and management considerations are developed in early stage of protocols development: IESG
 
 # Security Considerations
 
