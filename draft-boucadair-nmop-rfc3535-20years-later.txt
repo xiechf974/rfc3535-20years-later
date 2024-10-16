@@ -5,7 +5,7 @@
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
 Intended status: Informational                          L. M. C. Murillo
-Expires: 17 April 2025                                     O. G. D. Dios
+Expires: 19 April 2025                                     O. G. D. Dios
                                                               Telefonica
                                                                  T. Graf
                                                                 Swisscom
@@ -13,7 +13,7 @@ Expires: 17 April 2025                                     O. G. D. Dios
                                                                  Equinix
                                                            L. Tailhardat
                                                                   Orange
-                                                         14 October 2024
+                                                         16 October 2024
 
 
 RFC 3535, 20 Years Later: An Update of Operators Requirements on Network
@@ -22,9 +22,9 @@ RFC 3535, 20 Years Later: An Update of Operators Requirements on Network
 
 Abstract
 
-   The IAB has organized an important workshop to establish a dialog
-   between network operators and protocol developers, and to guide the
-   IETF focus on work regarding network management.  The outcome of that
+   The IAB organized an important workshop to establish a dialog between
+   network operators and protocol developers, and to guide the IETF
+   focus on work regarding network management.  The outcome of that
    workshop was documented in the "IAB Network Management Workshop" (RFC
    3535) which was instrumental for developing NETCONF and YANG, in
    particular.
@@ -56,7 +56,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 17 April 2025.
+   This Internet-Draft will expire on 19 April 2025.
 
 Copyright Notice
 
@@ -116,9 +116,9 @@ Table of Contents
 
 1.  Introduction
 
-   The IAB has organized a workshop (June 4-June 6, 2002) to establish a
+   The IAB organized a workshop (June 4-June 6, 2002) to establish a
    dialog between network operators and protocol developers, and to
-   guide the IETF focus on work regarding network management.  The
+   guide the IETF to focus on work regarding network management.  The
    outcome of that workshop was documented in the "IAB Network
    Management Workshop" [RFC3535] which was instrumental for developing
    NETCONF [RFC6241], YANG [RFC6020][RFC7950], and RESTCONF [RFC8040].
@@ -152,6 +152,9 @@ Table of Contents
    *  Intent-based [RFC9315]
 
    *  Network APIs
+
+   *  Models for management of services, networks, and devices
+      [RFC8199][RFC8309]
 
    *  Telemetry [RFC9232]
 
@@ -685,13 +688,16 @@ Table of Contents
 
 5.11.  Proprietary YANG Modules, CLI, and Limited Abstraction
 
-   Pluggins/Proxy YANG/CLI is still the rule in many operations.
+   Leveraging on pluggins, propietary YANG models or even CLI is still
+   the rule in many operations, sometimes forced by the need of
+   operating legacy infrastructures.
 
-   Complexity in dev the pluggins (as you need to cover many OS/
-   vendors).
+   The complexity of developing and maintaining these means of operation
+   is huge, as it is required to to cover many OS and vendors along the
+   lifetime of the network device.
 
-   Network models for the realization provides some "level" of
-   abstraction and then automation.
+   Network models for the realization of services provide some "level"
+   of abstraction and then automation.
 
 5.12.  Distinct Networks, Distinct Management Requirements
 
@@ -719,7 +725,7 @@ Table of Contents
    NEW-OPS-REQ-NEW-NEED:  Some networks have specific network management
       requirements such as the need for asynchronous operations or
       constraints on data compactness.  An example of such networks is
-      Delay-Tolerant Networking (DTN) [RFC838].
+      Delay-Tolerant Networking (DTN) [RFC838] or DetNet [RFC8557].
 
 5.13.  Implications of External Dependency
 
@@ -1192,10 +1198,18 @@ Table of Contents
               Protocol", RFC 8040, DOI 10.17487/RFC8040, January 2017,
               <https://www.rfc-editor.org/rfc/rfc8040>.
 
+   [RFC8199]  Bogdanovic, D., Claise, B., and C. Moberg, "YANG Module
+              Classification", RFC 8199, DOI 10.17487/RFC8199, July
+              2017, <https://www.rfc-editor.org/rfc/rfc8199>.
+
    [RFC8299]  Wu, Q., Ed., Litkowski, S., Tomotaki, L., and K. Ogaki,
               "YANG Data Model for L3VPN Service Delivery", RFC 8299,
               DOI 10.17487/RFC8299, January 2018,
               <https://www.rfc-editor.org/rfc/rfc8299>.
+
+   [RFC8309]  Wu, Q., Liu, W., and A. Farrel, "Service Models
+              Explained", RFC 8309, DOI 10.17487/RFC8309, January 2018,
+              <https://www.rfc-editor.org/rfc/rfc8309>.
 
    [RFC8341]  Bierman, A. and M. Bjorklund, "Network Configuration
               Access Control Model", STD 91, RFC 8341,
@@ -1224,6 +1238,10 @@ Table of Contents
    [RFC8528]  Bjorklund, M. and L. Lhotka, "YANG Schema Mount",
               RFC 8528, DOI 10.17487/RFC8528, March 2019,
               <https://www.rfc-editor.org/rfc/rfc8528>.
+
+   [RFC8557]  Finn, N. and P. Thubert, "Deterministic Networking Problem
+              Statement", RFC 8557, DOI 10.17487/RFC8557, May 2019,
+              <https://www.rfc-editor.org/rfc/rfc8557>.
 
    [RFC8568]  Bernardos, CJ., Rahman, A., Zuniga, JC., Contreras, LM.,
               Aranda, P., and P. Lynch, "Network Virtualization Research

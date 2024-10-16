@@ -12,7 +12,7 @@
 <meta content="Reshad Rahman" name="author">
 <meta content="Lionel Tailhardat" name="author">
 <meta content='
-       The IAB has organized an important workshop
+       The IAB organized an important workshop
 to establish a dialog between network operators and
 protocol developers, and to guide the IETF focus on work
 regarding network management.  The outcome of that workshop
@@ -1043,7 +1043,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Boucadair, et al.</td>
-<td class="center">Expires 17 April 2025</td>
+<td class="center">Expires 19 April 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1056,12 +1056,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-boucadair-nmop-rfc3535-20years-later-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-10-14" class="published">14 October 2024</time>
+<time datetime="2024-10-16" class="published">16 October 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-04-17">17 April 2025</time></dd>
+<dd class="expires"><time datetime="2025-04-19">19 April 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1094,7 +1094,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">The IAB has organized an important workshop
+<p id="section-abstract-1">The IAB organized an important workshop
 to establish a dialog between network operators and
 protocol developers, and to guide the IETF focus on work
 regarding network management.  The outcome of that workshop
@@ -1132,7 +1132,7 @@ requirements for network management operations.<a href="#section-abstract-2" cla
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 17 April 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 19 April 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1281,9 +1281,9 @@ requirements for network management operations.<a href="#section-abstract-2" cla
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">The IAB has organized a workshop (June 4-June 6, 2002)
+<p id="section-1-1">The IAB organized a workshop (June 4-June 6, 2002)
 to establish a dialog between network operators and
-protocol developers, and to guide the IETF focus on work
+protocol developers, and to guide the IETF to focus on work
 regarding network management.  The outcome of that workshop
 was documented in the "IAB Network Management Workshop" <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>
 which was instrumental for developing NETCONF <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>, YANG <span>[<a href="#RFC6020" class="cite xref">RFC6020</a>]</span><span>[<a href="#RFC7950" class="cite xref">RFC7950</a>]</span>, and RESTCONF <span>[<a href="#RFC8040" class="cite xref">RFC8040</a>]</span>.<a href="#section-1-1" class="pilcrow">¶</a></p>
@@ -1325,19 +1325,22 @@ which was instrumental for developing NETCONF <span>[<a href="#RFC6241" class="c
           <p id="section-2-2.9.1">Network APIs<a href="#section-2-2.9.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-2-2.10">
-          <p id="section-2-2.10.1">Telemetry <span>[<a href="#RFC9232" class="cite xref">RFC9232</a>]</span><a href="#section-2-2.10.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.10.1">Models for management of services, networks, and devices <span>[<a href="#RFC8199" class="cite xref">RFC8199</a>]</span><span>[<a href="#RFC8309" class="cite xref">RFC8309</a>]</span><a href="#section-2-2.10.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-2-2.11">
-          <p id="section-2-2.11.1">JSON Encoding of Data Modeled with YANG <span>[<a href="#RFC7951" class="cite xref">RFC7951</a>]</span><a href="#section-2-2.11.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.11.1">Telemetry <span>[<a href="#RFC9232" class="cite xref">RFC9232</a>]</span><a href="#section-2-2.11.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-2-2.12">
-          <p id="section-2-2.12.1">CoAP Management Interface (CORECONF) <span>[<a href="#I-D.ietf-core-comi" class="cite xref">I-D.ietf-core-comi</a>]</span><a href="#section-2-2.12.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.12.1">JSON Encoding of Data Modeled with YANG <span>[<a href="#RFC7951" class="cite xref">RFC7951</a>]</span><a href="#section-2-2.12.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-2-2.13">
-          <p id="section-2-2.13.1">YANG to CBOR mapping <span>[<a href="#RFC9254" class="cite xref">RFC9254</a>]</span><a href="#section-2-2.13.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.13.1">CoAP Management Interface (CORECONF) <span>[<a href="#I-D.ietf-core-comi" class="cite xref">I-D.ietf-core-comi</a>]</span><a href="#section-2-2.13.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-2-2.14">
-          <p id="section-2-2.14.1">YANG Schema Item iDentifier (YANG SID) <span>[<a href="#I-D.ietf-core-sid" class="cite xref">I-D.ietf-core-sid</a>]</span><a href="#section-2-2.14.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.14.1">YANG to CBOR mapping <span>[<a href="#RFC9254" class="cite xref">RFC9254</a>]</span><a href="#section-2-2.14.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-2-2.15">
+          <p id="section-2-2.15.1">YANG Schema Item iDentifier (YANG SID) <span>[<a href="#I-D.ietf-core-sid" class="cite xref">I-D.ietf-core-sid</a>]</span><a href="#section-2-2.15.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="section-2-3">See also "An Overview of the IETF Network Management Standards" <span>[<a href="#RFC6632" class="cite xref">RFC6632</a>]</span>.<a href="#section-2-3" class="pilcrow">¶</a></p>
@@ -2102,9 +2105,9 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1"
         <h3 id="name-proprietary-yang-modules-cl">
 <a href="#section-5.11" class="section-number selfRef">5.11. </a><a href="#name-proprietary-yang-modules-cl" class="section-name selfRef">Proprietary YANG Modules, CLI, and Limited Abstraction</a>
         </h3>
-<p id="section-5.11-1">Pluggins/Proxy YANG/CLI is still the rule in many operations.<a href="#section-5.11-1" class="pilcrow">¶</a></p>
-<p id="section-5.11-2">Complexity in dev the pluggins (as you need to cover many OS/vendors).<a href="#section-5.11-2" class="pilcrow">¶</a></p>
-<p id="section-5.11-3">Network models for the realization provides some "level" of abstraction and then automation.<a href="#section-5.11-3" class="pilcrow">¶</a></p>
+<p id="section-5.11-1">Leveraging on pluggins, propietary YANG models or even CLI is still the rule in many operations, sometimes forced by the need of operating legacy infrastructures.<a href="#section-5.11-1" class="pilcrow">¶</a></p>
+<p id="section-5.11-2">The complexity of developing and maintaining these means of operation is huge, as it is required to to cover many OS and vendors along the lifetime of the network device.<a href="#section-5.11-2" class="pilcrow">¶</a></p>
+<p id="section-5.11-3">Network models for the realization of services provide some "level" of abstraction and then automation.<a href="#section-5.11-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="distinct-networks-distinct-management-requirements">
@@ -2118,7 +2121,7 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1"
 <span class="break"></span><dl class="dlParallel" id="section-5.12-4">
           <dt id="section-5.12-4.1">NEW-OPS-REQ-NEW-NEED:</dt>
           <dd style="margin-left: 1.5em" id="section-5.12-4.2">
-            <p id="section-5.12-4.2.1">Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) <span>[<a href="#RFC838" class="cite xref">RFC838</a>]</span>.<a href="#section-5.12-4.2.1" class="pilcrow">¶</a></p>
+            <p id="section-5.12-4.2.1">Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) <span>[<a href="#RFC838" class="cite xref">RFC838</a>]</span> or DetNet <span>[<a href="#RFC8557" class="cite xref">RFC8557</a>]</span>.<a href="#section-5.12-4.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 </dl>
@@ -2551,9 +2554,17 @@ For example, "ygot" generates structures from YANG models and these can easily b
       <dd>
 <span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Bjorklund, M.</span>, and <span class="refAuthor">K. Watsen</span>, <span class="refTitle">"RESTCONF Protocol"</span>, <span class="seriesInfo">RFC 8040</span>, <span class="seriesInfo">DOI 10.17487/RFC8040</span>, <time datetime="2017-01" class="refDate">January 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8040">https://www.rfc-editor.org/rfc/rfc8040</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="RFC8199">[RFC8199]</dt>
+      <dd>
+<span class="refAuthor">Bogdanovic, D.</span>, <span class="refAuthor">Claise, B.</span>, and <span class="refAuthor">C. Moberg</span>, <span class="refTitle">"YANG Module Classification"</span>, <span class="seriesInfo">RFC 8199</span>, <span class="seriesInfo">DOI 10.17487/RFC8199</span>, <time datetime="2017-07" class="refDate">July 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8199">https://www.rfc-editor.org/rfc/rfc8199</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC8299">[RFC8299]</dt>
       <dd>
 <span class="refAuthor">Wu, Q., Ed.</span>, <span class="refAuthor">Litkowski, S.</span>, <span class="refAuthor">Tomotaki, L.</span>, and <span class="refAuthor">K. Ogaki</span>, <span class="refTitle">"YANG Data Model for L3VPN Service Delivery"</span>, <span class="seriesInfo">RFC 8299</span>, <span class="seriesInfo">DOI 10.17487/RFC8299</span>, <time datetime="2018-01" class="refDate">January 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8299">https://www.rfc-editor.org/rfc/rfc8299</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8309">[RFC8309]</dt>
+      <dd>
+<span class="refAuthor">Wu, Q.</span>, <span class="refAuthor">Liu, W.</span>, and <span class="refAuthor">A. Farrel</span>, <span class="refTitle">"Service Models Explained"</span>, <span class="seriesInfo">RFC 8309</span>, <span class="seriesInfo">DOI 10.17487/RFC8309</span>, <time datetime="2018-01" class="refDate">January 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8309">https://www.rfc-editor.org/rfc/rfc8309</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8341">[RFC8341]</dt>
       <dd>
@@ -2578,6 +2589,10 @@ For example, "ygot" generates structures from YANG models and these can easily b
 <dt id="RFC8528">[RFC8528]</dt>
       <dd>
 <span class="refAuthor">Bjorklund, M.</span> and <span class="refAuthor">L. Lhotka</span>, <span class="refTitle">"YANG Schema Mount"</span>, <span class="seriesInfo">RFC 8528</span>, <span class="seriesInfo">DOI 10.17487/RFC8528</span>, <time datetime="2019-03" class="refDate">March 2019</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8528">https://www.rfc-editor.org/rfc/rfc8528</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8557">[RFC8557]</dt>
+      <dd>
+<span class="refAuthor">Finn, N.</span> and <span class="refAuthor">P. Thubert</span>, <span class="refTitle">"Deterministic Networking Problem Statement"</span>, <span class="seriesInfo">RFC 8557</span>, <span class="seriesInfo">DOI 10.17487/RFC8557</span>, <time datetime="2019-05" class="refDate">May 2019</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8557">https://www.rfc-editor.org/rfc/rfc8557</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8568">[RFC8568]</dt>
       <dd>
