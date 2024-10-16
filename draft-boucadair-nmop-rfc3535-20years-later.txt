@@ -97,20 +97,17 @@ Table of Contents
      5.14. Too Much Time Between Publication of New Networking
             Functionality and the Associated YANG
      5.15. Lack of Implementation of Proposed Solutions
-     5.16. Tooling
+     5.16. Tooling & Skills
        5.16.1.  Integration with "native" IT Tooling
        5.16.2.  IETF Support for Better YANG Integration
        5.16.3.  Open-source Tools
+       5.16.4.  Skills
      5.17. New Service Approaches
      5.18. Many Solutions for the Same Problem, but Lack of Clear
             Applicably Guidance
-   6.  Additional Assessments
-     6.1.  What Went Well
-     6.2.  What Went Wrong
-     6.3.  Where Can Be Improved
-   7.  Security Considerations
-   8.  IANA Considerations
-   9.  Informative References
+   6.  Security Considerations
+   7.  IANA Considerations
+   8.  Informative References
    Acknowledgments
    Authors' Addresses
 
@@ -169,6 +166,8 @@ Table of Contents
             | NEW-OPS-REQ-IETF-TOOLS        | Section 5.16.2 |
             +-------------------------------+----------------+
             | NEW-OPS-REQ-CLIENT-TOOLS      | Section 5.16.3 |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-BRIDGE            | Section 5.16.4 |
             +-------------------------------+----------------+
             | NEW-OPS-REQ-GLUE              |  Section 5.17  |
             +-------------------------------+----------------+
@@ -857,7 +856,7 @@ Table of Contents
       the actual measures to put in place.  To date, only IDR WG has
       clear guidance on two implementations.
 
-5.16.  Tooling
+5.16.  Tooling & Skills
 
 5.16.1.  Integration with "native" IT Tooling
 
@@ -881,6 +880,15 @@ Table of Contents
 
    NEW-OPS-REQ-CLIENT-TOOLS:  Focus on tooling is needed, especially on
       the client side.
+
+5.16.4.  Skills
+
+   The IETF is not the expert community in data engineering.  The
+   experts are in the data industry.  Without them, integration in data
+   processing chains like Data Mesh is going to be a challenge.
+
+   NEW-OPS-REQ-BRIDGE:  Create an eco-system where data and networking
+      engineers can collaborate.
 
 5.17.  New Service Approaches
 
@@ -912,71 +920,15 @@ Table of Contents
       network management approach should be integrated in the
       specification itself.
 
-6.  Additional Assessments
-
-   This section captures some early assessments.  The goal is first to
-   capture received feedback, challenge it, and then structure it.
-
-6.1.  What Went Well
-
-   *  An overview of current and next possible technologies were given
-
-   *  Some rather technical, technology focused input from operators
-      were collected
-
-   *  Some protocols were early on de-scoped and described why
-
-6.2.  What Went Wrong
-
-   *  Not enough implementers (software developers implementing the
-      standards) and users (network operators using the network
-      management software developed based on standards) were present and
-      were well organized.  That lead to standards which are technical
-      not implementable and implementation that are not applicable or
-      bringing not enough added value.
-
-   *  IETF is not the expert community in data engineering.  The experts
-      are in the data industry.  Without them, integration in data
-      processing chains like Data Mesh is going to be a challenge.
-
-   *  Closed Loop Operation and Intent Based Networking were not
-      considered as a use case or overall non-technology related use
-      cases were not considered.
-
-   *  Most drawn conclusions were not explained why the IETF community
-      came to such conclusions.
-
-   *  We were looking at the past and present and not into the distant
-      future.  What do we need in 5-10 years?
-
-6.3.  Where Can Be Improved
-
-   *  Focus on use cases.  What goal do we need to fulfill and who can
-      describe best: Network Operators
-
-   *  Focus on how those use cases could be implemented best and what
-      standards would help: Software and Data Engineers
-
-   *  Look at current standards and see wherever those standards
-      contribute to those implementations: IETF community
-
-   *  List what is missing and analyze why it is missing: IETF community
-
-   *  Create an eco-systems of software developer and network operators
-      which share their open source tools: IETF community
-
-   *  Recommend that operational and management considerations are
-      developed in early stage of protocols development: IESG
-
-7.  Security Considerations
+6.  Security Considerations
 
    This document does not define any protocol or architecture.
 
-8.  IANA Considerations
+7.  IANA Considerations
 
    This document has no IANA actions.
 
-9.  Informative References
+8.  Informative References
 
    [BCP127]   Best Current Practice 127,
               <https://www.rfc-editor.org/info/bcp127>.
