@@ -67,7 +67,7 @@ informative:
 
 --- abstract
 
-The IAB has organized an important workshop
+The IAB organized an important workshop
 to establish a dialog between network operators and
 protocol developers, and to guide the IETF focus on work
 regarding network management.  The outcome of that workshop
@@ -83,9 +83,9 @@ requirements for network management operations.
 
 # Introduction
 
-The IAB has organized a workshop (June 4-June 6, 2002)
+The IAB organized a workshop (June 4-June 6, 2002)
 to establish a dialog between network operators and
-protocol developers, and to guide the IETF focus on work
+protocol developers, and to guide the IETF to focus on work
 regarding network management.  The outcome of that workshop
 was documented in the "IAB Network Management Workshop" {{?RFC3535}}
 which was instrumental for developing NETCONF {{?RFC6241}}, YANG {{?RFC6020}}{{?RFC7950}}, and RESTCONF {{?RFC8040}}.
@@ -105,6 +105,7 @@ Since the publication of {{?RFC3535}} major advances were achieved in the Networ
 * Containerization {{?I-D.ietf-bmwg-containerized-infra}}
 * Intent-based {{?RFC9315}}
 * Network APIs
+* Models for management of services, networks, and devices {{?RFC8199}}{{?RFC8309}}
 * Telemetry {{?RFC9232}}
 * JSON Encoding of Data Modeled with YANG {{?RFC7951}}
 * CoAP Management Interface (CORECONF) {{?I-D.ietf-core-comi}}
@@ -507,11 +508,11 @@ NEW-OPS-REQ-REUSABILITY:
 
 ## Proprietary YANG Modules, CLI, and Limited Abstraction
 
-Pluggins/Proxy YANG/CLI is still the rule in many operations.
+Leveraging on pluggins, propietary YANG models or even CLI is still the rule in many operations, sometimes forced by the need of operating legacy infrastructures.
 
-Complexity in dev the pluggins (as you need to cover many OS/vendors).
+The complexity of developing and maintaining these means of operation is huge, as it is required to to cover many OS and vendors along the lifetime of the network device.
 
-Network models for the realization provides some "level" of abstraction and then automation.
+Network models for the realization of services provide some "level" of abstraction and then automation.
 
 ## Distinct Networks, Distinct Management Requirements
 
@@ -522,7 +523,7 @@ Likewise, such diversity of services also require different management capabilit
 This reality is different from the one existing at the time of {{?RFC3535}}, and as such, the new identified needs can require from novel approaches to guarantee the aforementioned co-existence of services.
 
 NEW-OPS-REQ-NEW-NEED:
-: Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) {{?RFC838}}.
+: Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness. An example of such networks is Delay-Tolerant Networking (DTN) {{?RFC838}} or DetNet {{?RFC8557}}.
 
 ## Implications of External Dependency
 
