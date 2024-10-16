@@ -173,7 +173,7 @@ Table of Contents
             +-------------------------------+----------------+
             | NEW-OPS-REQ-GLUE              |  Section 5.17  |
             +-------------------------------+----------------+
-            | NEW-OPS-REQ-GUIDANCE          |   Section 4    |
+            | NEW-OPS-REQ-GUIDANCE          |  Section 5.18  |
             +-------------------------------+----------------+
 
                                  Table 1
