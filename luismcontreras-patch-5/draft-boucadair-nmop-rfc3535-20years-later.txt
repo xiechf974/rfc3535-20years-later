@@ -118,7 +118,7 @@ Table of Contents
 
    The IAB organized a workshop (June 4-June 6, 2002) to establish a
    dialog between network operators and protocol developers, and to
-   guide the IETF sfocus on work regarding network management.  The
+   guide the IETF to focus on work regarding network management.  The
    outcome of that workshop was documented in the "IAB Network
    Management Workshop" [RFC3535] which was instrumental for developing
    NETCONF [RFC6241], YANG [RFC6020][RFC7950], and RESTCONF [RFC8040].
