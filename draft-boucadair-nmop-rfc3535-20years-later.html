@@ -1371,9 +1371,15 @@ which was instrumental for developing NETCONF <span>[<a href="#RFC6241" class="c
 </td>
           </tr>
           <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-UNSILO</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-dep" class="auto internal xref">Section 5.13</a>
+</td>
+          </tr>
+          <tr>
             <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-TIMELY-DM</td>
             <td class="text-center" rowspan="1" colspan="1">
-              <a href="#sec-distinct" class="auto internal xref">Section 5.12</a>
+              <a href="#sec-pub" class="auto internal xref">Section 5.14</a>
 </td>
           </tr>
           <tr>
@@ -2267,10 +2273,28 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1"
         </h3>
 <p id="section-5.13-1">Networks are being updated to abandon the silo approach from the past towards an increasing convergence. Specifically, there are trends towards a tighter interaction and integration of different technologies previously considered as totally separated from an operational perspective. Examples of that trends are the IP and Optical integration (e.g., the introduction of colored interfaces on routers), or the extension of deterministic-behavior features to Layer 3 networks. This kind of convergence in most cases creates dependencies on the conventional network management features, which require to incorporate or integrate functionality from other technological domains.<a href="#section-5.13-1" class="pilcrow">¶</a></p>
 <p id="section-5.13-2">Such convergence is also reflected on the need of interacting and interworking with distinct network parts participating in the end-to-end service delivery. Mobile access, fixed access, data center, enterprise, radio functional split (i.e., fronthaul and midhaul), neutral exchanges, intensive data networks (e.g., scientific academic networks), content distribution, etc., represent network parts constituent of end-to-end services that can impose dependencies of the management of an intermediate network.<a href="#section-5.13-2" class="pilcrow">¶</a></p>
-<p id="section-5.13-3">That convergence observed in recent years also implies the need for an up-to-date refresh of management capabilities and tools for conventional networks.
-It highlights the necessity to handle the heterogeneity of data, configuration, and network management/requirements.<a href="#section-5.13-3" class="pilcrow">¶</a></p>
-<p id="section-5.13-4">From a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.
-Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.<a href="#section-5.13-4" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-5.13-3">
+          <dt id="section-5.13-3.1">NEW-OPS-REQ-UNSILO:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-3.2">
+            <p id="section-5.13-3.2.1">The convergence observed in recent years also implies the need for an up-to-date refresh of management capabilities and tools for conventional networks.<a href="#section-5.13-3.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-3.3"></dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-3.4">
+            <p id="section-5.13-3.4.1">It highlights the necessity to handle the heterogeneity of data, configuration, and network management/requirements.<a href="#section-5.13-3.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-3.5"></dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-3.6">
+            <p id="section-5.13-3.6.1">From a YANG perspective, this involves easily mapping and relating the data models used to manage each specific segment.<a href="#section-5.13-3.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-3.7"></dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-3.8">
+            <p id="section-5.13-3.8.1">Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.<a href="#section-5.13-3.8.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="sec-pub">
