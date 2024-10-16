@@ -105,7 +105,7 @@ Since the publication of {{?RFC3535}} major advances were achieved in the Networ
 * Containerization {{?I-D.ietf-bmwg-containerized-infra}}
 * Intent-based {{?RFC9315}}
 * Network APIs
-* Models for management of services, network and devices {{?RFC8199}}{{?RFC8309}}
+* Models for management of services, networks, and devices {{?RFC8199}}{{?RFC8309}}
 * Telemetry {{?RFC9232}}
 * JSON Encoding of Data Modeled with YANG {{?RFC7951}}
 * CoAP Management Interface (CORECONF) {{?I-D.ietf-core-comi}}
