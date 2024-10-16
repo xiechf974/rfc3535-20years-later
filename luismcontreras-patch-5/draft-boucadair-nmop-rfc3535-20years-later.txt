@@ -153,7 +153,7 @@ Table of Contents
 
    *  Network APIs
 
-   *  Models for management of services, network and devices
+   *  Models for management of services, networks, and devices
       [RFC8199][RFC8309]
 
    *  Telemetry [RFC9232]
