@@ -31,8 +31,8 @@ Abstract
 
    20 years later, it is time to evaluate what has been achieved since
    then and identify the operational barriers for making these
-   technologies widely implemented.  Also, this document intends to
-   capture new requirements for network management operations.
+   technologies widely implemented.  Also, this document captures new
+   requirements for network management operations.
 
 Discussion Venues
 
@@ -124,11 +124,62 @@ Table of Contents
    NETCONF [RFC6241], YANG [RFC6020][RFC7950], and RESTCONF [RFC8040].
 
    20 years later, new requirements on network management operations are
-   emerging from the operators.  This document intends to capture these
-   requirements that reflect the progress in this area.  The document
-   also provide an assessment of the RFC3535 recommendations and to what
-   extend that roadmap was driving network management efforts within the
-   IETF.
+   emerging from the operators.  This document captures these
+   requirements that reflect the progress in this area.  The following
+   table lists the new ops requirements; more details are provided in
+   Section 5.
+
+            +===============================+================+
+            | NEW Ops Requirement Label     |    Section     |
+            +===============================+================+
+            | NEW-OPS-REQ-STRENGTHEN-DM     |  Section 5.1   |
+            +-------------------------------+----------------+
+            | NEW -OPS-REQ-DM-RATIONALIZE   |  Section 5.2   |
+            +-------------------------------+----------------+
+            | NEW -OPS-REQ-EASE-EXPOSURE    |  Section 5.3   |
+            +-------------------------------+----------------+
+            | NEW -OPS-REQ-NW-API-DISCOVERY |  Section 5.3   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-DM-API            |  Section 5.4   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-PROFILING         |  Section 5.5   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-REASSESS          |  Section 5.5   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-AGILE             |  Section 5.6   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-INTEGRATION       |  Section 5.7   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-Y2KG              |  Section 5.8   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-SCALE             |  Section 5.8   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-LOSSLESS          |  Section 5.9   |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-REUSABILITY       |  Section 5.10  |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-NEW-NEED          |  Section 5.12  |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-TIMELY-DM         |  Section 5.12  |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-READILTY-IMPLEM   |  Section 5.15  |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-IT-INTEGRATION    | Section 5.16.1 |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-IETF-TOOLS        | Section 5.16.2 |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-CLIENT-TOOLS      | Section 5.16.3 |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-GLUE              |  Section 5.17  |
+            +-------------------------------+----------------+
+            | NEW-OPS-REQ-GUIDANCE          |   Section 4    |
+            +-------------------------------+----------------+
+
+                                 Table 1
+
+   The document also provide an assessment of the RFC3535
+   recommendations (Section 3) and to what extend that roadmap was
+   driving network management efforts within the IETF (Section 4).
 
 2.  Technology Advances Since RFC 3535
 
@@ -484,8 +535,8 @@ Table of Contents
    and network models, IETF-defined device models are not widely
    implemented.
 
-   NEW-OPS-REQ-RATIONALIZE:  There is a need to rationalize this space
-      and avoid redundant efforts.
+   NEW-OPS-REQ-DM-RATIONALIZE:  There is a need to rationalize this
+      space and avoid redundant efforts.
 
 5.3.  The Network Becomes Consumable
 
@@ -503,8 +554,8 @@ Table of Contents
       expose network/service capabilities, network-wide services, and
       related operations.
 
-   NEW-OPS-REQ-NW-DISCOVERY:  Define a reference approach/process for
-      service exposure discovery (APIs discovery).
+   NEW-OPS-REQ-NW-API-DISCOVERY:  Define a reference approach/process
+      for service exposure discovery (APIs discovery).
 
 5.4.  Network APIfication
 
@@ -615,7 +666,7 @@ Table of Contents
    case, for example, during a path calculation on a network topology.
    Different approaches using graph theory and compatible with YANG are
    currently available, but require further experimentation to
-   generalize their adoption.  For istance, [ODL] implements an in-
+   generalize their adoption.  For instance, [ODL] implements an in-
    memory connected graph version of YANG-based data to enable fast
    breadth-first search (BFS).
 
@@ -632,8 +683,8 @@ Table of Contents
 5.9.  Translation and Mapping Between Service/Network and Device Models
 
    Navigating among multiple levels of the hierarchy (service, network,
-   device) relies currenlty on proprietary solutions to graft and
-   tanslate between two layers.  There is no programmatic approach to
+   device) relies currently on proprietary solutions to graft and
+   translate between two layers.  There is no programmatic approach to
    ensure lossless mappings.
 
    NEW-OPS-REQ-LOSSLESS:  Consider programmatic approaches to ensure
@@ -800,18 +851,18 @@ Table of Contents
 
    NEW-OPS-REQ-READILTY-IMPLEM:  It is tempting to consider mandating at
       least one implementation.  However, there were areas which imposed
-      in the past rules for implementationsmanagement for I-Ds to be
-      published as PS (e.g., [RFC1264]), but these rules were relaxed
-      for reasons described, e.g., [RFC4794] and left it to the WGs to
-      decide about the actual measures to put in place.  To date, only
-      IDR WG has clear guidance on two implementations.
+      in the past rules for implementations for I-Ds to be published as
+      PS (e.g., [RFC1264]), but these rules were relaxed for reasons
+      described, e.g., [RFC4794] and left it to the WGs to decide about
+      the actual measures to put in place.  To date, only IDR WG has
+      clear guidance on two implementations.
 
 5.16.  Tooling
 
 5.16.1.  Integration with "native" IT Tooling
 
    NEW-OPS-REQ-IT-INTEGRATION:  There is a need to ease the integration
-      of low-level/network-oriented solutuon with native "IT tooling"
+      of low-level/network-oriented solution with native "IT tooling"
       (e.g., "https://opentelemetry.io/").
 
 5.16.2.  IETF Support for Better YANG Integration

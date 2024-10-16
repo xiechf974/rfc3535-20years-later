@@ -20,7 +20,7 @@ was documented in the "IAB Network Management Workshop" (RFC 3535)
 which was instrumental for developing NETCONF and YANG, in particular. 
        20 years later, it is time to evaluate what has been achieved since then and
 identify the operational barriers for making these
-technologies widely implemented. Also, this document intends to capture new
+technologies widely implemented. Also, this document captures new
 requirements for network management operations. 
     ' name="description">
 <meta content="xml2rfc 3.23.2" name="generator">
@@ -1102,7 +1102,7 @@ was documented in the "IAB Network Management Workshop" (RFC 3535)
 which was instrumental for developing NETCONF and YANG, in particular.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 <p id="section-abstract-2">20 years later, it is time to evaluate what has been achieved since then and
 identify the operational barriers for making these
-technologies widely implemented. Also, this document intends to capture new
+technologies widely implemented. Also, this document captures new
 requirements for network management operations.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
@@ -1287,7 +1287,145 @@ protocol developers, and to guide the IETF to focus on work
 regarding network management.  The outcome of that workshop
 was documented in the "IAB Network Management Workshop" <span>[<a href="#RFC3535" class="cite xref">RFC3535</a>]</span>
 which was instrumental for developing NETCONF <span>[<a href="#RFC6241" class="cite xref">RFC6241</a>]</span>, YANG <span>[<a href="#RFC6020" class="cite xref">RFC6020</a>]</span><span>[<a href="#RFC7950" class="cite xref">RFC7950</a>]</span>, and RESTCONF <span>[<a href="#RFC8040" class="cite xref">RFC8040</a>]</span>.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">20 years later, new requirements on network management operations are emerging from the operators. This document intends to capture these requirements that reflect the progress in this area. The document also provide an assessment of the RFC3535 recommendations and to what extend that roadmap was driving network management efforts within the IETF.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-2">20 years later, new requirements on network management operations are emerging from the operators. This document captures these requirements that reflect the progress in this area. The following table lists the new ops requirements; more details are provided in <a href="#sec-obs" class="auto internal xref">Section 5</a>.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<table class="center" id="table-1">
+        <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
+<thead>
+          <tr>
+            <th class="text-left" rowspan="1" colspan="1">NEW Ops Requirement Label</th>
+            <th class="text-center" rowspan="1" colspan="1">Section</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-STRENGTHEN-DM</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-dm" class="auto internal xref">Section 5.1</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW -OPS-REQ-DM-RATIONALIZE</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-frag" class="auto internal xref">Section 5.2</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW -OPS-REQ-EASE-EXPOSURE</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-cons" class="auto internal xref">Section 5.3</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW -OPS-REQ-NW-API-DISCOVERY</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-cons" class="auto internal xref">Section 5.3</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-DM-API</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-api" class="auto internal xref">Section 5.4</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-PROFILING</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-pro" class="auto internal xref">Section 5.5</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-REASSESS</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-pro" class="auto internal xref">Section 5.5</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-AGILE</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-agile" class="auto internal xref">Section 5.6</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-INTEGRATION</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-int" class="auto internal xref">Section 5.7</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-Y2KG</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-dama" class="auto internal xref">Section 5.8</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-SCALE</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-dama" class="auto internal xref">Section 5.8</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-LOSSLESS</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-map" class="auto internal xref">Section 5.9</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-REUSABILITY</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-con" class="auto internal xref">Section 5.10</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-NEW-NEED</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-distinct" class="auto internal xref">Section 5.12</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-TIMELY-DM</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-distinct" class="auto internal xref">Section 5.12</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-READILTY-IMPLEM</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-impl" class="auto internal xref">Section 5.15</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-IT-INTEGRATION</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-it" class="auto internal xref">Section 5.16.1</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-IETF-TOOLS</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-ietf-in" class="auto internal xref">Section 5.16.2</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-CLIENT-TOOLS</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-client" class="auto internal xref">Section 5.16.3</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-GLUE</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-new" class="auto internal xref">Section 5.17</a>
+</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">NEW-OPS-REQ-GUIDANCE</td>
+            <td class="text-center" rowspan="1" colspan="1">
+              <a href="#sec-reca" class="auto internal xref">Section 4</a>
+</td>
+          </tr>
+        </tbody>
+      </table>
+<p id="section-1-4">The document also provide an assessment of the RFC3535 recommendations (<a href="#sec-assessment" class="auto internal xref">Section 3</a>) and to what extend that roadmap was driving network management efforts within the IETF (<a href="#sec-reca" class="auto internal xref">Section 4</a>).<a href="#section-1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="technology-advances-since-rfc-3535">
@@ -1346,7 +1484,7 @@ which was instrumental for developing NETCONF <span>[<a href="#RFC6241" class="c
 <p id="section-2-3">See also "An Overview of the IETF Network Management Standards" <span>[<a href="#RFC6632" class="cite xref">RFC6632</a>]</span>.<a href="#section-2-3" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="assessment-of-rfc-3535-operator-requirements">
+<div id="sec-assessment">
 <section id="section-3">
       <h2 id="name-assessment-of-rfc-3535-oper">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-assessment-of-rfc-3535-oper" class="section-name selfRef">Assessment of RFC 3535 Operator Requirements</a>
@@ -1640,7 +1778,7 @@ which was instrumental for developing NETCONF <span>[<a href="#RFC6241" class="c
 </dl>
 </section>
 </div>
-<div id="assessment-of-rfc-3535-recommendations">
+<div id="sec-reca">
 <section id="section-4">
       <h2 id="name-assessment-of-rfc-3535-reco">
 <a href="#section-4" class="section-number selfRef">4. </a><a href="#name-assessment-of-rfc-3535-reco" class="section-name selfRef">Assessment of RFC 3535 Recommendations</a>
@@ -1872,7 +2010,7 @@ Historic status.<a href="#section-4-24.2.1" class="pilcrow">¶</a></p>
       <h2 id="name-observations-and-new-requir">
 <a href="#section-5" class="section-number selfRef">5. </a><a href="#name-observations-and-new-requir" class="section-name selfRef">Observations and New Requirements</a>
       </h2>
-<div id="on-the-importance-of-data-models">
+<div id="sec-dm">
 <section id="section-5.1">
         <h3 id="name-on-the-importance-of-data-m">
 <a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-on-the-importance-of-data-m" class="section-name selfRef">On the Importance of Data Models</a>
@@ -1924,7 +2062,7 @@ Historic status.<a href="#section-4-24.2.1" class="pilcrow">¶</a></p>
 </dl>
 </section>
 </div>
-<div id="fragmented-ecosystem">
+<div id="sec-frag">
 <section id="section-5.2">
         <h3 id="name-fragmented-ecosystem">
 <a href="#section-5.2" class="section-number selfRef">5.2. </a><a href="#name-fragmented-ecosystem" class="section-name selfRef">Fragmented Ecosystem</a>
@@ -1932,7 +2070,7 @@ Historic status.<a href="#section-4-24.2.1" class="pilcrow">¶</a></p>
 <p id="section-5.2-1">The current YANG device models ecosystem is <strong>fragmented</strong>: some standards models are defined through the IETF, while similar ones are defined in other forums such as Openconfig or ONF.
 Unlike service and network models, IETF-defined device models are not widely implemented.<a href="#section-5.2-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-5.2-2">
-          <dt id="section-5.2-2.1">NEW-OPS-REQ-RATIONALIZE:</dt>
+          <dt id="section-5.2-2.1">NEW-OPS-REQ-DM-RATIONALIZE:</dt>
           <dd style="margin-left: 1.5em" id="section-5.2-2.2">
             <p id="section-5.2-2.2.1">There is a need to rationalize this space and avoid redundant efforts.<a href="#section-5.2-2.2.1" class="pilcrow">¶</a></p>
 </dd>
@@ -1940,7 +2078,7 @@ Unlike service and network models, IETF-defined device models are not widely imp
 </dl>
 </section>
 </div>
-<div id="the-network-becomes-consumable">
+<div id="sec-cons">
 <section id="section-5.3">
         <h3 id="name-the-network-becomes-consuma">
 <a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-the-network-becomes-consuma" class="section-name selfRef">The Network Becomes Consumable</a>
@@ -1952,7 +2090,7 @@ Unlike service and network models, IETF-defined device models are not widely imp
             <p id="section-5.3-2.2.1">Focus on protocols and data models to expose network/service capabilities, network-wide services, and related operations.<a href="#section-5.3-2.2.1" class="pilcrow">¶</a></p>
 </dd>
           <dd class="break"></dd>
-<dt id="section-5.3-2.3">NEW-OPS-REQ-NW-DISCOVERY:</dt>
+<dt id="section-5.3-2.3">NEW-OPS-REQ-NW-API-DISCOVERY:</dt>
           <dd style="margin-left: 1.5em" id="section-5.3-2.4">
             <p id="section-5.3-2.4.1">Define a reference approach/process for service exposure discovery (APIs discovery).<a href="#section-5.3-2.4.1" class="pilcrow">¶</a></p>
 </dd>
@@ -1975,7 +2113,7 @@ Unlike service and network models, IETF-defined device models are not widely imp
 </dl>
 </section>
 </div>
-<div id="lack-of-profiling">
+<div id="sec-pro">
 <section id="section-5.5">
         <h3 id="name-lack-of-profiling">
 <a href="#section-5.5" class="section-number selfRef">5.5. </a><a href="#name-lack-of-profiling" class="section-name selfRef">Lack of Profiling</a>
@@ -2004,7 +2142,7 @@ Such a document would serve as a guide and reference for implementers and others
 </dl>
 </section>
 </div>
-<div id="lack-of-agile-process-for-the-maintenance-of-yang-modules">
+<div id="sec-agile">
 <section id="section-5.6">
         <h3 id="name-lack-of-agile-process-for-t">
 <a href="#section-5.6" class="section-number selfRef">5.6. </a><a href="#name-lack-of-agile-process-for-t" class="section-name selfRef">Lack of Agile Process for (The Maintenance of) YANG Modules</a>
@@ -2021,7 +2159,7 @@ Such a document would serve as a guide and reference for implementers and others
 </dl>
 </section>
 </div>
-<div id="integration-complexity">
+<div id="sec-int">
 <section id="section-5.7">
         <h3 id="name-integration-complexity">
 <a href="#section-5.7" class="section-number selfRef">5.7. </a><a href="#name-integration-complexity" class="section-name selfRef">Integration Complexity</a>
@@ -2039,7 +2177,7 @@ Such a document would serve as a guide and reference for implementers and others
 </dl>
 </section>
 </div>
-<div id="yang-formatted-data-manipulation">
+<div id="sec-dama">
 <section id="section-5.8">
         <h3 id="name-yang-formatted-data-manipul">
 <a href="#section-5.8" class="section-number selfRef">5.8. </a><a href="#name-yang-formatted-data-manipul" class="section-name selfRef">YANG-formatted Data Manipulation</a>
@@ -2047,7 +2185,7 @@ Such a document would serve as a guide and reference for implementers and others
 <p id="section-5.8-1">The use of a flat tree hierarchy in YANG models may induce some performance issues compared to other graph models.
 This can be the case, for example, during a path calculation on a network topology.
 Different approaches using graph theory and compatible with YANG are currently available, but require further experimentation to generalize their adoption.
-For istance, <span>[<a href="#ODL" class="cite xref">ODL</a>]</span> implements an in-memory connected graph version of YANG-based data to enable fast breadth-first search (BFS).<a href="#section-5.8-1" class="pilcrow">¶</a></p>
+For instance, <span>[<a href="#ODL" class="cite xref">ODL</a>]</span> implements an in-memory connected graph version of YANG-based data to enable fast breadth-first search (BFS).<a href="#section-5.8-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-5.8-2">
           <dt id="section-5.8-2.1">NEW-OPS-REQ-Y2KG:</dt>
           <dd style="margin-left: 1.5em" id="section-5.8-2.2">
@@ -2065,13 +2203,13 @@ For istance, <span>[<a href="#ODL" class="cite xref">ODL</a>]</span> implements 
 </dl>
 </section>
 </div>
-<div id="translation-and-mapping-between-servicenetwork-and-device-models">
+<div id="sec-map">
 <section id="section-5.9">
         <h3 id="name-translation-and-mapping-bet">
 <a href="#section-5.9" class="section-number selfRef">5.9. </a><a href="#name-translation-and-mapping-bet" class="section-name selfRef">Translation and Mapping Between Service/Network and Device Models</a>
         </h3>
 <p id="section-5.9-1">Navigating among multiple levels of the hierarchy (service, network, device) relies
-currenlty on proprietary solutions to graft and tanslate between two layers. There
+currently on proprietary solutions to graft and translate between two layers. There
 is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-5.9-2">
           <dt id="section-5.9-2.1">NEW-OPS-REQ-LOSSLESS:</dt>
@@ -2082,7 +2220,7 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1"
 </dl>
 </section>
 </div>
-<div id="inconsistent-data-structures-in-network-protocols-for-data-export">
+<div id="sec-con">
 <section id="section-5.10">
         <h3 id="name-inconsistent-data-structure">
 <a href="#section-5.10" class="section-number selfRef">5.10. </a><a href="#name-inconsistent-data-structure" class="section-name selfRef">(In)Consistent Data Structures in Network Protocols for Data Export</a>
@@ -2100,7 +2238,7 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1"
 </dl>
 </section>
 </div>
-<div id="proprietary-yang-modules-cli-and-limited-abstraction">
+<div id="sec-limit">
 <section id="section-5.11">
         <h3 id="name-proprietary-yang-modules-cl">
 <a href="#section-5.11" class="section-number selfRef">5.11. </a><a href="#name-proprietary-yang-modules-cl" class="section-name selfRef">Proprietary YANG Modules, CLI, and Limited Abstraction</a>
@@ -2110,7 +2248,7 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1"
 <p id="section-5.11-3">Network models for the realization of services provide some "level" of abstraction and then automation.<a href="#section-5.11-3" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="distinct-networks-distinct-management-requirements">
+<div id="sec-distinct">
 <section id="section-5.12">
         <h3 id="name-distinct-networks-distinct-">
 <a href="#section-5.12" class="section-number selfRef">5.12. </a><a href="#name-distinct-networks-distinct-" class="section-name selfRef">Distinct Networks, Distinct Management Requirements</a>
@@ -2127,7 +2265,7 @@ is no programmatic approach to ensure lossless mappings.<a href="#section-5.9-1"
 </dl>
 </section>
 </div>
-<div id="implications-of-external-dependency">
+<div id="sec-dep">
 <section id="section-5.13">
         <h3 id="name-implications-of-external-de">
 <a href="#section-5.13" class="section-number selfRef">5.13. </a><a href="#name-implications-of-external-de" class="section-name selfRef">Implications of External Dependency</a>
@@ -2140,7 +2278,7 @@ It highlights the necessity to handle the heterogeneity of data, configuration, 
 Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.<a href="#section-5.13-4" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="too-much-time-between-publication-of-new-networking-functionality-and-the-associated-yang">
+<div id="sec-pub">
 <section id="section-5.14">
         <h3 id="name-too-much-time-between-publi">
 <a href="#section-5.14" class="section-number selfRef">5.14. </a><a href="#name-too-much-time-between-publi" class="section-name selfRef">Too Much Time Between Publication of New Networking Functionality and the Associated YANG</a>
@@ -2156,7 +2294,7 @@ That may slow down the protocol specification, though.<a href="#section-5.14-2.2
 </dl>
 </section>
 </div>
-<div id="lack-of-implementation-of-proposed-solutions">
+<div id="sec-impl">
 <section id="section-5.15">
         <h3 id="name-lack-of-implementation-of-p">
 <a href="#section-5.15" class="section-number selfRef">5.15. </a><a href="#name-lack-of-implementation-of-p" class="section-name selfRef">Lack of Implementation of Proposed Solutions</a>
@@ -2178,7 +2316,7 @@ That may slow down the protocol specification, though.<a href="#section-5.14-2.2
 <span class="break"></span><dl class="dlParallel" id="section-5.15-5">
           <dt id="section-5.15-5.1">NEW-OPS-REQ-READILTY-IMPLEM:</dt>
           <dd style="margin-left: 1.5em" id="section-5.15-5.2">
-            <p id="section-5.15-5.2.1">It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementationsmanagement for I-Ds to be published as PS (e.g., <span>[<a href="#RFC1264" class="cite xref">RFC1264</a>]</span>), but these rules were relaxed for reasons described, e.g., <span>[<a href="#RFC4794" class="cite xref">RFC4794</a>]</span> and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.<a href="#section-5.15-5.2.1" class="pilcrow">¶</a></p>
+            <p id="section-5.15-5.2.1">It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementations for I-Ds to be published as PS (e.g., <span>[<a href="#RFC1264" class="cite xref">RFC1264</a>]</span>), but these rules were relaxed for reasons described, e.g., <span>[<a href="#RFC4794" class="cite xref">RFC4794</a>]</span> and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.<a href="#section-5.15-5.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 </dl>
@@ -2189,7 +2327,7 @@ That may slow down the protocol specification, though.<a href="#section-5.14-2.2
         <h3 id="name-tooling">
 <a href="#section-5.16" class="section-number selfRef">5.16. </a><a href="#name-tooling" class="section-name selfRef">Tooling</a>
         </h3>
-<div id="integration-with-native-it-tooling">
+<div id="sec-it">
 <section id="section-5.16.1">
           <h4 id="name-integration-with-native-it-">
 <a href="#section-5.16.1" class="section-number selfRef">5.16.1. </a><a href="#name-integration-with-native-it-" class="section-name selfRef">Integration with "native" IT Tooling</a>
@@ -2197,13 +2335,13 @@ That may slow down the protocol specification, though.<a href="#section-5.14-2.2
 <span class="break"></span><dl class="dlParallel" id="section-5.16.1-1">
             <dt id="section-5.16.1-1.1">NEW-OPS-REQ-IT-INTEGRATION:</dt>
             <dd style="margin-left: 1.5em" id="section-5.16.1-1.2">
-              <p id="section-5.16.1-1.2.1">There is a need to ease the integration of low-level/network-oriented solutuon with native "IT tooling" (e.g., "https://opentelemetry.io/").<a href="#section-5.16.1-1.2.1" class="pilcrow">¶</a></p>
+              <p id="section-5.16.1-1.2.1">There is a need to ease the integration of low-level/network-oriented solution with native "IT tooling" (e.g., "https://opentelemetry.io/").<a href="#section-5.16.1-1.2.1" class="pilcrow">¶</a></p>
 </dd>
           <dd class="break"></dd>
 </dl>
 </section>
 </div>
-<div id="ietf-support-for-better-yang-integration">
+<div id="sec-ietf-in">
 <section id="section-5.16.2">
           <h4 id="name-ietf-support-for-better-yan">
 <a href="#section-5.16.2" class="section-number selfRef">5.16.2. </a><a href="#name-ietf-support-for-better-yan" class="section-name selfRef">IETF Support for Better YANG Integration</a>
@@ -2217,7 +2355,7 @@ That may slow down the protocol specification, though.<a href="#section-5.14-2.2
 </dl>
 </section>
 </div>
-<div id="open-source-tools">
+<div id="sec-client">
 <section id="section-5.16.3">
           <h4 id="name-open-source-tools">
 <a href="#section-5.16.3" class="section-number selfRef">5.16.3. </a><a href="#name-open-source-tools" class="section-name selfRef">Open-source Tools</a>
@@ -2235,7 +2373,7 @@ For example, "ygot" generates structures from YANG models and these can easily b
 </div>
 </section>
 </div>
-<div id="new-service-approaches">
+<div id="sec-new">
 <section id="section-5.17">
         <h3 id="name-new-service-approaches">
 <a href="#section-5.17" class="section-number selfRef">5.17. </a><a href="#name-new-service-approaches" class="section-name selfRef">New Service Approaches</a>
@@ -2250,7 +2388,7 @@ For example, "ygot" generates structures from YANG models and these can easily b
 </dl>
 </section>
 </div>
-<div id="many-solutions-for-the-same-problem-but-lack-of-clear-applicably-guidance">
+<div id="sec-guid">
 <section id="section-5.18">
         <h3 id="name-many-solutions-for-the-same">
 <a href="#section-5.18" class="section-number selfRef">5.18. </a><a href="#name-many-solutions-for-the-same" class="section-name selfRef">Many Solutions for the Same Problem, but Lack of Clear Applicably Guidance</a>
