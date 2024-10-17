@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-15T01:23:15.917898+00:00",
+  "timestamp": "2024-10-17T01:22:42.364039+00:00",
   "repo": "boucadair/rfc3535-20years-later",
   "labels": [
     {
@@ -1067,6 +1067,143 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 26,
+      "id": "PR_kwDOKqz7zs5-zjBV",
+      "title": "Edits, some additional references and suggested text",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/26",
+      "state": "MERGED",
+      "author": "luismcontreras",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Edits, some additional references and suggested text before submission to NEMOPS workshop",
+      "createdAt": "2024-10-16T10:18:27Z",
+      "updatedAt": "2024-10-16T11:30:25Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "be3548da5d0ecd0dab13f469e554ed2575c2dbd3",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "luismcontreras-patch-5",
+      "headRefOid": "06cb91d3aa131c69255edda3b6f7d03506a9016c",
+      "closedAt": "2024-10-16T11:30:24Z",
+      "mergedAt": "2024-10-16T11:30:24Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "f9a9b839cd2c07935bbf3e86574896dedb4221d4"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqz7zs6NYsVC",
+          "commit": {
+            "abbreviatedOid": "d3a0107"
+          },
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "state": "CHANGES_REQUESTED",
+          "body": "",
+          "createdAt": "2024-10-16T11:00:36Z",
+          "updatedAt": "2024-10-16T11:01:26Z",
+          "comments": [
+            {
+              "originalPosition": 17,
+              "body": "```suggestion\r\nprotocol developers, and to guide the IETF to focus on work\r\n```",
+              "createdAt": "2024-10-16T11:00:36Z",
+              "updatedAt": "2024-10-16T11:01:26Z"
+            },
+            {
+              "originalPosition": 25,
+              "body": "```suggestion\r\n* Models for management of services, networks, and devices {{?RFC8199}}{{?RFC8309}}\r\n```",
+              "createdAt": "2024-10-16T11:00:54Z",
+              "updatedAt": "2024-10-16T11:01:26Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "id": "PR_kwDOKqz7zs5-0Kp_",
+      "title": "list of requirements",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/27",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-16T11:30:03Z",
+      "updatedAt": "2024-10-16T11:33:50Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "be3548da5d0ecd0dab13f469e554ed2575c2dbd3",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "list-of-requirements",
+      "headRefOid": "bd9202550b10fa780c63736ffa5f0fbba7d7fcef",
+      "closedAt": "2024-10-16T11:33:50Z",
+      "mergedAt": "2024-10-16T11:33:50Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "48a066aee7fafc925659e62e0d99f3cb5092757e"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 28,
+      "id": "PR_kwDOKqz7zs5-0sxs",
+      "title": "requirement to unsilo",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/28",
+      "state": "MERGED",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-16T12:30:25Z",
+      "updatedAt": "2024-10-16T12:31:31Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "49468f82e1d02f87538868bb59ed2b720f2ad41b",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "requirement-to-unsilo",
+      "headRefOid": "34335a6d310d73e784d4e2da1248ceb44f7fa085",
+      "closedAt": "2024-10-16T12:31:31Z",
+      "mergedAt": "2024-10-16T12:31:31Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "87609c75384834a63bbce27e7f57e2b9e5febaf4"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 29,
+      "id": "PR_kwDOKqz7zs5-3DgN",
+      "title": "Update Luis and Oscar details in draft-boucadair-nmop-rfc3535-20years\u2026",
+      "url": "https://github.com/boucadair/rfc3535-20years-later/pull/29",
+      "state": "OPEN",
+      "author": "luismcontreras",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "\u2026-later.md\r\n\r\nFixed Oscar's mail address, and appearance of Luis name.\r\n\r\n(This minor change can wait for other more significant changes to produce a new version of the draft).",
+      "createdAt": "2024-10-16T16:49:51Z",
+      "updatedAt": "2024-10-16T16:49:51Z",
+      "baseRepository": "boucadair/rfc3535-20years-later",
+      "baseRefName": "main",
+      "baseRefOid": "0cd163bd767bb7db8eae6d1c50dcf31d44f950ea",
+      "headRepository": "boucadair/rfc3535-20years-later",
+      "headRefName": "luismcontreras-patch-6",
+      "headRefOid": "37b0b3cf181270617d6389421cd6110ede7d0b94",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
