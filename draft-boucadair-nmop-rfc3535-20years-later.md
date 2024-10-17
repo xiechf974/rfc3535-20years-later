@@ -21,13 +21,13 @@ author:
    organization: Orange
    email: mohamed.boucadair@orange.com
  -
-   fullname: Luis Miguel Contreras Murillo
+   fullname: Luis M. Contreras
    organization: Telefonica
    email: luismiguel.contrerasmurillo@telefonica.com
  -
    fullname: Oscar Gonzalez de Dios
    organization: Telefonica
-   email: oscar.gonzalezdedios@telefonica.co
+   email: oscar.gonzalezdedios@telefonica.com
  -
    fullname: Thomas Graf
    organization: Swisscom
