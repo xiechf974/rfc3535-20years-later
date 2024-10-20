@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-17T01:22:42.364039+00:00",
+  "timestamp": "2024-10-20T01:36:04.867761+00:00",
   "repo": "boucadair/rfc3535-20years-later",
   "labels": [
     {
@@ -111,16 +111,24 @@
       "id": "I_kwDOKqz7zs6C-dMQ",
       "title": "Candidate venue to socialize the work: autocon (Amsterdam)",
       "url": "https://github.com/boucadair/rfc3535-20years-later/issues/10",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "boucadair",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "https://networkautomation.forum/autocon1",
       "createdAt": "2024-03-20T12:27:00Z",
-      "updatedAt": "2024-03-20T12:27:00Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-10-17T05:10:32Z",
+      "closedAt": "2024-10-17T05:10:32Z",
+      "comments": [
+        {
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "body": "outdated",
+          "createdAt": "2024-10-17T05:10:32Z",
+          "updatedAt": "2024-10-17T05:10:32Z"
+        }
+      ]
     },
     {
       "number": 14,
@@ -143,15 +151,15 @@
       "id": "I_kwDOKqz7zs6ZAOix",
       "title": "Lack of implementation of proposed solutions",
       "url": "https://github.com/boucadair/rfc3535-20years-later/issues/18",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "reshad-equinix",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "New solutions proposed by WGs such as NETMOD and NETCONF very often lack an implementation or only have a partial implementation. The situation has improved with the last hackathons (e.g. for YANG-Push) but these solutions became RFCs without a known implementation:\r\n- YANG-Push\r\n- Schema-mount\r\n- NMDA\r\n\r\nSchema-mount allegedly has only 1 known implementation because of the complexity of the solution. That means the IETF most likely spent lots of cycles for something which won't be deployed ever.\r\n\r\nWhile hackathons have improved the situation, I wonder if we should mandate at least 1 implementation. For open-source, `sysrepo`/`libyang` are decent choices. ",
       "createdAt": "2024-10-04T18:01:15Z",
-      "updatedAt": "2024-10-09T13:40:23Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-17T05:10:21Z",
+      "closedAt": "2024-10-17T05:10:21Z",
       "comments": [
         {
           "author": "boucadair",
@@ -159,6 +167,13 @@
           "body": "Added  point in #21 as this is a valid point to discuss. \r\n\r\nNote however that I added the following as this is a recurrent story in the IETF.\r\n\r\nNEW-OPS-REQ-READILTY-IMPLEM:\r\n: It is tempting to consider mandating at least one implementation. However, there were areas which imposed in the past rules for implementations/management for I-Ds to be published as PS (e.g., {{?RFC1264}}), but these rules were relaxed for reasons described, e.g., {{?RFC4794}} and left it to the WGs to decide about the actual measures to put in place. To date, only IDR WG has clear guidance on two implementations.",
           "createdAt": "2024-10-09T13:40:21Z",
           "updatedAt": "2024-10-09T13:40:21Z"
+        },
+        {
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "body": "Fixed in -05",
+          "createdAt": "2024-10-17T05:10:21Z",
+          "updatedAt": "2024-10-17T05:10:21Z"
         }
       ]
     },
@@ -167,16 +182,24 @@
       "id": "I_kwDOKqz7zs6ZkgtQ",
       "title": "API Discovery",
       "url": "https://github.com/boucadair/rfc3535-20years-later/issues/24",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "boucadair",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-10-09T17:07:23Z",
-      "updatedAt": "2024-10-09T17:07:23Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-10-17T05:10:05Z",
+      "closedAt": "2024-10-17T05:10:05Z",
+      "comments": [
+        {
+          "author": "boucadair",
+          "authorAssociation": "OWNER",
+          "body": "discussed in -05",
+          "createdAt": "2024-10-17T05:10:05Z",
+          "updatedAt": "2024-10-17T05:10:05Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -1184,24 +1207,26 @@
       "id": "PR_kwDOKqz7zs5-3DgN",
       "title": "Update Luis and Oscar details in draft-boucadair-nmop-rfc3535-20years\u2026",
       "url": "https://github.com/boucadair/rfc3535-20years-later/pull/29",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "luismcontreras",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "\u2026-later.md\r\n\r\nFixed Oscar's mail address, and appearance of Luis name.\r\n\r\n(This minor change can wait for other more significant changes to produce a new version of the draft).",
       "createdAt": "2024-10-16T16:49:51Z",
-      "updatedAt": "2024-10-16T16:49:51Z",
+      "updatedAt": "2024-10-17T05:09:25Z",
       "baseRepository": "boucadair/rfc3535-20years-later",
       "baseRefName": "main",
       "baseRefOid": "0cd163bd767bb7db8eae6d1c50dcf31d44f950ea",
       "headRepository": "boucadair/rfc3535-20years-later",
       "headRefName": "luismcontreras-patch-6",
       "headRefOid": "37b0b3cf181270617d6389421cd6110ede7d0b94",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-10-17T05:09:25Z",
+      "mergedAt": "2024-10-17T05:09:25Z",
+      "mergedBy": "boucadair",
+      "mergeCommit": {
+        "oid": "0344d790bb585a7df16e3f0fed2c6ee6e333fe5e"
+      },
       "comments": [],
       "reviews": []
     }
