@@ -5,7 +5,7 @@
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
 Intended status: Informational                           L. M. Contreras
-Expires: 20 April 2025                                     O. G. D. Dios
+Expires: 29 May 2025                                       O. G. D. Dios
                                                               Telefonica
                                                                  T. Graf
                                                                 Swisscom
@@ -13,7 +13,7 @@ Expires: 20 April 2025                                     O. G. D. Dios
                                                                  Equinix
                                                            L. Tailhardat
                                                                   Orange
-                                                         17 October 2024
+                                                        25 November 2024
 
 
 RFC 3535, 20 Years Later: An Update of Operators Requirements on Network
@@ -56,7 +56,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 April 2025.
+   This Internet-Draft will expire on 29 May 2025.
 
 Copyright Notice
 
@@ -958,16 +958,16 @@ Table of Contents
               Ngọc, T. M., Rao, S., Lee, J., and Y. Kim, "Considerations
               for Benchmarking Network Performance in Containerized
               Infrastructures", Work in Progress, Internet-Draft, draft-
-              ietf-bmwg-containerized-infra-02, 30 September 2024,
+              ietf-bmwg-containerized-infra-03, 4 November 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-bmwg-
-              containerized-infra-02>.
+              containerized-infra-03>.
 
    [I-D.ietf-core-comi]
               Veillette, M., Van der Stok, P., Pelov, A., Bierman, A.,
               and C. Bormann, "CoAP Management Interface (CORECONF)",
-              Work in Progress, Internet-Draft, draft-ietf-core-comi-18,
-              23 July 2024, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-core-comi-18>.
+              Work in Progress, Internet-Draft, draft-ietf-core-comi-19,
+              3 November 2024, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-core-comi-19>.
 
    [I-D.ietf-core-sid]
               Veillette, M., Pelov, A., Petrov, I., Bormann, C., and M.
@@ -995,34 +995,34 @@ Table of Contents
               Zheng, G., Zhou, T., Graf, T., Francois, P., Feng, A. H.,
               and P. Lucente, "UDP-based Transport for Configured
               Subscriptions", Work in Progress, Internet-Draft, draft-
-              ietf-netconf-udp-notif-14, 4 July 2024,
+              ietf-netconf-udp-notif-16, 21 October 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-netconf-
-              udp-notif-14>.
+              udp-notif-16>.
 
    [I-D.ietf-opsawg-ntw-attachment-circuit]
               Boucadair, M., Roberts, R., de Dios, O. G., Barguil, S.,
               and B. Wu, "A Network YANG Data Model for Attachment
               Circuits", Work in Progress, Internet-Draft, draft-ietf-
-              opsawg-ntw-attachment-circuit-13, 5 September 2024,
+              opsawg-ntw-attachment-circuit-14, 7 November 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-
-              ntw-attachment-circuit-13>.
+              ntw-attachment-circuit-14>.
 
    [I-D.ietf-opsawg-teas-attachment-circuit]
               Boucadair, M., Roberts, R., de Dios, O. G., Barguil, S.,
               and B. Wu, "YANG Data Models for Bearers and 'Attachment
               Circuits'-as-a-Service (ACaaS)", Work in Progress,
               Internet-Draft, draft-ietf-opsawg-teas-attachment-circuit-
-              17, 10 October 2024,
+              18, 7 November 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-
-              teas-attachment-circuit-17>.
+              teas-attachment-circuit-18>.
 
    [I-D.marcas-nmop-knowledge-graph-yang]
-              Martinez-Casanueva, I. D. and L. C. Rodríguez, "Knowledge
-              Graphs for YANG-based Network Management", Work in
-              Progress, Internet-Draft, draft-marcas-nmop-knowledge-
-              graph-yang-03, 5 July 2024,
+              Martinez-Casanueva, I. D., Rodríguez, L. C., and P.
+              Martinez-Julia, "Knowledge Graphs for YANG-based Network
+              Management", Work in Progress, Internet-Draft, draft-
+              marcas-nmop-knowledge-graph-yang-05, 21 October 2024,
               <https://datatracker.ietf.org/doc/html/draft-marcas-nmop-
-              knowledge-graph-yang-03>.
+              knowledge-graph-yang-05>.
 
    [I-D.openconfig-rtgwg-gnmi-spec]
               Shakir, R., Shaikh, A., Borman, P., Hines, M., Lebsack,
@@ -1033,11 +1033,11 @@ Table of Contents
               rtgwg-gnmi-spec-01>.
 
    [I-D.ramseyer-grow-peering-api]
-              Aguado, C., Griswold, M., Ramseyer, J., Servin, A. L., and
-              T. Strickx, "Peering API", Work in Progress, Internet-
-              Draft, draft-ramseyer-grow-peering-api-05, 30 May 2024,
+              Aguado, C., Griswold, M., Ramseyer, J., Servin, A., and T.
+              Strickx, "Peering API", Work in Progress, Internet-Draft,
+              draft-ramseyer-grow-peering-api-06, 4 November 2024,
               <https://datatracker.ietf.org/doc/html/draft-ramseyer-
-              grow-peering-api-05>.
+              grow-peering-api-06>.
 
    [I-D.tailhardat-nmop-incident-management-noria]
               Tailhardat, L., Troncy, R., and Y. Chabot, "Knowledge
