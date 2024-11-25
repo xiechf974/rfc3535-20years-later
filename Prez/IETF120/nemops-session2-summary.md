@@ -8,6 +8,8 @@
 |NEW-OPS-REQ-NW-API-DISCOVERY|Define a reference approach/process for service exposure discovery (APIs discovery).|#4|
 |NEW-OPS-REQ-DM-API|Readily available API specifications could be generalized from YANG modules for fast development, prototyping, and validation. |#4|
 |NEW-OPS-REQ-PROFILING|Editing a profile document that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs. |#4|
+|NEW-OPS-REQ-GUIDANCE|The target application/applicability of a network management approach should be documented.|#4, #5|
+|NEW-OPS-REQ-ARCH|Need to promote more arch and framework documents to exemplify the intended use.|#5|
 |NEW-OPS-REQ-REASSESS|reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.|#4|
 |NEW-OPS-REQ-AGILE|Develop a more agile process for the development and maintenance of YANG modules in the IETF. RFCs might not be suited for documenting YANG modules. |#4, #5, #8|
 |NEW-OPS-REQ-ITER|needs a velocity and approach to standardisation that allows for business goals to be incrementally realised|#5, #6|
@@ -25,8 +27,7 @@
 |NEW-OPS-REQ-CLIENT-TOOLS|Focus on tooling is needed, especially on the client side.|#3, #4, #5, #8|
 |NEW-OPS-REQ-BRIDGE|Create an eco-system where data and networking engineers can collaborate.|#4|
 |NEW-OPS-REQ-GLUE|The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.|#2, #4, #8|
-|NEW-OPS-REQ-GUIDANCE|The target application/applicability of a network management approach should be documented.|#4, #5|
-|NEW-OPS-REQ-ARCH|Need to promote more arch and framework documents to exemplify the intended use.|#5|
+
 
 # Papers
 
