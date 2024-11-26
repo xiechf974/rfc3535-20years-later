@@ -1,3 +1,10 @@
+# Notes
+
+* Collection of NEW requirements from operators
+* Labelling of a requirement/description can be tweaked to capture a common message
+* This is work-in-progress
+
+# Summary
 
 
 |NEW Ops Requirement Label| Description| Papers|
