@@ -37,33 +37,35 @@
 
 # Requirement Level
 
-|NEW Ops Requirement Label   | Level        |
-|----------------------------|:------------:|
-|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |
-|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |
-|NEW-OPS-REQ-AGILE           |Strong        |
-|NEW-OPS-REQ-PROFILING       |Strong        |
-|NEW-OPS-REQ-GUIDANCE        |Nice to have  |
-|NEW-OPS-REQ-ARCH            |Nice to have  |
-|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |
-|NEW-OPS-REQ-TIMELY-DM       |Strong        |
-|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |
-|NEW-OPS-REQ-DM-API          |Strong        |
-|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |
-|NEW-OPS-REQ-REASSESS        |Strong        |
-|NEW-OPS-REQ-BRIDGE          |Nice to have  |
-|NEW-OPS-REQ-INTEGRATION     |Strong        |
-|NEW-OPS-REQ-LOSSLESS        |Nice to have  |
-|NEW-OPS-REQ-REUSABILITY     |Strong        |
-|NEW-OPS-REQ-SCALE           |Strong        |
-|NEW-OPS-REQ-UNSILO          |Nice to have  |
-|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |
-|NEW-OPS-REQ-ITER            |Strong        |
-|NEW-OPS-REQ-Y2KG            |Nice to have  |
-|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |
-|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |
-|NEW-OPS-REQ-NEW-NEED        |Nice to have  |
-|NEW-OPS-REQ-GLUE            |Nice to have  |
+> Feel free to complete a column with your own assessment + update OP# with the operator name.
+
+|NEW Ops Requirement Label   | Level (Or)   |Level (OP# 1)   |Level (OP# 2)   |
+|----------------------------|:------------:|:--------------:|:--------------:|
+|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-AGILE           |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-PROFILING       |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-GUIDANCE        |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-ARCH            |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-TIMELY-DM       |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-DM-API          |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-REASSESS        |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-BRIDGE          |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-INTEGRATION     |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-LOSSLESS        |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-REUSABILITY     |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-SCALE           |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-UNSILO          |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-ITER            |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-Y2KG            |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |     TBC        |     TBC        |
+|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-NEW-NEED        |Nice to have  |     TBC        |     TBC        |
+|NEW-OPS-REQ-GLUE            |Nice to have  |     TBC        |     TBC        |
 
 # Papers
 
