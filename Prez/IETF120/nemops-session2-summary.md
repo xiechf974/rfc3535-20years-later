@@ -35,6 +35,35 @@
 |NEW-OPS-REQ-NEW-NEED|Some networks have specific network management requirements such as the need for asynchronous operations or constraints on data compactness.|#4|
 |NEW-OPS-REQ-GLUE|The distinct approaches followed in both the compute and the network environments makes necessary to define suitable mechanisms for enabling an efficient interplay, while highly automating the overall service delivery procedure.|#2, #4, #8|
 
+# Requirement Level
+
+|NEW Ops Requirement Label   | Level        |
+|----------------------------|:------------:|
+|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |
+|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |
+|NEW-OPS-REQ-AGILE           |Strong        |
+|NEW-OPS-REQ-PROFILING       |Strong        |
+|NEW-OPS-REQ-GUIDANCE        |Nice to have  |
+|NEW-OPS-REQ-ARCH            |Nice to have  |
+|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |
+|NEW-OPS-REQ-TIMELY-DM       |Strong        |
+|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |
+|NEW-OPS-REQ-DM-API          |Strong        |
+|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |
+|NEW-OPS-REQ-REASSESS        |Strong        |
+|NEW-OPS-REQ-BRIDGE          |Nice to have  |
+|NEW-OPS-REQ-INTEGRATION     |Strong        |
+|NEW-OPS-REQ-LOSSLESS        |Nice to have  |
+|NEW-OPS-REQ-REUSABILITY     |Strong        |
+|NEW-OPS-REQ-SCALE           |Strong        |
+|NEW-OPS-REQ-UNSILO          |Nice to have  |
+|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |
+|NEW-OPS-REQ-ITER            |Strong        |
+|NEW-OPS-REQ-Y2KG            |Nice to have  |
+|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |
+|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |
+|NEW-OPS-REQ-NEW-NEED        |Nice to have  |
+|NEW-OPS-REQ-GLUE            |Nice to have  |
 
 # Papers
 
