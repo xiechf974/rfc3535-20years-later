@@ -42,33 +42,35 @@
 > agile==well/quick (change the label)
 > some parts of the guidance can be moved to profiling, while othe to the arch req
 
-|NEW Ops Requirement Label   | Level (Orange)   |Level (Telefonica)     |Level (Swisscom)      |Level (Equinix)      |
-|----------------------------|:------------:|:--------------:|:--------------:|:--------------:|
-|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |
-|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |     
-|NEW-OPS-REQ-AGILE           |Strong        |     Strong     |     Strong     |     Strong     |
-|NEW-OPS-REQ-PROFILING       |Strong        | Nice to have   |     Strong     | Nice to have   |
-|NEW-OPS-REQ-GUIDANCE        |Nice to have  | Nice to have   |   Nice to have  |     Nice to have           |
-|NEW-OPS-REQ-ARCH            |Nice to have  | Nice to have   |     Strong     | Nice to have|
-|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     Strong     |     Strong     | Strong |
-|NEW-OPS-REQ-TIMELY-DM       |Strong        |     Strong        |     Strong        | Strong|
-|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     Strong        |     Strong        | Strong |
-|NEW-OPS-REQ-DM-API          |Strong        |  Nice to have  |     Strong     | Nice to have |
-|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     Strong     |     Nice to have | Nice to have|
-|NEW-OPS-REQ-REASSESS        |Strong        |     Strong        |     Strong        | Strong|
-|NEW-OPS-REQ-BRIDGE          |Nice to have  |     Strong     |     Strong     |  Nice to have|
-|NEW-OPS-REQ-INTEGRATION     |Strong        |     Strong     |     Strong        |Strong|
-|NEW-OPS-REQ-LOSSLESS        |Nice to have  |     Strong     |     Nive to have| Nice to have|
-|NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong        |     Strong        | Strong|
-|NEW-OPS-REQ-SCALE           |Strong        |     Strong        |     Strong        |Strong |
-|NEW-OPS-REQ-UNSILO          |Nice to have  |     Nice to have        |     Strong        | Nice to have|
-|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |     Nice to have |     Nice to have        | Nice to have|
-|NEW-OPS-REQ-ITER            |Strong        |     Strong     |     Strong        | Nice to have |
-|NEW-OPS-REQ-Y2KG            |Nice to have  |     Nice to have        |     Nice to have        | Nice to have|
-|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |     Strong        |     Nice to have        | Strong |
-|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |  Nice to have  |     Nice to have        | Nice to haave|
-|NEW-OPS-REQ-NEW-NEED        |Nice to have  |     Strong     |     Nice to have        |Nice to have |
-|NEW-OPS-REQ-GLUE            |Nice to have  |     Strong        |     Nice to have        |Nice to have|
+|NEW Ops Requirement Label   | Orange       | Telefonica     | Swisscom       | Equinix        |    OP #        |
+|----------------------------|:------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |      TBC       |
+|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |     
+|NEW-OPS-REQ-AGILE           |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |
+|NEW-OPS-REQ-PROFILING       |Strong        | Nice to have   |     Strong     | Nice to have   |      TBC       |
+|NEW-OPS-REQ-GUIDANCE        |Nice to have  | Nice to have   |  Nice to have  | Nice to have   |      TBC       |
+|NEW-OPS-REQ-ARCH            |Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
+|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
+|NEW-OPS-REQ-TIMELY-DM       |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
+|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
+|NEW-OPS-REQ-DM-API          |Strong        |  Nice to have  |     Strong     | Nice to have   |      TBC       |
+|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     Strong     |  Nice to have  | Nice to have   |      TBC       |
+|NEW-OPS-REQ-REASSESS        |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
+|NEW-OPS-REQ-BRIDGE          |Nice to have  |     Strong     |     Strong     |  Nice to have  |      TBC       |
+|NEW-OPS-REQ-INTEGRATION     |Strong        |     Strong     |     Strong     |Strong          |      TBC       |
+|NEW-OPS-REQ-LOSSLESS        |Nice to have  |     Strong     |   Nive to have | Nice to have   |      TBC       |
+|NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
+|NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
+|NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
+|NEW-OPS-REQ-SCALE           |Strong        |     Strong     |     Strong     |Strong          |      TBC       |
+|NEW-OPS-REQ-UNSILO          |Nice to have  |  Nice to have  |     Strong     | Nice to have   |      TBC       |
+|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |   Nice to have |   Nice to have | Nice to have   |      TBC       |
+|NEW-OPS-REQ-ITER            |Strong        |     Strong     |     Strong     | Nice to have   |      TBC       |
+|NEW-OPS-REQ-Y2KG            |Nice to have  | Nice to have   |  Nice to have  | Nice to have   |      TBC       |
+|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |     Strong     |  Nice to have  | Strong         |      TBC       |
+|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |  Nice to have  |  Nice to have  | Nice to haave  |      TBC       |
+|NEW-OPS-REQ-NEW-NEED        |Nice to have  |     Strong     |  Nice to have  |Nice to have    |      TBC       |
+|NEW-OPS-REQ-GLUE            |Nice to have  |     Strong     |  Nice to have  |Nice to have    |      TBC       |
 
 # Papers
 
