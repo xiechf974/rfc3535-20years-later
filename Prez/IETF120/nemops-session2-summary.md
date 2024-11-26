@@ -26,7 +26,7 @@
 |NEW-OPS-REQ-INTEGRATION|Consider approaches to ease integration by-design (e.g., protocols and data models).|#4|
 |NEW-OPS-REQ-LOSSLESS|Consider programmatic approaches to ensure lossless mappings between service/network/device data models.|#4|
 |NEW-OPS-REQ-REUSABILITY|Consider approaches to ensure reuse/consistent data structure across various NM segments|#4, #5, #7|
-|NEW-OPS-REQ-SCALE|Consider approaches for YANG models to scale.|#4, #7|
+|NEW-OPS-REQ-SCALE|Consider approaches for YANG models to scale + protocol considerartions (transactions, touches, etc.).|#4, #7|
 |NEW-OPS-REQ-UNSILO|Necessity to handle the heterogeneity of data, configuration, and network management/requirements. Resolving such issue could draw on insights from parallel technical fields such as knowledge engineering practices and concepts associated with Linked Data in the Semantic Web, areas where it is common to manage problems of heterogeneity and data reconciliation across various application domains.|#4, #8|
 |NEW-OPS-REQ-IT-INTEGRATION|There is a need to ease the integration of low-level/network-oriented solution with native "IT tooling" (e.g., "https://opentelemetry.io/").|#3, #4|
 |NEW-OPS-REQ-ITER|needs a velocity and approach to standardisation that allows for business goals to be incrementally realised|#5, #6|
@@ -39,34 +39,36 @@
 # Requirement Level
 
 > Feel free to complete a column with your own assessment + update OP# with the operator name.
+> agile==well/quick (change the label)
+> some parts of the guidance can be moved to profiling, while othe to the arch req
 
-|NEW Ops Requirement Label   | Level (Or)   |Level (OP# 1)   |Level (OP# 2)   |
-|----------------------------|:------------:|:--------------:|:--------------:|
-|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-AGILE           |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-PROFILING       |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-GUIDANCE        |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-ARCH            |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-TIMELY-DM       |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-DM-API          |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-REASSESS        |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-BRIDGE          |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-INTEGRATION     |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-LOSSLESS        |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-REUSABILITY     |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-SCALE           |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-UNSILO          |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-ITER            |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-Y2KG            |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |     TBC        |     TBC        |
-|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-NEW-NEED        |Nice to have  |     TBC        |     TBC        |
-|NEW-OPS-REQ-GLUE            |Nice to have  |     TBC        |     TBC        |
+|NEW Ops Requirement Label   | Level (Orange)   |Level (Telefonica)     |Level (Swisscom)      |Level (Equinox)      |
+|----------------------------|:------------:|:--------------:|:--------------:|:--------------:|
+|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |
+|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |     
+|NEW-OPS-REQ-AGILE           |Strong        |     Strong     |     Strong     |     Strong     |
+|NEW-OPS-REQ-PROFILING       |Strong        | Nice to have   |     Strong     | Nice to have   |
+|NEW-OPS-REQ-GUIDANCE        |Nice to have  | Nice to have   |   Nice to have  |     Nice to have           |
+|NEW-OPS-REQ-ARCH            |Nice to have  | Nice to have   |     Strong     | Nice to have|
+|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     Strong     |     Strong     | Strong |
+|NEW-OPS-REQ-TIMELY-DM       |Strong        |     Strong        |     Strong        | Strong|
+|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     Strong        |     Strong        | Strong |
+|NEW-OPS-REQ-DM-API          |Strong        |  Nice to have  |     Strong     | Nice to have |
+|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     Strong     |     Nice to have | Nice to have|
+|NEW-OPS-REQ-REASSESS        |Strong        |     Strong        |     Strong        | Strong|
+|NEW-OPS-REQ-BRIDGE          |Nice to have  |     Strong     |     Strong     |  Nice to have|
+|NEW-OPS-REQ-INTEGRATION     |Strong        |     Strong     |     Strong        |Strong|
+|NEW-OPS-REQ-LOSSLESS        |Nice to have  |     Strong     |     Nive to have| Nice to have|
+|NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong        |     Strong        | Strong|
+|NEW-OPS-REQ-SCALE           |Strong        |     Strong        |     Strong        |Strong |
+|NEW-OPS-REQ-UNSILO          |Nice to have  |     Nice to have        |     Strong        | Nice to have|
+|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |     Nice to have |     Nice to have        | Nice to have|
+|NEW-OPS-REQ-ITER            |Strong        |     Strong     |     Strong        | Nice to have |
+|NEW-OPS-REQ-Y2KG            |Nice to have  |     Nice to have        |     Nice to have        | Nice to have|
+|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |     Strong        |     Nice to have        | Strong |
+|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |  Nice to have  |     Nice to have        | Nice to haave|
+|NEW-OPS-REQ-NEW-NEED        |Nice to have  |     Strong     |     Nice to have        |Nice to have |
+|NEW-OPS-REQ-GLUE            |Nice to have  |     Strong        |     Nice to have        |Nice to have|
 
 # Papers
 
