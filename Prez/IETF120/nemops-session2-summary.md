@@ -42,7 +42,7 @@
 > agile==well/quick (change the label)
 > some parts of the guidance can be moved to profiling, while othe to the arch req
 
-|NEW Ops Requirement Label   | Level (Orange)   |Level (Telefonica)     |Level (Swisscom)      |Level (Equinox)      |
+|NEW Ops Requirement Label   | Level (Orange)   |Level (Telefonica)     |Level (Swisscom)      |Level (Equinix)      |
 |----------------------------|:------------:|:--------------:|:--------------:|:--------------:|
 |NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |
 |NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |     
