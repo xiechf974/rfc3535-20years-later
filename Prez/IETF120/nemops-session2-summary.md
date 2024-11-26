@@ -44,7 +44,7 @@
    + (NEW-OPS-REQ-CLIENT-TOOLS) "Collaboration on open-source software, like Orchestron (https://github.com/orchestron-orchestrator/)"
    + (NEW-OPS-REQ-EASE-EXPOSURE) "the convergence of configuration management and the collection and monitoring of operational state is essential"
    + (NEW-OPS-REQ-INTEGRATION) "The IETF could do more to help bridge the gap by providing standardized operational monitoring models to match the configuration models; at both the device level and the network/service level"
-   + (NEW-OPS-REQ-IT-INTEGRATION) "The combination of the relevant TMF specifcations and IETF YANG service models would offer service providers a comprehensive and powerful solution"
+   + (NEW-OPS-REQ-IT-INTEGRATION) "The combination of the relevant TMF specifications and IETF YANG service models would offer service providers a comprehensive and powerful solution"
 4. [RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling](https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-an-update-of-operators-requirements-on-network-management-protocols-and-modelling-00.pdf)
 5. [Rethinking Standardisation of Network Management](https://www.ietf.org/slides/slides-nemopsws-paper-rethinking-standardisation-of-network-management-00.pdf)
    + (NEW-OPS-REQ-AGILE) "need for iteration"
