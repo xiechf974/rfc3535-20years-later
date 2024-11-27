@@ -12,7 +12,7 @@
 |-------------------------|:------:|:------:|
 |NEW-OPS-REQ-STRENGTHEN-DM |Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code. Particularly, without data models, a Network API is essentially useless.|#1, #4|
 |NEW-OPS-REQ-DM-RATIONALIZE|There is a need to rationalize this space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.|#3, #4|
-|NEW-OPS-REQ-QUICK-WELL/quick|Develop a more agile process for the development and maintenance of YANG modules in the IETF. RFCs might not be suited for documenting YANG modules. |#4, #5, #8|
+|NEW-OPS-REQ-QUICK-BUT-WELL|Develop a more agile process for the development and maintenance of YANG modules in the IETF. RFCs might not be suited for documenting YANG modules. |#4, #5, #8|
 |NEW-OPS-REQ-GUIDE-PROFILE|The target application/applicability of a network management approach should be documented. Specifically, editing a profile that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs. |#4|
 |NEW-OPS-REQ-ARCH|Need to promote more arch and framework documents to exemplify the intended use.|#5|
 |NEW-OPS-REQ-EASE-EXPOSURE|Focus on protocols and data models to expose network/service capabilities, network-wide services, and related operations. |#1, #3, #4|
@@ -45,7 +45,7 @@
 |----------------------------|:------------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |      TBC       |
 |NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |     
-|NEW-OPS-REQ-QUICK-WELL      |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |
+|NEW-OPS-REQ-QUICK-BUT-WELL  |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |
 |NEW-OPS-REQ-GUIDE-PROFILE   |Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
 |NEW-OPS-REQ-ARCH            |Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
 |NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
