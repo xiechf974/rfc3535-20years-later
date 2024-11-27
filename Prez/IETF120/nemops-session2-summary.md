@@ -13,12 +13,12 @@
 |NEW-OPS-REQ-STRENGTHEN-DM |Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code. Particularly, without data models, a Network API is essentially useless.|#1, #4|
 |NEW-OPS-REQ-DM-RATIONALIZE|There is a need to rationalize this space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented.|#3, #4|
 |NEW-OPS-REQ-QUICK-BUT-WELL|Develop a more agile process for the development and maintenance of YANG modules in the IETF. RFCs might not be suited for documenting YANG modules. |#4, #5, #8|
-|NEW-OPS-REQ-GUIDE-PROFILE|The target application/applicability of a network management approach should be documented. Specifically, editing a profile that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs. |#4|
+|NEW-OPS-REQ-GUIDE-AND-PROFILE|The target application/applicability of a network management approach should be documented. Specifically, editing a profile that outlines a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs. |#4|
 |NEW-OPS-REQ-ARCH|Need to promote more arch and framework documents to exemplify the intended use.|#5|
 |NEW-OPS-REQ-EASE-EXPOSURE|Focus on protocols and data models to expose network/service capabilities, network-wide services, and related operations. |#1, #3, #4|
 |NEW-OPS-REQ-TIMELY-DM|Consider having YANG as part of the protocol specification/change where possible, or have the YANG document progress in parallel.|#4|
 |NEW-OPS-REQ-READILTY-IMPLEM|the availablability of implementation is concerning|#4|
-|NEW-OPS-REQ-DM-API|Readily available API specifications could be generalized from YANG modules for fast development, prototyping, and validation. |#4|
+|NEW-OPS-REQ-DM2API|Readily available API specifications could be generalized from YANG modules for fast development, prototyping, and validation. |#4|
 |NEW-OPS-REQ-NW-API-DISCOVERY|Define a reference approach/process for service exposure discovery (APIs discovery).|#4|
 |NEW-OPS-REQ-REASSESS|reassessing the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC vs. YANG-Push) would be beneficial.|#4|
 |NEW-OPS-REQ-BRIDGE|Create an eco-system where data and networking engineers can collaborate.|#4|
@@ -46,12 +46,12 @@
 |NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |      TBC       |
 |NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |     
 |NEW-OPS-REQ-QUICK-BUT-WELL  |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |
-|NEW-OPS-REQ-GUIDE-PROFILE   |Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
+|NEW-OPS-REQ-GUIDE-AND-PROFILE|Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
 |NEW-OPS-REQ-ARCH            |Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
 |NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
 |NEW-OPS-REQ-TIMELY-DM       |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
 |NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
-|NEW-OPS-REQ-DM-API          |Strong        |  Nice to have  |     Strong     | Nice to have   |      TBC       |
+|NEW-OPS-REQ-DM2API          |Strong        |  Nice to have  |     Strong     | Nice to have   |      TBC       |
 |NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     Strong     |  Nice to have  | Nice to have   |      TBC       |
 |NEW-OPS-REQ-REASSESS        |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
 |NEW-OPS-REQ-BRIDGE          |Nice to have  |     Strong     |     Strong     |  Nice to have  |      TBC       |
