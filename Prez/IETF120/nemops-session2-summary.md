@@ -59,7 +59,7 @@
 |NEW-OPS-REQ-LOSSLESS        |Nice to have  |     Strong     |   Nive to have | Nice to have   |      Strong    |
 |NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong     |     Strong     | Strong         |      Strong    |
 |NEW-OPS-REQ-SCALE           |Strong        |     Strong     |     Strong     |Strong          |      Strong    |
-|NEW-OPS-REQ-UNSILO          |Nice to have  |  Nice to have  |     Strong     | Nice to have   |      Strong    |
+|NEW-OPS-REQ-UNSILO          |Nice to have  |     Strong     |     Strong     | Nice to have   |      Strong    |
 |NEW-OPS-REQ-IT-INTEGRATION  |Strong        |   Nice to have |   Nice to have | Nice to have   |  Nice to have  |
 |NEW-OPS-REQ-ITER            |Strong        |     Strong     |     Strong     | Nice to have   |      Strong    |
 |NEW-OPS-REQ-Y2KG            |Nice to have  | Nice to have   |  Nice to have  | Nice to have   |  Nice to have  |
@@ -67,6 +67,7 @@
 |NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |  Nice to have  |  Nice to have  | Nice to have   |  Nice to have  |
 |NEW-OPS-REQ-NEW-NEED        |Nice to have  |     Strong     |  Nice to have  |Nice to have    |  Nice to have  |
 |NEW-OPS-REQ-GLUE            |Nice to have  |     Strong     |  Nice to have  |Nice to have    |  Nice to have  |
+
 
 # Papers
 
@@ -99,9 +100,9 @@
    + "data sources should implement active streaming of data to post-processing systems immediately upon production, this will also ensure that closed-loop automation systems have access to data in near real-time."
    + (NEW-OPS-REQ-REUSABILITY) "There is potential for retrofitting Internet of Things (IoT) oriented protocols on telemetry or management-type signaling within the network management domain"
 8. [IAB NEMOPS Position Paper - Telefonica](https://www.ietf.org/slides/slides-nemopsws-paper-iab-nemops-position-paper-telefonica-00.pdf)
-   + (NEW-OPS-REQ-Y2KG) "the YANG language should evolve towards a grounding on formal knowledge representation to achieve the semantic  interoperability level. Standards like Resource Definition Framework (RDF) and Web 
+   + (NEW-OPS-REQ-Y2KG) "the YANG language should evolve towards a grounding on formal knowledge representation to achieve the semantic  interoperability level. Standards like Resource Definition Framework (RDF) and Web
 Ontology Language (OWL) from the Semantic Web may serve as reference in this area."
-   + (NEW-OPS-REQ-UNSILO) "Fixed hierarchical structure limits the modeling of complex scenarios where relationships within the data are important...graph structures provide a 
+   + (NEW-OPS-REQ-UNSILO) "Fixed hierarchical structure limits the modeling of complex scenarios where relationships within the data are important...graph structures provide a
 more flexible structure that can accommodate any kind of data"
    + (NEW-OPS-REQ-CLIENT-TOOLS) "Lack of mature YANG libraries, with several efforts in different programming languages that have been abandoned or that do not keep the pace of the standards"
    + (NEW-OPS-REQ-QUICK-BUT-WELL) "maintenance and up-to-date documentation of the YANG models is a not agile process"
