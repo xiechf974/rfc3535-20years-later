@@ -41,32 +41,33 @@
 >
 
 
-|NEW Ops Requirement Label   | Orange       | Telefonica     | Swisscom       | Equinix        |    OP #        |
+|NEW Ops Requirement Label   | Orange       | Telefonica     | Swisscom       | Equinix        |    DT          |
 |----------------------------|:------------:|:--------------:|:--------------:|:--------------:|:--------------:|
-|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |      TBC       |
-|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |
-|NEW-OPS-REQ-QUICK-BUT-WELL  |Strong        |     Strong     |     Strong     |     Strong     |      TBC       |
-|NEW-OPS-REQ-GUIDE-AND-PROFILE|Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
-|NEW-OPS-REQ-ARCH            |Nice to have  | Nice to have   |     Strong     | Nice to have   |      TBC       |
-|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
-|NEW-OPS-REQ-TIMELY-DM       |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
-|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
-|NEW-OPS-REQ-DM2API          |Strong        |  Nice to have  |     Strong     | Nice to have   |      TBC       |
-|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     Strong     |  Nice to have  | Nice to have   |      TBC       |
-|NEW-OPS-REQ-REASSESS        |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
-|NEW-OPS-REQ-BRIDGE          |Nice to have  |     Strong     |     Strong     |  Nice to have  |      TBC       |
-|NEW-OPS-REQ-INTEGRATION     |Strong        |     Strong     |     Strong     |Strong          |      TBC       |
-|NEW-OPS-REQ-LOSSLESS        |Nice to have  |     Strong     |   Nive to have | Nice to have   |      TBC       |
-|NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong     |     Strong     | Strong         |      TBC       |
-|NEW-OPS-REQ-SCALE           |Strong        |     Strong     |     Strong     |Strong          |      TBC       |
-|NEW-OPS-REQ-UNSILO          |Nice to have  |     Strong     |     Strong     | Nice to have   |      TBC       |
-|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |   Nice to have |   Nice to have | Nice to have   |      TBC       |
-|NEW-OPS-REQ-ITER            |Strong        |     Strong     |     Strong     | Nice to have   |      TBC       |
-|NEW-OPS-REQ-Y2KG            |Nice to have  | Nice to have   |  Nice to have  | Nice to have   |      TBC       |
-|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |     Strong     |  Nice to have  | Strong         |      TBC       |
-|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |  Nice to have  |  Nice to have  | Nice to have   |      TBC       |
-|NEW-OPS-REQ-NEW-NEED        |Nice to have  |     Strong     |  Nice to have  |Nice to have    |      TBC       |
-|NEW-OPS-REQ-GLUE            |Nice to have  |     Strong     |  Nice to have  |Nice to have    |      TBC       |
+|NEW-OPS-REQ-STRENGTHEN-DM   |Strong        |     Strong     |  Nice to have  |     Strong     |      Strong    |
+|NEW-OPS-REQ-DM-RATIONALIZE  |Strong        |     Strong     |     Strong     |     Strong     |      Strong    |     
+|NEW-OPS-REQ-QUICK-BUT-WELL  |Strong        |     Strong     |     Strong     |     Strong     |      Strong    |
+|NEW-OPS-REQ-GUIDE-AND-PROFILE|Nice to have  | Nice to have   |     Strong     | Nice to have  |      Strong    |
+|NEW-OPS-REQ-ARCH            |Nice to have  | Nice to have   |     Strong     | Nice to have   |      Strong    |
+|NEW-OPS-REQ-EASE-EXPOSURE   |Strong        |     Strong     |     Strong     | Strong         |      Strong    |
+|NEW-OPS-REQ-TIMELY-DM       |Strong        |     Strong     |     Strong     | Strong         |      Strong    |
+|NEW-OPS-REQ-READILTY-IMPLEM |Strong        |     Strong     |     Strong     | Strong         |      Strong    |
+|NEW-OPS-REQ-DM2API          |Strong        |  Nice to have  |     Strong     | Nice to have   |      Strong    |
+|NEW-OPS-REQ-NW-API-DISCOVERY|Nice to have  |     Strong     |  Nice to have  | Nice to have   |  Nice to have  |
+|NEW-OPS-REQ-REASSESS        |Strong        |     Strong     |     Strong     | Strong         |      Strong    |
+|NEW-OPS-REQ-BRIDGE          |Nice to have  |     Strong     |     Strong     |  Nice to have  |      Strong    |
+|NEW-OPS-REQ-INTEGRATION     |Strong        |     Strong     |     Strong     |Strong          |    Strong      |
+|NEW-OPS-REQ-LOSSLESS        |Nice to have  |     Strong     |   Nive to have | Nice to have   |      Strong    |
+|NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong     |     Strong     | Strong         |      Strong    |
+|NEW-OPS-REQ-SCALE           |Strong        |     Strong     |     Strong     |Strong          |      Strong    |
+|NEW-OPS-REQ-UNSILO          |Nice to have  |     Strong     |     Strong     | Nice to have   |      Strong    |
+|NEW-OPS-REQ-IT-INTEGRATION  |Strong        |   Nice to have |   Nice to have | Nice to have   |  Nice to have  |
+|NEW-OPS-REQ-ITER            |Strong        |     Strong     |     Strong     | Nice to have   |      Strong    |
+|NEW-OPS-REQ-Y2KG            |Nice to have  | Nice to have   |  Nice to have  | Nice to have   |  Nice to have  |
+|NEW-OPS-REQ-CLIENT-TOOLS    |Strong        |     Strong     |  Nice to have  | Strong         |  Nice to have  |
+|NEW-OPS-REQ-IETF-TOOLS      |Nice to have  |  Nice to have  |  Nice to have  | Nice to have   |  Nice to have  |
+|NEW-OPS-REQ-NEW-NEED        |Nice to have  |     Strong     |  Nice to have  |Nice to have    |  Nice to have  |
+|NEW-OPS-REQ-GLUE            |Nice to have  |     Strong     |  Nice to have  |Nice to have    |  Nice to have  |
+
 
 # Papers
 
@@ -86,7 +87,7 @@
    + (NEW-OPS-REQ-IT-INTEGRATION) "The combination of the relevant TMF specifications and IETF YANG service models would offer service providers a comprehensive and powerful solution"
 4. [RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling](https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-an-update-of-operators-requirements-on-network-management-protocols-and-modelling-00.pdf)
 5. [Rethinking Standardisation of Network Management](https://www.ietf.org/slides/slides-nemopsws-paper-rethinking-standardisation-of-network-management-00.pdf)
-   + (NEW-OPS-REQ-AGILE) "need for iteration"
+   + (NEW-OPS-REQ-QUICK-BUT-WELL) "need for iteration"
    + (NEW-OPS-REQ-ITER) "To keep operators engaged, the IETF needs a velocity and approach to standardisation that allows for business goals to be incrementally realised."
    + (NEW-OPS-REQ-CLIENT-TOOLS) "The need for open source"
    + (NEW-OPS-REQ-GUIDANCE) "There is little or no publications or standards consideration for how different IETF technologies might fit together. This places constraints on the relevance of the technologies that are developed in the IETF"
@@ -104,5 +105,5 @@ Ontology Language (OWL) from the Semantic Web may serve as reference in this are
    + (NEW-OPS-REQ-UNSILO) "Fixed hierarchical structure limits the modeling of complex scenarios where relationships within the data are important...graph structures provide a
 more flexible structure that can accommodate any kind of data"
    + (NEW-OPS-REQ-CLIENT-TOOLS) "Lack of mature YANG libraries, with several efforts in different programming languages that have been abandoned or that do not keep the pace of the standards"
-   + (NEW-OPS-REQ-AGILE) "maintenance and up-to-date documentation of the YANG models is a not agile process"
+   + (NEW-OPS-REQ-QUICK-BUT-WELL) "maintenance and up-to-date documentation of the YANG models is a not agile process"
    + (NEW-OPS-REQ-GLUE) "Integrating additional relevant information that could be required for those applications for taking decisions on the network"
