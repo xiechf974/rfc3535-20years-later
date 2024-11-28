@@ -86,7 +86,7 @@
    + (NEW-OPS-REQ-IT-INTEGRATION) "The combination of the relevant TMF specifications and IETF YANG service models would offer service providers a comprehensive and powerful solution"
 4. [RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling](https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-an-update-of-operators-requirements-on-network-management-protocols-and-modelling-00.pdf)
 5. [Rethinking Standardisation of Network Management](https://www.ietf.org/slides/slides-nemopsws-paper-rethinking-standardisation-of-network-management-00.pdf)
-   + (NEW-OPS-REQ-AGILE) "need for iteration"
+   + (NEW-OPS-REQ-QUICK-BUT-WELL) "need for iteration"
    + (NEW-OPS-REQ-ITER) "To keep operators engaged, the IETF needs a velocity and approach to standardisation that allows for business goals to be incrementally realised."
    + (NEW-OPS-REQ-CLIENT-TOOLS) "The need for open source"
    + (NEW-OPS-REQ-GUIDANCE) "There is little or no publications or standards consideration for how different IETF technologies might fit together. This places constraints on the relevance of the technologies that are developed in the IETF"
@@ -104,5 +104,5 @@ Ontology Language (OWL) from the Semantic Web may serve as reference in this are
    + (NEW-OPS-REQ-UNSILO) "Fixed hierarchical structure limits the modeling of complex scenarios where relationships within the data are important...graph structures provide a 
 more flexible structure that can accommodate any kind of data"
    + (NEW-OPS-REQ-CLIENT-TOOLS) "Lack of mature YANG libraries, with several efforts in different programming languages that have been abandoned or that do not keep the pace of the standards"
-   + (NEW-OPS-REQ-AGILE) "maintenance and up-to-date documentation of the YANG models is a not agile process"
+   + (NEW-OPS-REQ-QUICK-BUT-WELL) "maintenance and up-to-date documentation of the YANG models is a not agile process"
    + (NEW-OPS-REQ-GLUE) "Integrating additional relevant information that could be required for those applications for taking decisions on the network"
