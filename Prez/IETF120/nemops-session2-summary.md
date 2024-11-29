@@ -108,7 +108,8 @@ more flexible structure that can accommodate any kind of data"
    + (NEW-OPS-REQ-QUICK-BUT-WELL) "maintenance and up-to-date documentation of the YANG models is a not agile process"
    + (NEW-OPS-REQ-GLUE) "Integrating additional relevant information that could be required for those applications for taking decisions on the network"
 
-Lower Level YANG and protocol related Requirements combining with high level service and network model requirements
+
+# Lower Level YANG and Protocol-related Requirements Combined with High-Level Service and Network Model Requirements
 
 9. [Four Thoughts for How to Improve Network Management for Operators](https://www.ietf.org/slides/slides-nemopsws-paper-nemops-position-paper-kent-watsen-00.pdf)
    + Promote RESTCONF with JSON encoding, obsolete NETCONF and RESTCONF's XML
