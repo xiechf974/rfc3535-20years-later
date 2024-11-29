@@ -118,7 +118,7 @@ more flexible structure that can accommodate any kind of data"
    + There should be a "library" of adaptors to transform standards-based data models to the native data model supported by devices
    + Device-adapters to send the device-specific data to the device (which only supports CLI or SNMP) via its CLI
 
-11. [Device Network Management - Current Status, and Future Direction](https://www.ietf.org/slides/slides-nemopsws-paper-device-network-management-current-status-and-future-direction-00.txt)
+10. [Device Network Management - Current Status, and Future Direction](https://www.ietf.org/slides/slides-nemopsws-paper-device-network-management-current-status-and-future-direction-00.txt)
     
    + NETCONF-next:
       * Be optimized to specify the minimum functionality required to manage network devices using YANG.
