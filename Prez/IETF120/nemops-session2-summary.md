@@ -11,7 +11,7 @@
 |NEW Ops Requirement Label| Description| Papers|
 |-------------------------|:------:|:------:|
 |NEW-OPS-REQ-STRENGTHEN-DM |Network softwarization can only happen with a strong, committed standardization effort, complemented by active involvement in open-source projects that facilitate access to code|#1, #4|
-|NEW-OPS-REQ-DM-RATIONALIZE|TRationalize this space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented|#3, #4|
+|NEW-OPS-REQ-DM-RATIONALIZE|Rationalize this space and avoid redundant efforts. Unlike service and network models, IETF-defined device models are not widely implemented|#3, #4|
 |NEW-OPS-REQ-QUICK-BUT-WELL|Develop a more agile process for the development and maintenance of YANG modules in the IETF. RFCs might not be suited for documenting YANG modules|#4, #5, #8|
 |NEW-OPS-REQ-GUIDE-AND-PROFILE|The target application/applicability of a network management approach should be documented (e.g., edit profile documents that outline a set of recommendations for core/key features, along with appropriate justifications, will help foster more implementations that meet operators’ needs) |#4|
 |NEW-OPS-REQ-ARCH|Need to promote more arch and framework documents to exemplify the intended use|#5|
@@ -69,44 +69,44 @@
 |NEW-OPS-REQ-GLUE            |Nice to have  |     Strong     |  Nice to have  |Nice to have    |  Nice to have  |     TBC        |     TBC        |
 
 
-# Papers
+# Papers with Requirements
 
 1. [NEMOPS: RFC3535 and the forgotten word](https://www.ietf.org/slides/slides-nemopsws-nemops-rfc3535-and-the-forgotten-word-00.pdf)
-   + (NEW-OPS-REQ-STRENGTHEN-DM) "New services can/should be modeled directly in YANG"
-   + (NEW-OPS-REQ-EASE-EXPOSURE) "Should focus more on operational data aspects. There must be enough information to come to data driven decisions, which then ends in closed
+   + (**NEW-OPS-REQ-STRENGTHEN-DM**) "New services can/should be modeled directly in YANG"
+   + (**NEW-OPS-REQ-EASE-EXPOSURE**) "Should focus more on operational data aspects. There must be enough information to come to data driven decisions, which then ends in closed
      loops that solve (or prevent) incidents"
 2. [Towards a Unified Compute and Communication Infrastructure for Application and Network Management](https://www.ietf.org/slides/slides-nemopsws-paper-towards-a-unified-compute-and-communication-infrastructure-for-application-and-network-management-00.pdf)
-   + (NEW-OPS-REQ-GLUE) "Providing standardized models of unified compute and communication infrastructure, along with mechanisms to expose their properties"
+   + (**NEW-OPS-REQ-GLUE**) "Providing standardized models of unified compute and communication infrastructure, along with mechanisms to expose their properties"
 3. [RFC3535, 20 Years Later from an Operator's Perspective (Deutsche Telekom)](https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-from-an-operators-perspective-deutsche-telekom-00.pdf)
-   + (NEW-OPS-REQ-DM-RATIONALIZE) "The stability of the IETF models and the conformance to proper IETF YANG make them superior to OpenConfigg whose models suffer from inconsistencies across
+   + (**NEW-OPS-REQ-DM-RATIONALIZE**) "The stability of the IETF models and the conformance to proper IETF YANG make them superior to OpenConfigg whose models suffer from inconsistencies across
      versions, this in turn leads to operational and interoperability issues"
-   + (NEW-OPS-REQ-DM-RATIONALIZE) "We don't want to go down the path of scope and feature creep with an ever larger surface area of the language"
-   + (NEW-OPS-REQ-CLIENT-TOOLS) "Collaboration on open-source software, like Orchestron (https://github.com/orchestron-orchestrator/)"
-   + (NEW-OPS-REQ-EASE-EXPOSURE) "the convergence of configuration management and the collection and monitoring of operational state is essential"
-   + (NEW-OPS-REQ-INTEGRATION) "The IETF could do more to help bridge the gap by providing standardized operational monitoring models to match the configuration models; at both the device level and the network/service level"
-   + (NEW-OPS-REQ-IT-INTEGRATION) "The combination of the relevant TMF specifications and IETF YANG service models would offer service providers a comprehensive and powerful solution"
+   + (**NEW-OPS-REQ-DM-RATIONALIZE**) "We don't want to go down the path of scope and feature creep with an ever larger surface area of the language"
+   + (**NEW-OPS-REQ-CLIENT-TOOLS**) "Collaboration on open-source software, like Orchestron (https://github.com/orchestron-orchestrator/)"
+   + (**NEW-OPS-REQ-EASE-EXPOSURE**) "the convergence of configuration management and the collection and monitoring of operational state is essential"
+   + (**NEW-OPS-REQ-INTEGRATION**) "The IETF could do more to help bridge the gap by providing standardized operational monitoring models to match the configuration models; at both the device level and the network/service level"
+   + (**NEW-OPS-REQ-IT-INTEGRATION**) "The combination of the relevant TMF specifications and IETF YANG service models would offer service providers a comprehensive and powerful solution"
 4. [RFC 3535, 20 Years Later: An Update of Operators Requirements on Network Management Protocols and Modelling](https://www.ietf.org/slides/slides-nemopsws-paper-rfc3535-years-later-an-update-of-operators-requirements-on-network-management-protocols-and-modelling-00.pdf)
 5. [Rethinking Standardisation of Network Management](https://www.ietf.org/slides/slides-nemopsws-paper-rethinking-standardisation-of-network-management-00.pdf)
-   + (NEW-OPS-REQ-QUICK-BUT-WELL) "need for iteration"
-   + (NEW-OPS-REQ-ITER) "To keep operators engaged, the IETF needs a velocity and approach to standardisation that allows for business goals to be incrementally realised."
-   + (NEW-OPS-REQ-CLIENT-TOOLS) "The need for open source"
-   + (NEW-OPS-REQ-GUIDANCE) "There is little or no publications or standards consideration for how different IETF technologies might fit together. This places constraints on the relevance of the technologies that are developed in the IETF"
-   + (NEW-OPS-REQ-REUSABILITY) "The need for reuse"
-   + NEW-OPS-REQ-ARCH
+   + (**NEW-OPS-REQ-QUICK-BUT-WELL**) "need for iteration"
+   + (**NEW-OPS-REQ-ITER**) "To keep operators engaged, the IETF needs a velocity and approach to standardisation that allows for business goals to be incrementally realised."
+   + (**NEW-OPS-REQ-CLIENT-TOOLS**) "The need for open source"
+   + (**NEW-OPS-REQ-GUIDANCE**) "There is little or no publications or standards consideration for how different IETF technologies might fit together. This places constraints on the relevance of the technologies that are developed in the IETF"
+   + (**NEW-OPS-REQ-REUSABILITY**) "The need for reuse"
+   + **NEW-OPS-REQ-ARCH** Added as a new req
 6. [Agile Incremental Driven Development for Network Management](https://www.ietf.org/slides/slides-nemopsws-paper-agile-incremental-driven-development-for-network-management-00.pdf)
-   + (NEW-OPS-REQ-ITER) "Enable agile incremental driven development"
+   + (**NEW-OPS-REQ-ITER**) "Enable agile incremental driven development"
 7. [Evolving Challenges and Solutions in Network Management](https://www.ietf.org/slides/slides-nemopsws-paper-evolving-challenges-and-solutions-in-network-management-00.pdf)
-   + (NEW-OPS-REQ-SCALE) "YANG Scalability"
+   + (**EW-OPS-REQ-SCALE**) "YANG Scalability"
    + "data sources should implement active streaming of data to post-processing systems immediately upon production, this will also ensure that closed-loop automation systems have access to data in near real-time."
-   + (NEW-OPS-REQ-REUSABILITY) "There is potential for retrofitting Internet of Things (IoT) oriented protocols on telemetry or management-type signaling within the network management domain"
+   + (**NEW-OPS-REQ-REUSABILITY**) "There is potential for retrofitting Internet of Things (IoT) oriented protocols on telemetry or management-type signaling within the network management domain"
 8. [IAB NEMOPS Position Paper - Telefonica](https://www.ietf.org/slides/slides-nemopsws-paper-iab-nemops-position-paper-telefonica-00.pdf)
-   + (NEW-OPS-REQ-Y2KG) "the YANG language should evolve towards a grounding on formal knowledge representation to achieve the semantic  interoperability level. Standards like Resource Definition Framework (RDF) and Web
+   + (**NEW-OPS-REQ-Y2KG**) "the YANG language should evolve towards a grounding on formal knowledge representation to achieve the semantic  interoperability level. Standards like Resource Definition Framework (RDF) and Web
 Ontology Language (OWL) from the Semantic Web may serve as reference in this area."
-   + (NEW-OPS-REQ-UNSILO) "Fixed hierarchical structure limits the modeling of complex scenarios where relationships within the data are important...graph structures provide a
+   + (**NEW-OPS-REQ-UNSILO**) "Fixed hierarchical structure limits the modeling of complex scenarios where relationships within the data are important...graph structures provide a
 more flexible structure that can accommodate any kind of data"
-   + (NEW-OPS-REQ-CLIENT-TOOLS) "Lack of mature YANG libraries, with several efforts in different programming languages that have been abandoned or that do not keep the pace of the standards"
-   + (NEW-OPS-REQ-QUICK-BUT-WELL) "maintenance and up-to-date documentation of the YANG models is a not agile process"
-   + (NEW-OPS-REQ-GLUE) "Integrating additional relevant information that could be required for those applications for taking decisions on the network"
+   + (**NEW-OPS-REQ-CLIENT-TOOLS**) "Lack of mature YANG libraries, with several efforts in different programming languages that have been abandoned or that do not keep the pace of the standards"
+   + (**NEW-OPS-REQ-QUICK-BUT-WELL**) "maintenance and up-to-date documentation of the YANG models is a not agile process"
+   + (**NEW-OPS-REQ-GLUE**) "Integrating additional relevant information that could be required for those applications for taking decisions on the network"
 
 
 # Lower Level YANG and Protocol-related Requirements Combined with High-Level Service and Network Model Requirements
@@ -125,29 +125,29 @@ more flexible structure that can accommodate any kind of data"
       * Make all extra functionality optional, perhaps moving them to a separate document (e.g., XPath filtering)
       * Consider if there is any legacy features that are no longer useful and could be removed altogether (e.g., shared candidate)
       * Model all NETCONF RPC operations in YANG data models.
-      * (NEW-OPS-REQ-NEW-NEED) Support for JSON encoding of YANG data by default, but also allowing support for CBOR and XML.
+      * (**NEW-OPS-REQ-NEW-NEED**) Support for JSON encoding of YANG data by default, but also allowing support for CBOR and XML.
    + YANG-next:
       * Merging in the core versioning changes.
       * Any small changes to the language that significantly improve modelling of difficult cases.
-      * (NEW-OPS-REQ-REUSABILITY) Any small generalizations to the language that make it more widely usable (e.g., add a base float type).
-      * (NEW-OPS-REQ-GUIDE-AND-PROFILE) Deprecation of functionality that adds unnecessary complexity, to be removed in future version (e.g., sub-modules).
+      * (**NEW-OPS-REQ-REUSABILITY**) Any small generalizations to the language that make it more widely usable (e.g., add a base float type).
+      * (**NEW-OPS-REQ-GUIDE-AND-PROFILE**) Deprecation of functionality that adds unnecessary complexity, to be removed in future version (e.g., sub-modules).
       * Any bug fixes or omissions from the existing specification.
-   + (NEW-OPS-REQ-GUIDE-AND-PROFILE) Develop a mechanism to define sets of IETF and other SDO YANG models that are known to work well together.
-   + (NEW-OPS-REQ-QUICK-BUT-WELL) Define a more efficient mechanism for evolving YANG data models. Rather than having all of the YANG modules residing in RFCs, that
+   + (**NEW-OPS-REQ-GUIDE-AND-PROFILE**) Develop a mechanism to define sets of IETF and other SDO YANG models that are known to work well together.
+   + (**NEW-OPS-REQ-QUICK-BUT-WELL**) Define a more efficient mechanism for evolving YANG data models. Rather than having all of the YANG modules residing in RFCs, that
      are slow and expensive to update, it would be better to have a working copy of the IETF YANG models with fixes and enhancements applied, stored in github 
      and readily available for use.  Overtime, as these models become stable they could be published in RFCs, if necessary.
-   + (NEW-OPS-REQ-QUICK-BUT-WELL) The IETF should consider whether assets, such as YANG models, should be specified in documents at all, of whether the RFCs should only document the 
+   + (**NEW-OPS-REQ-QUICK-BUT-WELL**) The IETF should consider whether assets, such as YANG models, should be specified in documents at all, of whether the RFCs should only document the 
      abstract overview of the YANG data model
    + The IETF should check whether the YANG data models are complete to solve particular standard deployments and configuration.
-   + (NEW-OPS-REQ-BRIDGE) Collaboration between operators, vendors, and universities.
-   + (NEW-OPS-REQ-ITER) The IETF should focus on staged "minimum-viable-product" deliverables, and take smaller steps to achieve the minimum agreed functionality
-   + (NEW-OPS-REQ-READILTY-IMPLEM and NEW-OPS-REQ-CLIENT-TOOLS)IETF should focus more on the the availability of open source solutions
+   + (**NEW-OPS-REQ-BRIDGE**) Collaboration between operators, vendors, and universities.
+   + (**NEW-OPS-REQ-ITER**) The IETF should focus on staged "minimum-viable-product" deliverables, and take smaller steps to achieve the minimum agreed functionality
+   + (**NEW-OPS-REQ-READILTY-IMPLEM** and **NEW-OPS-REQ-CLIENT-TOOLS**) IETF should focus more on the the availability of open source solutions
 
 11. [Composable, Declarative, Reproducible, Verifiable Network and Service Configurations](https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf)
     
-   + (NEW-OPS-REQ-GUIDE-AND-PROFILE) Improve the YANG language and fix known limitations as well as add a package mechanism to YANG
-   + (NEW-OPS-REQ-EASE-EXPOSURE) Shift the focus from device configuration to network and service configuration:
-      - (NEW-OPS-REQ-REUSABILITY) enable to define composable and reusable configuration components for specific services that do compose well into a larger network and service configurations.
-      - (NEW-OPS-REQ-LOSSLESS) tackle declarative network and service configuration and allows the expression of specific deployment constraints which may translate to constraints that must be met by device configuration
-      - (3535) support a smooth transition between network configurations, e.g., bring all systems back to network configuration X
-      - (3535) support network-wide configurations that are verifiable configuration and resilient against certain types of failures or robustness against certain attacks.
+   + (**NEW-OPS-REQ-GUIDE-AND-PROFILE**) Improve the YANG language and fix known limitations as well as add a package mechanism to YANG
+   + (**NEW-OPS-REQ-EASE-EXPOSURE**) Shift the focus from device configuration to network and service configuration:
+      - (**NEW-OPS-REQ-REUSABILITY**) enable to define composable and reusable configuration components for specific services that do compose well into a larger network and service configurations.
+      - (**NEW-OPS-REQ-LOSSLESS**) tackle declarative network and service configuration and allows the expression of specific deployment constraints which may translate to constraints that must be met by device configuration
+      - (**3535**) support a smooth transition between network configurations, e.g., bring all systems back to network configuration X
+      - (**3535**) support network-wide configurations that are verifiable configuration and resilient against certain types of failures or robustness against certain attacks.
