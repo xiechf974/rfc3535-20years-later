@@ -109,12 +109,14 @@ more flexible structure that can accommodate any kind of data"
    + (NEW-OPS-REQ-GLUE) "Integrating additional relevant information that could be required for those applications for taking decisions on the network"
 
 Lower Level YANG and protocol related Requirements combining with high level service and network model requirements
+
 9. [Four Thoughts for How to Improve Network Management for Operators](https://www.ietf.org/slides/slides-nemopsws-paper-nemops-position-paper-kent-watsen-00.pdf)
    + Promote RESTCONF with JSON encoding, obsolete NETCONF and RESTCONF's XML
    + NMDA should be mandatory to implement in the next verssion of NETCONF and RESTCONF protocols
    + There should be a "library" of adaptors to transform standards-based data models to the native data model supported by devices
    + Device-adapters to send the device-specific data to the device (which only supports CLI or SNMP) via its CLI
-10.[Device Network Management - Current Status, and Future Direction](https://www.ietf.org/slides/slides-nemopsws-paper-device-network-management-current-status-and-future-direction-00.txt)
+
+10. [Device Network Management - Current Status, and Future Direction](https://www.ietf.org/slides/slides-nemopsws-paper-device-network-management-current-status-and-future-direction-00.txt)
    + NETCONF-next: Be optimized to specify the minimum functionality required to manage network devices using YANG.
    + NETCONF-next: Make all extra functionality optional, perhaps moving them to a separate document (e.g., XPath filtering)
    + NETONF-next: Consider if there is any legacy features that are no longer useful and could be removed altogether (e.g., shared candidate)
@@ -135,7 +137,8 @@ Lower Level YANG and protocol related Requirements combining with high level ser
    + collaboration between operators, vendors, and universities.
    + The IETF should focus on staged "minimum-viable-product" deliverables, and take smaller steps to achieve the minimum agreed functionality
    + IETF should focus more on the the availability of open source solutions
-11.[Composable, Declarative, Reproducible, Verifiable Network and Service Configurations](https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf)
+
+11. [Composable, Declarative, Reproducible, Verifiable Network and Service Configurations](https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf)
    + Improve the YANG language and fix known limitations as well as add a package mechanism to YANG
    + Shift the focus from device configuration to network and service configuration: enable to define composable and reusable configuration components for 
      specific services that do compose well into a larger network and service configurations.
