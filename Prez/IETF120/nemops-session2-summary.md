@@ -20,7 +20,7 @@
 |NEW-OPS-REQ-READILTY-IMPLEM|The availablability of implementation is concerning|#4|
 |NEW-OPS-REQ-DM2API|Readily available API specifications should be generalized from YANG modules for fast development, prototyping, and validation |#4|
 |NEW-OPS-REQ-NW-API-DISCOVERY|Define a reference approach/process for service exposure discovery (APIs discovery)|#4|
-|NEW-OPS-REQ-REASSESS|Reassess the value of some IETF proposals compared to competing or emerging solutions (e.g., gRPC/gNMI)|#4|
+|NEW-OPS-REQ-REASSESS|Reassess the value of some IETF proposals, including compared to competing or emerging solutions (e.g., gRPC/gNMI)|#4|
 |NEW-OPS-REQ-BRIDGE|Create an eco-system where data and networking engineers can collaborate|#4|
 |NEW-OPS-REQ-INTEGRATION|Consider approaches to ease integration by-design (e.g., protocols and data models)|#4|
 |NEW-OPS-REQ-LOSSLESS|Consider programmatic approaches to ensure lossless mappings between service/network/device data models|#4|
@@ -113,10 +113,10 @@ more flexible structure that can accommodate any kind of data"
 
 9. [Four Thoughts for How to Improve Network Management for Operators](https://www.ietf.org/slides/slides-nemopsws-paper-nemops-position-paper-kent-watsen-00.pdf)
     
-   + Promote RESTCONF with JSON encoding, obsolete NETCONF and RESTCONF's XML
-   + NMDA should be mandatory to implement in the next verssion of NETCONF and RESTCONF protocols
-   + There should be a "library" of adaptors to transform standards-based data models to the native data model supported by devices
-   + Device-adapters to send the device-specific data to the device (which only supports CLI or SNMP) via its CLI
+   + (**NEW-OPS-REQ-REASSESS**) Promote RESTCONF with JSON encoding, obsolete NETCONF and RESTCONF's XML
+   + NMDA should be mandatory to implement in the next version of NETCONF and RESTCONF protocols
+   + (**NEW-OPS-REQ-INTEGRATION**) There should be a "library" of adaptors to transform standards-based data models to the native data model supported by devices
+   + (**NEW-OPS-REQ-INTEGRATION**) Device-adapters to send the device-specific data to the device (which only supports CLI or SNMP) via its CLI
 
 10. [Device Network Management - Current Status, and Future Direction](https://www.ietf.org/slides/slides-nemopsws-paper-device-network-management-current-status-and-future-direction-00.txt)
     
