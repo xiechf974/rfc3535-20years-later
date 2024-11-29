@@ -145,13 +145,9 @@ more flexible structure that can accommodate any kind of data"
 
 11. [Composable, Declarative, Reproducible, Verifiable Network and Service Configurations](https://www.ietf.org/slides/slides-nemopsws-paper-composable-declarative-reproducible-verifiable-network-and-service-configurations-00.pdf)
     
-   + Improve the YANG language and fix known limitations as well as add a package mechanism to YANG
-   + Shift the focus from device configuration to network and service configuration:
-      - enable to define composable and reusable configuration components for 
-     specific services that do compose well into a larger network and service configurations.
-   + Shift the focus from device configuration to network and service configuration: tackle declarative network and service configuration and allows the 
-     expression of specific deployment constraints which may translate to constraints that must be met by device configuration
-   + Shift the focus from device configuration to network and service configuration: support a smooth transition between network configurations, e.g., bring 
-     all systems back to network configuration X
-   + Shift the focus from device configuration to network and service configuration: support network-wide configurations that are verifiable configuration and 
-     resilient against certain types of failures or robustness against certain attacks.
+   + (NEW-OPS-REQ-GUIDE-AND-PROFILE) Improve the YANG language and fix known limitations as well as add a package mechanism to YANG
+   + (NEW-OPS-REQ-EASE-EXPOSURE) Shift the focus from device configuration to network and service configuration:
+      - (NEW-OPS-REQ-REUSABILITY) enable to define composable and reusable configuration components for specific services that do compose well into a larger network and service configurations.
+      - (NEW-OPS-REQ-LOSSLESS) tackle declarative network and service configuration and allows the expression of specific deployment constraints which may translate to constraints that must be met by device configuration
+      - (3535) support a smooth transition between network configurations, e.g., bring all systems back to network configuration X
+      - (3535) support network-wide configurations that are verifiable configuration and resilient against certain types of failures or robustness against certain attacks.
