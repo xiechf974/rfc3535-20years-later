@@ -59,7 +59,7 @@
 |NEW-OPS-REQ-LOSSLESS        |Nice to have  |     Strong     |   Nive to have | Nice to have   |      Strong    |     TBC        |     TBC        |
 |NEW-OPS-REQ-REUSABILITY     |Strong        |     Strong     |     Strong     | Strong         |      Strong    |     TBC        |     TBC        |
 |NEW-OPS-REQ-SCALE           |Strong        |     Strong     |     Strong     |Strong          |      Strong    |     TBC        |     TBC        |
-|NEW-OPS-REQ-UNSILO          |Nice to have  |     Strong     |     Strong     | Nice to have   |      Strong    |     TBC        |     TBC        |
+|NEW-OPS-REQ-UNSILO          |Strong        |     Strong     |     Strong     | Nice to have   |      Strong    |     TBC        |     TBC        |
 |NEW-OPS-REQ-IT-INTEGRATION  |Strong        |   Nice to have |   Nice to have | Nice to have   |  Nice to have  |     TBC        |     TBC        |
 |NEW-OPS-REQ-ITER            |Strong        |     Strong     |     Strong     | Nice to have   |      Strong    |     TBC        |     TBC        |
 |NEW-OPS-REQ-Y2KG            |Nice to have  | Nice to have   |  Nice to have  | Nice to have   |  Nice to have  |     TBC        |     TBC        |
